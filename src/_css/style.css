@@ -1,0 +1,20 @@
+.titlebar {
+  text-align: center;
+}
+
+.content {
+  max-width: 0.8vw;
+}
+
+/* so clunky, change height later */
+.path {
+  height: 120px;
+  justify-items: end;
+  z-index: 2;
+}
+
+@media (max-width: 769px) {
+  .is-hidden-touch {
+    display: none;
+  }
+}
