@@ -20,7 +20,36 @@
     <nav class="topbar">
       <a class="topbar-item" id="home" href="">home</a>
       <a href="" class="topbar-item">theme</a>
-      <div class="topbar-item dd">settings</div>
+      <!-- settings -->
+      <div class="topbar-item dd" tabindex="0">
+        settings
+        <form class="dd-group">
+          <label class="dd-item">
+            reduced motion
+            <input type="checkbox" checked="checked" />
+            <span class="checkmark"></span>
+          </label>
+          <br />
+          <label class="dd-item">
+            lazy loading
+            <input type="checkbox" checked="true" />
+            <span class="checkmark"></span>
+          </label>
+          <br />
+          <label class="dd-item">
+            dyslexia friendly font
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <br />
+          <label class="dd-item">
+            alt text below images
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <input type="submit" value="Apply" />
+        </form>
+      </div>
     </nav>
 
     <nav class="path columns is-mobile">
@@ -78,19 +107,21 @@
               </p>
             </section>
             <!-- socials -->
-            <article>
-              <a href="https://malfen.tumblr.com">tumblr</a>
-              <a href="">toyhouse</a>
-              <a href="">artfight</a>
-              <a href="https://github.com/kiptunes">github</a>
-              <a href="">ko-fi</a>
-            </article>
+            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
+              <ul>
+                <li><a href="https://malfen.tumblr.com">tumblr</a></li>
+                <li><a href="">toyhouse</a></li>
+                <li><a href="">artfight</a></li>
+                <li><a href="https://github.com/kiptunes">github</a></li>
+                <li><a href="">ko-fi</a></li>
+              </ul>
+            </nav>
           </article>
           <hr />
           <!-- site updates -->
           <section class="site-updates columns is-mobile">
             <!-- todo -->
-            <aside class="column is-one-third">
+            <aside class="column is-one-third" tabindex="0">
               <h4>To-Do</h4>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -100,7 +131,7 @@
               </p>
             </aside>
             <!-- changelog -->
-            <div class="column">
+            <div class="column" tabindex="0">
               <h4>Changelog</h4>
               <section>
                 <article>
@@ -136,24 +167,28 @@
           <div class="window is-hidden-touch">
             <img src="" alt="" />
           </div>
-          <!-- webrings -->
-          <div>
-            <h4>Webrings</h4>
-            <div class="outgoing"></div>
-          </div>
-          <!-- link back stamp -->
-          <div>
-            <h4>Link back</h4>
-            <div></div>
-          </div>
+
+          <section class="grid-links">
+            <!-- webrings -->
+            <div>
+              <h4>Webrings</h4>
+              <div class="outgoing"></div>
+            </div>
+            <!-- link back stamp -->
+            <div>
+              <h4>Link back</h4>
+              <div></div>
+            </div>
+          </section>
         </aside>
       </div>
 
       <!-- footer -->
       <footer>
-        <a href="">sourcecode</a>
-        <a href="">credits</a>
-        licensed under the unlicense. yayy yippee wip
+        <a href="">sourcecode</a> / <a href="">credits</a> / public domain under
+        the <a href="https://unlicense.org/">unlicense</a>
+        <br />
+        2026 • malfen
       </footer>
     </div>
   </body>
