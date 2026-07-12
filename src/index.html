@@ -17,43 +17,38 @@
 
   <body>
     <!-- top navigation -->
-    <div class="top stay">
-      <nav class="topbar navbar is-fixed-top">
-        <a class="navbar brand" href="">home</a>
-        <div class="navbar-menu is-active">
-          <div class="navbar-end">
-            <button class="navbar-item">theme</button>
-            <button class="navbar-item">settings</button>
-          </div>
-        </div>
-      </nav>
-      <nav class="path navbar">
-        <div class="navbar-start">
-          <button class="navbar-item">Back</button>
-          <button class="navbar-item">Forward</button>
-          <h5 class="navbar-item">path/to/page</h5>
-        </div>
-      </nav>
-    </div>
+    <nav class="topbar">
+      <a class="topbar-item" id="home" href="">home</a>
+      <a href="" class="topbar-item">theme</a>
+      <div class="topbar-item dd">settings</div>
+    </nav>
+
+    <nav class="path columns is-mobile">
+      <button class="column is-narrow">Back</button>
+      <button class="column is-narrow">Forward</button>
+      <a class="column is-hidden-touch">path/to/page</a>
+    </nav>
 
     <div class="sitebox container is-widescreen">
       <header class="titlebar">
         <h1>WELCOME</h1>
       </header>
 
-      <div class="content columns container is-widescreen">
+      <div class="columns container is-widescreen">
         <!-- sidebar -->
-        <aside class="menu column is-hidden-touch">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Info</a></li>
-            <li><a href="">Art</a></li>
-            <li><a href="">Links</a></li>
-          </ul>
+        <aside class="column is-hidden-touch">
+          <nav class="menu sidebar">
+            <ul class="menu-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="info.html">Info</a></li>
+              <li><a href="art/index.html">Art</a></li>
+              <li><a href="resources.html">Links</a></li>
+            </ul>
+          </nav>
+
           <!-- contact-->
           <article>
             <h4>Contact me!</h4>
-            <img src="" alt="" />
             <p><a href="mailto:">email</a> for personal & business inquiries</p>
             <hr />
             <h4>repository</h4>
@@ -84,18 +79,18 @@
             </section>
             <!-- socials -->
             <article>
-              <a href="">tumblr</a>
+              <a href="https://malfen.tumblr.com">tumblr</a>
               <a href="">toyhouse</a>
               <a href="">artfight</a>
-              <a href="">github</a>
+              <a href="https://github.com/kiptunes">github</a>
               <a href="">ko-fi</a>
             </article>
           </article>
-
+          <hr />
           <!-- site updates -->
-          <section class="columns is-mobile">
+          <section class="site-updates columns is-mobile">
             <!-- todo -->
-            <article class="column is-one-quarter">
+            <aside class="column is-one-third">
               <h4>To-Do</h4>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -103,9 +98,9 @@
                 repellendus, sequi, molestias fugiat culpa magni eaque et. Sequi
                 libero, maiores corrupti fuga ratione qui!
               </p>
-            </article>
+            </aside>
             <!-- changelog -->
-            <article class="column">
+            <div class="column">
               <h4>Changelog</h4>
               <section>
                 <article>
@@ -127,36 +122,38 @@
                   </p>
                 </article>
               </section>
-            </article>
+            </div>
           </section>
         </main>
 
         <!-- quicklinks -->
         <aside class="right column">
           <!-- onsite links -->
-          <article>
+          <div id="guestbook">
             <!-- guestbook link here + something else? -->
-          </article>
+          </div>
           <!-- separator image -->
-          <div class="window">
+          <div class="window is-hidden-touch">
             <img src="" alt="" />
           </div>
           <!-- webrings -->
-          <article>
+          <div>
             <h4>Webrings</h4>
             <div class="outgoing"></div>
-            <br />
+          </div>
+          <!-- link back stamp -->
+          <div>
             <h4>Link back</h4>
             <div></div>
-          </article>
+          </div>
         </aside>
       </div>
 
       <!-- footer -->
-      <footer class="columns">
-        <a class="column is-narrow" href="">credits</a>
-        <a class="column is-narrow" href="">sourcecode</a>
-        <p class="column">licensed under the unlicense. yayy yippee wip</p>
+      <footer>
+        <a href="">sourcecode</a>
+        <a href="">credits</a>
+        licensed under the unlicense. yayy yippee wip
       </footer>
     </div>
   </body>

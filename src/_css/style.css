@@ -1,20 +1,63 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.sitebox {
+  overflow-wrap:anywhere;
+}
+
 .titlebar {
   text-align: center;
+  padding: 5vw 0vw;
 }
 
-.content {
-  max-width: 0.8vw;
+.topbar {
+  display: flex;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-/* so clunky, change height later */
-.path {
-  height: 120px;
-  justify-items: end;
-  z-index: 2;
+.topbar > * {
+  margin: 10px;
+}
+
+.sidebar {
+  height: 60%;
+}
+
+#home {
+  flex: 1;
+}
+
+.site-updates > * {
+  height: 300px;
+  overflow-wrap: break-word;
+  overflow-y: scroll;
+}
+
+.site-updates > * > h4 {
+  top: 0;
+  position: sticky;
+}
+
+footer {
+  text-align: center;
+  padding: 3vw 0vw 10vw;
 }
 
 @media (max-width: 769px) {
   .is-hidden-touch {
     display: none;
+  }
+  aside.right {
+    display: grid;
+    grid-template: "side main" "footer footer";
+    gap: 10px;
+  }
+  #guestbook {
+    grid-area: footer;
   }
 }
