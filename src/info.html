@@ -5,61 +5,213 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal page for all my art and things. Welcome!"
+    />
+    <!-- <link rel="icon" type="image/x-icon" href=""> -->
+    <link rel="stylesheet" href="_css/bulma-no-helpers.css" />
+    <link rel="stylesheet" href="_css/style.css" />
+    <link rel="stylesheet" href="_css/dropdown.css" />
     <title>malfen</title>
   </head>
 
   <body>
     <!-- top navigation -->
-    <nav class="top">
-      <a href="">home</a>
-      <button>theme</button>
-      <button>settings</button>
+    <nav class="topbar">
+      <a class="topbar-item" id="home" href="">home</a>
+      <a href="" class="topbar-item">theme</a>
+      <!-- settings -->
+      <div class="topbar-item dd" tabindex="0">
+        settings
+        <form class="dd-group">
+          <label class="dd-item">
+            reduced motion
+            <input type="checkbox" checked="checked" />
+            <span class="checkmark"></span>
+          </label>
+          <br />
+          <label class="dd-item">
+            lazy loading
+            <input type="checkbox" checked="true" />
+            <span class="checkmark"></span>
+          </label>
+          <br />
+          <label class="dd-item">
+            dyslexia friendly font
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <br />
+          <label class="dd-item">
+            alt text below images
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <input type="submit" value="Apply" />
+        </form>
+      </div>
     </nav>
 
-    <header class="titlebar">
-      <h1>INFO</h1>
-    </header>
+    <nav class="path columns is-mobile">
+      <button class="column is-narrow">Back</button>
+      <button class="column is-narrow">Forward</button>
+      <a class="column is-hidden-touch">path/to/page</a>
+      <div class="column nav-icon">
+        <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
+        <label for="nav-checkbox">nav</label>
+      </div>
+    </nav>
 
-    <main>
-      <!-- sidebar -->
-      <nav class="sidebar">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Info</a></li>
-          <li><a href="">Art</a></li>
-          <li><a href="">Links</a></li>
-        </ul>
-      </nav>
+    <!-- mobile navigation (hidden on desktop) -->
+    <nav class="menu sidebar-mobile">
+      <p class="menu-label">General</p>
+      <ul class="menu-list">
+        <li><a class="is-active" href="index.html">Home</a></li>
+        <li>
+          <p>Info</p>
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Site</a></li>
+            <li><a href="">Comms</a></li>
+            <li><a href="">Setup</a></li>
+          </ul>
+        </li>
+        <li>
+          <p>Art</p>
+          <ul>
+            <li><a href="">Illustrations</a></li>
+            <li><a href="">Sketchbook</a></li>
+            <li><a href="">Pixel art</a></li>
+          </ul>
+        </li>
+        <li><a href="stamps.html">Stamps</a></li>
+      </ul>
+      <p class="menu-label">Bookmarks</p>
+      <ul class="menu-list">
+        <li>
+          <p>Resources</p>
+          <ul>
+            <li><a href="">HTML + CSS</a></li>
+            <li><a href="">Other languages</a></li>
+            <li><a href="">Linux</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
 
-      <section class="content">
-        <div class="tabs">
-          <button class="tablinks">About</button>
-          <button class="tablinks">Site</button>
-          <button class="tablinks">Comms</button>
-        </div>
-        <article>
-            <h3>About me</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo adipisci cupiditate totam dolorum, deserunt reprehenderit deleniti placeat minima, ea assumenda? Enim rem nostrum accusamus numquam debitis deleniti voluptatibus sapiente?
-            Mollitia illo consequatur, aspernatur minima expedita aliquid error ipsa sapiente itaque recusandae consequuntur voluptate, dolorem labore sit. Culpa rerum, molestiae fuga mollitia, amet maiores labore laboriosam dolore harum, sit minima.
-            Sapiente, voluptas distinctio beatae nihil mollitia architecto aperiam est soluta, nostrum vero fugit velit amet iste libero repudiandae quisquam eos nam, officia deleniti dolorum nobis! Dignissimos harum consequuntur odio vitae!</p>
-            <img src="" alt="">
-            <p>you can also <a href="">email me</a>.</p>
-        </article>
-        <nav class="socials">
-            <a href="">tumblr</a>
-            <a href="">toyhouse</a>
-            <a href="">artfight</a>
-            <a href="">github</a>
-            <a href="">ko-fi</a>
-        </nav>
-      </section>
-    </main>
+    <div class="sitebox container is-widescreen">
+      <header class="titlebar">
+        <h1>INFO</h1>
+      </header>
 
-    <!-- footer -->
-    <footer>
-      <a href="">credits</a>
-      <a href="">sourcecode</a>
-      <p>licensed under the unlicense. yayy yippee wip</p>
-    </footer>
+      <div class="columns container is-widescreen">
+        <!-- sidebar -->
+        <aside class="column is-one-fifth is-hidden-touch">
+          <nav class="menu sidebar">
+            <p class="menu-label">General</p>
+            <ul class="menu-list">
+              <li><a href="index.html">Home</a></li>
+              <li class="dd">
+                <input type="checkbox" id="info-dd" />
+                <label for="info-dd">Info</label>
+                <ul class="dd-group">
+                  <li><a href="">About</a></li>
+                  <li><a href="">Site</a></li>
+                  <li><a href="">Comms</a></li>
+                  <li><a href="">Setup</a></li>
+                </ul>
+              </li>
+              <li class="dd">
+                <input type="checkbox" id="art-dd" />
+                <label for="art-dd">Art</label>
+                <ul class="dd-group">
+                  <li><a href="">Illustrations</a></li>
+                  <li><a href="">Sketchbook</a></li>
+                  <li><a href="">Pixel art</a></li>
+                </ul>
+              </li>
+              <li><a href="stamps.html">Stamps</a></li>
+            </ul>
+            <p class="menu-label">Bookmarks</p>
+            <ul class="menu-list">
+              <li class="dd">
+                <input type="checkbox" id="resources-dd" checked="false" />
+                <label for="resources-dd">Resources </label>
+                <ul class="dd-group">
+                  <li class="dd-item"><a href="">HTML + CSS</a></li>
+                  <li class="dd-item"><a href="">Other languages</a></li>
+                  <li class="dd-item"><a href="">Linux</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- contact-->
+          <article>
+            <h4>Contact me!</h4>
+            <p><a href="mailto:">email</a> for personal & business inquiries</p>
+            <hr />
+            <h4>repository</h4>
+            <p>view the source code on <a href="">github!</a></p>
+          </article>
+        </aside>
+
+        <!-- sitebox -->
+        <main class="column">
+          <div class="tabs">
+            <ul>
+              <li class="is-active"><a href="#about">About</a></li>
+              <li><a href="#site">Site</a></li>
+              <li><a href="#comms">Comms</a></li>
+              <li><a href="#setup">Setup</a></li>
+            </ul>
+          </div>
+          <article>
+            <div class="container" id="about">
+              <div>
+                <h2>About Me</h2>
+                <p>
+                  hi : &#x0029; Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Veniam tenetur dolorum repellendus incidunt
+                  rem ratione, neque saepe optio quisquam eos voluptate? Cum quo
+                  exercitationem rerum provident accusantium earum ea aliquid?
+                  Vero facere ut excepturi labore commodi optio ipsa neque
+                  molestias obcaecati non numquam voluptas dolorem perferendis,
+                  esse pariatur. Voluptatem rerum excepturi asperiores nesciunt
+                  quis ea odio sit facere assumenda officiis? Amet a nostrum,
+                  natus assumenda minima quo rem velit nam vel totam sint
+                  molestiae dolorum sit. Quia, quos ullam dolor quidem fuga eius
+                  aut impedit illo quod nobis. Quia, quae. Suscipit sit amet
+                  quidem fugiat dicta assumenda consequatur magni in, quas error
+                  exercitationem obcaecati, alias nihil necessitatibus at
+                  quibusdam libero tempora ab praesentium provident illo
+                  accusantium doloribus cupiditate pariatur! Consectetur?
+                </p>
+                <img src="" alt="" />
+              </div>
+            </div>
+          </article>
+          <!-- socials -->
+          <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
+            <ul>
+              <li><a href="https://malfen.tumblr.com">tumblr</a></li>
+              <li><a href="">toyhouse</a></li>
+              <li><a href="">artfight</a></li>
+              <li><a href="https://github.com/kiptunes">github</a></li>
+              <li><a href="">ko-fi</a></li>
+            </ul>
+          </nav>
+        </main>
+      </div>
+
+      <!-- footer -->
+      <footer>
+        <a href="">sourcecode</a> / <a href="">credits</a> / public domain under
+        the <a href="https://unlicense.org/">unlicense</a>
+        <br />
+        hand coded • 2026 • malfen
+      </footer>
+    </div>
   </body>
 </html>
