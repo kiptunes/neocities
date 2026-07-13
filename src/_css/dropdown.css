@@ -4,13 +4,17 @@
   position: relative;
 }
 
+.input:hover{
+  background-color:blue;
+}
+
 .dd-group {
   display: none;
 }
 
 /* sidebar specific dropdown styling */
 li.dd {
-  margin: 8px;
+  margin: 12px;
 }
 
 input.checkbox-hidden, li.dd input{
