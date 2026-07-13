@@ -1,7 +1,7 @@
 html,
 body {
   max-width: 100%;
-  overflow-x: wrap;
+  overflow-x: hidden;
 }
 
 .topbar {
@@ -27,11 +27,6 @@ body {
 
 .sidebar {
   min-height: 60%;
-}
-
-.sidebar-mobile {
-  display: none;
-  background-color:black;
 }
 
 .site-updates > * {
@@ -70,26 +65,33 @@ footer {
     margin: 1rem;
     text-align: end;
   }
-  
-  body:has(#nav-checkbox:checked) .sidebar-mobile {
-    display: block;
-    position: fixed;
-    top: 0;
-    height: 100%;
-    width: 50%;
+
+  .sidebar-mobile {
+    background-color: black;
+    position: absolute;
+    top: auto;
+    right: 0;
+    width: 75%;
     z-index: 10;
-    overflow-y: scroll;
-    animation: slideInLeft .4s ease-out;
   }
 
-  @keyframes slideInLeft {
+  .nav-icon:has(#nav-checkbox:checked) .sidebar-mobile {
+    display: block;
+    /* animation: 0.5s ease-in 0s slideInRight; */
+  }
+
+  .nav-icon:has(#nav-checkbox:not(:checked)) .sidebar-mobile {
+    display: none;
+  }
+
+  @keyframes slideInRight {
     from {
-        transform: translateX(-100%);
+      transform: translateX(100%);
     }
     to {
-        transform: translateX(0);
+      transform: translateX(0);
     }
-}
+  }
 
   #guestbook {
     grid-area: footer;

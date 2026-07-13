@@ -10,8 +10,9 @@
       content="Personal page for all my art and things. Welcome!"
     />
     <!-- <link rel="icon" type="image/x-icon" href=""> -->
-    <link rel="stylesheet" href="_css/bulma-no-helpers.css" />
+    <link rel="stylesheet" href="_css/bulma/bulma-no-helpers.css" />
     <link rel="stylesheet" href="_css/style.css" />
+    <link rel="stylesheet" href="_css/dropdown.css" />
     <title>malfen</title>
   </head>
 
@@ -56,6 +57,75 @@
       <button class="column is-narrow">Back</button>
       <button class="column is-narrow">Forward</button>
       <a class="column is-hidden-touch">path/to/page</a>
+      <div class="column nav-icon">
+        <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
+        <label for="nav-checkbox">nav</label>
+        <nav class="menu sidebar-mobile">
+          <p class="menu-label">General</p>
+          <!-- 
+          <ul class="menu-list">
+            <li><a class="is-active" href="index.html">Home</a></li>
+            <li class="dd">
+              <input type="checkbox" id="info-dd" />
+              <label for="info-dd">Info</label>
+              <ul class="dd-group">
+                <li><a href="info.html#about">About</a></li>
+                <li><a href="info.html#site">Site</a></li>
+                <li><a href="info.html#comms">Comms</a></li>
+                <li><a href="info.html#setup">Setup</a></li>
+              </ul>
+            </li>
+            <li class="dd">
+              <input type="checkbox" id="art-dd" />
+              <label for="art-dd">Art</label>
+              <ul class="dd-group">
+                <li><a href="">Illustrations</a></li>
+                <li><a href="">Sketchbook</a></li>
+                <li><a href="">Pixel art</a></li>
+              </ul>
+            </li>
+            <li><a href="stamps.html">Stamps</a></li>
+            <li><a href="stamps.html">Characters</a></li>
+          </ul>
+          <ul class="menu-list">
+            <li class="dd">
+              <input type="checkbox" id="media-dd" checked="false" />
+              <label for="media-dd">Media </label>
+              <ul class="dd-group">
+                <li class="dd-item"><a href="">Music</a></li>
+                <li class="dd-item"><a href="">Games</a></li>
+                <li class="dd-item"><a href="">Books</a></li>
+                <li class="dd-item"><a href="">Other</a></li>
+              </ul>
+            </li>
+          </ul>
+          <p class="menu-label">Bookmarks</p>
+          <ul class="menu-list">
+            <li><a href="sites.html">Sites</a></li>
+            <li><a href="toybox.html">Fun</a></li>
+            <li class="dd">
+              <input type="checkbox" id="resources-dd" checked="false" />
+              <label for="resources-dd">Resources </label>
+              <ul class="dd-group">
+                <li class="dd-item"><a href="resources.html#art">Art</a></li>
+                <li class="dd-item">
+                  <a href="resources.html#articles">Articles</a>
+                </li>
+                <li class="dd-item">
+                  <a href="resources.html#code">Coding</a>
+                </li>
+                <li class="dd-item">
+                  <a href="resources.html#tools">Tools</a>
+                </li>
+                <li class="dd-item">
+                  <a href="resources.html#webdev">Web dev</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          -->
+        </nav>
+      </div>
     </nav>
 
     <div class="sitebox container is-widescreen">
@@ -67,21 +137,86 @@
         <!-- sidebar -->
         <aside class="column is-hidden-touch">
           <nav class="menu sidebar">
+            <p class="menu-label">ROOT</p>
             <ul class="menu-list">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="info.html">Info</a></li>
-              <li><a href="art/index.html">Art</a></li>
-              <li><a href="resources.html">Links</a></li>
+              <li><a class="is-active" href="index.html">Home</a></li>
+              <li class="dd">
+                <input type="checkbox" id="info-dd" />
+                <label for="info-dd">Info</label>
+                <ul class="dd-group">
+                  <li><a href="info.html#about">About</a></li>
+                  <li><a href="info.html#site">Site</a></li>
+                  <li><a href="info.html#comms">Comms</a></li>
+                  <li><a href="info.html#setup">Setup</a></li>
+                </ul>
+              </li>
+              <li class="dd">
+                <input type="checkbox" id="art-dd" />
+                <label for="art-dd">Art</label>
+                <ul class="dd-group">
+                  <li><a href="art/illustrations.html">Illustrations</a></li>
+                  <li><a href="art/fanart.html">Fanart</a></li>
+                  <li><a href="art/sketchbook.html">Sketchbook</a></li>
+                  <li><a href="art/pixel-art.html">Pixel art</a></li>
+                </ul>
+              </li>
+              <li><a href="">Characters</a></li>
+            </ul>
+            
+            <ul class="menu-list">
+              <li class="dd">
+                <input type="checkbox" id="media-dd" checked="false" />
+                <label for="media-dd">Media </label>
+                <ul class="dd-group">
+                  <li class="dd-item"><a href="media/music.html">Music</a></li>
+                  <li class="dd-item"><a href="media/games.html">Games</a></li>
+                  <li class="dd-item"><a href="media/books.html">Books</a></li>
+                  <li class="dd-item"><a href="media/other.html">Other</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- links folder -->
+            <p class="menu-label">LINKS</p>
+            <ul class="menu-list">
+              <li><a href="links/sites.html">Neighbors</a></li>
+              <li><a href="links/toybox.html">Fun</a></li>
+              <li class="dd">
+                <input type="checkbox" id="resources-dd" checked="false" />
+                <label for="resources-dd">Resources </label>
+                <ul class="dd-group">
+                  <li class="dd-item">
+                    <a href="links/resources.html#art">Art</a>
+                  </li>
+                  <li class="dd-item">
+                    <a href="links/resources.html#articles">Articles</a>
+                  </li>
+                  <li class="dd-item">
+                    <a href="links/resources.html#code">Coding</a>
+                  </li>
+                  <li class="dd-item">
+                    <a href="links/resources.html#tools">Tools</a>
+                  </li>
+                  <li class="dd-item">
+                    <a href="links/resources.html#webdev">Web dev</a>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </nav>
 
           <!-- contact-->
           <article>
             <h4>Contact me!</h4>
-            <p><a href="mailto:">email</a> for personal & business inquiries</p>
+            <p>
+              <a href="mailto:shrimpcantfryrice@gmail.com">email</a> for
+              personal & business inquiries
+            </p>
             <hr />
             <h4>repository</h4>
-            <p>view the source code on <a href="">github!</a></p>
+            <p>
+              view the source code on
+              <a href="github.com/kiptunes/neocities">github!</a>
+            </p>
           </article>
         </aside>
 
@@ -185,8 +320,9 @@
 
       <!-- footer -->
       <footer>
-        <a href="">sourcecode</a> / <a href="">credits</a> / public domain under
-        the <a href="https://unlicense.org/">unlicense</a>
+        <a href="github.com/kiptunes/neocities">sourcecode</a> /
+        <a href="credits.html">credits</a> / public domain under the
+        <a href="https://unlicense.org/">unlicense</a>
         <br />
         2026 • malfen
       </footer>
