@@ -10,9 +10,9 @@
       content="Personal page for all my art and things. Welcome!"
     />
     <!-- <link rel="icon" type="image/x-icon" href=""> -->
-    <link rel="stylesheet" href="_css/bulma-no-helpers.css" />
+    <link rel="stylesheet" href="_css/bulma/bulma-no-helpers.css" />
     <link rel="stylesheet" href="_css/style.css" />
-    <link rel="stylesheet" href="_css/dropdown.css" />
+    <link rel="stylesheet" href="_css/components.css" />
     <title>malfen</title>
   </head>
 
@@ -22,82 +22,37 @@
       <a class="topbar-item" id="home" href="">home</a>
       <a href="" class="topbar-item">theme</a>
       <!-- settings -->
-      <div class="topbar-item dd" tabindex="0">
-        settings
-        <form class="dd-group">
-          <label class="dd-item">
-            reduced motion
-            <input type="checkbox" checked="checked" />
+      <div class="topbar-item dd-wrapper">
+        <label for="settings-dd">
+          <span>Settings</span>
+          <input type="checkbox" id="settings-dd" class="dd-toggle" />
+        </label>
+        <div class="dd-content is-hoverable">
+          <label>
+            <span>reduced motion</span>
+            <input type="checkbox" checked />
             <span class="checkmark"></span>
           </label>
           <br />
-          <label class="dd-item">
-            lazy loading
-            <input type="checkbox" checked="true" />
+          <label>
+            <span>lazy loading</span>
+            <input type="checkbox" checked />
             <span class="checkmark"></span>
           </label>
           <br />
-          <label class="dd-item">
-            dyslexia friendly font
+          <label>
+            <span>dyslexia friendly font</span>
             <input type="checkbox" />
             <span class="checkmark"></span>
           </label>
           <br />
-          <label class="dd-item">
-            alt text below images
+          <label>
+            <span>alt text below images</span>
             <input type="checkbox" />
             <span class="checkmark"></span>
           </label>
-          <input type="submit" value="Apply" />
-        </form>
+        </div>
       </div>
-    </nav>
-
-    <nav class="path columns is-mobile">
-      <button class="column is-narrow">Back</button>
-      <button class="column is-narrow">Forward</button>
-      <a class="column is-hidden-touch">path/to/page</a>
-      <div class="column nav-icon">
-        <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
-        <label for="nav-checkbox">nav</label>
-      </div>
-    </nav>
-
-    <!-- mobile navigation (hidden on desktop) -->
-    <nav class="menu sidebar-mobile">
-      <p class="menu-label">General</p>
-      <ul class="menu-list">
-        <li><a class="is-active" href="index.html">Home</a></li>
-        <li>
-          <p>Info</p>
-          <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Site</a></li>
-            <li><a href="">Comms</a></li>
-            <li><a href="">Setup</a></li>
-          </ul>
-        </li>
-        <li>
-          <p>Art</p>
-          <ul>
-            <li><a href="">Illustrations</a></li>
-            <li><a href="">Sketchbook</a></li>
-            <li><a href="">Pixel art</a></li>
-          </ul>
-        </li>
-        <li><a href="stamps.html">Stamps</a></li>
-      </ul>
-      <p class="menu-label">Bookmarks</p>
-      <ul class="menu-list">
-        <li>
-          <p>Resources</p>
-          <ul>
-            <li><a href="">HTML + CSS</a></li>
-            <li><a href="">Other languages</a></li>
-            <li><a href="">Linux</a></li>
-          </ul>
-        </li>
-      </ul>
     </nav>
 
     <div class="sitebox container is-widescreen">
@@ -107,41 +62,77 @@
 
       <div class="columns container is-widescreen">
         <!-- sidebar -->
-        <aside class="column is-one-fifth is-hidden-touch">
+        <aside class="column is-hidden-touch">
           <nav class="menu sidebar">
-            <p class="menu-label">General</p>
+            <p class="menu-label">ROOT</p>
             <ul class="menu-list">
               <li><a href="index.html">Home</a></li>
-              <li class="dd">
-                <input type="checkbox" id="info-dd" />
-                <label for="info-dd">Info</label>
-                <ul class="dd-group">
-                  <li><a href="">About</a></li>
-                  <li><a href="">Site</a></li>
-                  <li><a href="">Comms</a></li>
-                  <li><a href="">Setup</a></li>
+              <li class="is-active"><a href="info.html">Info</a></li>
+              <li class="dd-wrapper">
+                <label for="art-dd">
+                  <span>Art</span>
+                  <input type="checkbox" id="art-dd" class="dd-toggle" />
+                </label>
+                <ul class="dd-content">
+                  <li><a href="art/illustrations.html">Illustrations</a></li>
+                  <li><a href="art/fanart.html">Fanart</a></li>
+                  <li><a href="art/sketchbook.html">Sketchbook</a></li>
+                  <li><a href="art/pixel-art.html">Pixel art</a></li>
                 </ul>
               </li>
-              <li class="dd">
-                <input type="checkbox" id="art-dd" />
-                <label for="art-dd">Art</label>
-                <ul class="dd-group">
-                  <li><a href="">Illustrations</a></li>
-                  <li><a href="">Sketchbook</a></li>
-                  <li><a href="">Pixel art</a></li>
-                </ul>
-              </li>
-              <li><a href="stamps.html">Stamps</a></li>
+              <li><a href="">Characters</a></li>
             </ul>
-            <p class="menu-label">Bookmarks</p>
+
             <ul class="menu-list">
-              <li class="dd">
-                <input type="checkbox" id="resources-dd" checked="false" />
-                <label for="resources-dd">Resources </label>
-                <ul class="dd-group">
-                  <li class="dd-item"><a href="">HTML + CSS</a></li>
-                  <li class="dd-item"><a href="">Other languages</a></li>
-                  <li class="dd-item"><a href="">Linux</a></li>
+              <li class="dd-wrapper">
+                <label for="media-dd">
+                  <span>Media</span>
+                  <input
+                    type="checkbox"
+                    class="dd-toggle"
+                    id="media-dd"
+                    checked="false"
+                  />
+                </label>
+                <ul class="dd-content">
+                  <li class="dd-item"><a href="media/music.html">Music</a></li>
+                  <li class="dd-item"><a href="media/games.html">Games</a></li>
+                  <li class="dd-item"><a href="media/books.html">Books</a></li>
+                  <li class="dd-item"><a href="media/other.html">Other</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- links folder -->
+            <p class="menu-label">LINKS</p>
+            <ul class="menu-list">
+              <li><a href="links/sites.html">Neighbors</a></li>
+              <li><a href="links/toybox.html">Fun</a></li>
+              <li class="dd-wrapper">
+                <label for="resources-dd">
+                  <span>Resources</span>
+                  <input
+                    type="checkbox"
+                    class="dd-toggle"
+                    id="resources-dd"
+                    checked="false"
+                  />
+                </label>
+                <ul class="dd-content">
+                  <li class="dd-item">
+                    <a href="links/resources.html#art">Art</a>
+                  </li>
+                  <li class="dd-item">
+                    <a href="links/resources.html#articles">Articles</a>
+                  </li>
+                  <li class="dd-item">
+                    <a href="links/resources.html#code">Coding</a>
+                  </li>
+                  <li class="dd-item">
+                    <a href="links/resources.html#tools">Tools</a>
+                  </li>
+                  <li class="dd-item">
+                    <a href="links/resources.html#webdev">Web dev</a>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -150,48 +141,233 @@
           <!-- contact-->
           <article>
             <h4>Contact me!</h4>
-            <p><a href="mailto:">email</a> for personal & business inquiries</p>
+            <p>
+              <a href="mailto:shrimpcantfryrice@gmail.com">email</a> for
+              personal & business inquiries
+            </p>
             <hr />
             <h4>repository</h4>
-            <p>view the source code on <a href="">github!</a></p>
+            <p>
+              view the source code on
+              <a href="github.com/kiptunes/neocities">github!</a>
+            </p>
           </article>
         </aside>
 
-        <!-- sitebox -->
-        <main class="column">
-          <div class="tabs">
-            <ul>
-              <li class="is-active"><a href="#about">About</a></li>
-              <li><a href="#site">Site</a></li>
-              <li><a href="#comms">Comms</a></li>
-              <li><a href="#setup">Setup</a></li>
-            </ul>
-          </div>
-          <article>
-            <div class="container" id="about">
-              <div>
-                <h2>About Me</h2>
-                <p>
-                  hi : &#x0029; Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Veniam tenetur dolorum repellendus incidunt
-                  rem ratione, neque saepe optio quisquam eos voluptate? Cum quo
-                  exercitationem rerum provident accusantium earum ea aliquid?
-                  Vero facere ut excepturi labore commodi optio ipsa neque
-                  molestias obcaecati non numquam voluptas dolorem perferendis,
-                  esse pariatur. Voluptatem rerum excepturi asperiores nesciunt
-                  quis ea odio sit facere assumenda officiis? Amet a nostrum,
-                  natus assumenda minima quo rem velit nam vel totam sint
-                  molestiae dolorum sit. Quia, quos ullam dolor quidem fuga eius
-                  aut impedit illo quod nobis. Quia, quae. Suscipit sit amet
-                  quidem fugiat dicta assumenda consequatur magni in, quas error
-                  exercitationem obcaecati, alias nihil necessitatibus at
-                  quibusdam libero tempora ab praesentium provident illo
-                  accusantium doloribus cupiditate pariatur! Consectetur?
-                </p>
-                <img src="" alt="" />
+        <main class="column is-9">
+          <div class="tabs-wrapper">
+            <!-- tab navigation -->
+            <nav class="tabs-nav">
+              <label for="tab0-toggle" class="tab-item">
+                <span>About</span>
+                <input
+                  checked
+                  type="radio"
+                  name="tabs-toggle"
+                  id="tab0-toggle"
+                />
+              </label>
+              <label for="tab1-toggle" class="tab-item">
+                <span>Site</span>
+                <input type="radio" name="tabs-toggle" id="tab1-toggle" />
+              </label>
+              <label for="tab2-toggle" class="tab-item">
+                <span>Comms</span>
+                <input type="radio" name="tabs-toggle" id="tab2-toggle" />
+              </label>
+              <label for="tab3-toggle" class="tab-item">
+                <span>Setup</span>
+                <input type="radio" name="tabs-toggle" id="tab3-toggle" />
+              </label>
+            </nav>
+
+            <!-- about me -->
+            <div class="tab-content" id="tab0-content">
+              <div class="container">
+                <article>
+                  <h2>About Me</h2>
+                  <p>
+                    hi : &#x0029; Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Veniam tenetur dolorum repellendus
+                    incidunt rem ratione, neque saepe optio quisquam eos
+                    voluptate? Cum quo exercitationem rerum provident
+                    accusantium earum ea aliquid? Vero facere ut excepturi
+                    labore commodi optio ipsa neque molestias obcaecati non
+                    numquam voluptas dolorem perferendis, esse pariatur.
+                    Voluptatem rerum excepturi asperiores nesciunt quis ea odio
+                    sit facere assumenda officiis? Amet a nostrum, natus
+                    assumenda minima quo rem velit nam vel totam sint molestiae
+                    dolorum sit. Quia, quos ullam dolor quidem fuga eius aut
+                    impedit illo quod nobis. Quia, quae. Suscipit sit amet
+                    quidem fugiat dicta assumenda consequatur magni in, quas
+                    error exercitationem obcaecati, alias nihil necessitatibus
+                    at quibusdam libero tempora ab praesentium provident illo
+                    accusantium doloribus cupiditate pariatur! Consectetur?
+                  </p>
+                  <img src="" alt="" />
+                </article>
               </div>
             </div>
-          </article>
+            <!-- about site -->
+            <div class="tab-content" id="tab1-content">
+              <div class="container">
+                <h2>About the Site</h2>
+                <p class="main-abt">
+                  I made this site to use as a css without js sandbox ! It uses
+                  the Bulma CSS framework (specifically the alt version without
+                  helpers) for theming, responsiveness, and other components
+                  like the breadcrumbs at the bottom of this page. Since it
+                  doesn't come with js, but has components like dropdowns that
+                  assume exterior js implementation to work, I recoded dropdowns
+                  on my own to work with only css.
+                  <br />
+                </p>
+                <article>
+                  <h2>FAQ</h2>
+                  <div class="qna">
+                    <h6 class="question">How long did this take you?</h6>
+                    <p class="answer">
+                      According to <a href="">Wakatime</a>, as of now, 15 hours!
+                    </p>
+                  </div>
+                  <div class="qna">
+                    <h6 class="question">Why not use javascript?</h6>
+                    <p class="answer">
+                      This site doesn't have to be lightweight, and most
+                      browsers support javascript by now. However, I'd spent
+                      some time away from web development at the time of
+                      building this site and wanted to regain familiarity with
+                      css specifically, so I decided to try and not use any
+                      javascript at all on this site. At some point in the
+                      future, I might overhaul the site to implement js, since a
+                      lot of things are held together with duct tape. For now,
+                      though, if it works, it works.
+                    </p>
+                  </div>
+                  <div class="qna">
+                    <h6 class="question">Why use a framework?</h6>
+                    <p class="answer">
+                      Responsiveness (the ability of a website to adapt to
+                      different screen sizes) is important to me, and it's just
+                      a little bit faster to use a framework to accomplish that.
+                      I guess a lot of the bulma css code is redundant, though,
+                      since I didn't use a lot of it.
+                    </p>
+                  </div>
+                  <div class="qna">
+                    <h6 class="question">
+                      Can I copy or modify this site's code?
+                    </h6>
+                    <p class="answer">
+                      Yes! My code is free use without attribution, but if you
+                      use anything from the source code that requires Bulma CSS,
+                      keep in mind that it uses the MIT license, which has
+                      different requirements. 
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <!-- commission info -->
+            <div class="tab-content" id="tab2-content">
+              <div class="container">
+                <h2>Commissions</h2>
+                <article>
+                  <p>closed</p>
+                </article>
+              </div>
+            </div>
+            <!-- about setup -->
+            <div class="tab-content" id="tab3-content">
+              <div class="container">
+                <h2>Setup</h2>
+                <article>
+                  <div>
+                    <h4>Devices</h4>
+                    <ul>
+                      <li>Thinkpad X280</li>
+                      <li>iPad (9th generation)</li>
+                      <li>Apple Pencil (1st generation)</li>
+                      <li>Huion H1060P</li>
+                    </ul>
+                  </div>
+                  <hr>
+                  <p>
+                    OS: Linux<br>
+                    Distribution: Arch<br>
+                    Window manager: i3<br>
+                    Display server: X11<br>
+                  </p>
+                  <hr>
+                  <div>
+                    <h4>Applications</h4>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Purpose</th>
+                          <th>Compatibility</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Procreate</td>
+                          <td>Drawing</td>
+                          <td>iPad</td>
+                        </tr>
+                        <tr>
+                          <td>Krita</td>
+                          <td>Drawing</td>
+                          <td>Linux, Windows, Mac</td>
+                        </tr>
+                        <tr>
+                          <td>Aseprite</td>
+                          <td>Pixel art</td>
+                          <td>Windows, Linux (aur)</td>
+                        </tr>
+                        <tr>
+                          <td>Inkscape</td>
+                          <td>Vector drawing</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Blender</td>
+                          <td>3d art</td>
+                          <td>Linux, Windows, Mac</td>
+                        </tr>
+                        <tr>
+                          <td>FreeCAD</td>
+                          <td>CAD</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Opentoonz</td>
+                          <td>Animation</td>
+                          <td>Linux, Windows, Mac</td>
+                        </tr>
+                        <tr>
+                          <td>Godot Engine</td>
+                          <td>Game development</td>
+                          <td>Linux, Windows, Mac</td>
+                        </tr>
+                        <tr>
+                          <td>KiCAD</td>
+                          <td>PCB design</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>CodeOSS</td>
+                          <td>Code editor</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p>lalalaaaaa</p>
+                </article>
+              </div>
+            </div>
+          </div>
           <!-- socials -->
           <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
             <ul>
@@ -210,7 +386,7 @@
         <a href="">sourcecode</a> / <a href="">credits</a> / public domain under
         the <a href="https://unlicense.org/">unlicense</a>
         <br />
-        hand coded • 2026 • malfen
+        2026 • malfen
       </footer>
     </div>
   </body>
