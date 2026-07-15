@@ -7,11 +7,11 @@
   display: none;
 }
 
-.dd-toggle input {
+.dd-toggle {
   display: none;
 }
 
-.dd-wrapper:has(input.dd-toggle:checked) .dd-content {
+.dd-wrapper:has(.dd-toggle:checked) .dd-content {
   display: block;
 }
 
