@@ -1,0 +1,799 @@
+<!-- template.html -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal page for all my art and things. Welcome!"
+    />
+    <!-- <link rel="icon" type="image/x-icon" href=""> -->
+    <link rel="stylesheet" href="../_css/bulma/bulma-no-helpers.css" />
+    <link rel="stylesheet" href="../_css/links.css" />
+    <link rel="stylesheet" href="../_css/style.css" />
+    <link rel="stylesheet" href=",,/_css/components.css" />
+    <title>malfen</title>
+  </head>
+
+  <body>
+    <!-- top navigation -->
+    <nav class="topbar">
+      <a class="topbar-item" id="home" href="">home</a>
+      <a href="" class="topbar-item">theme</a>
+      <!-- settings -->
+      <div class="topbar-item">
+        <details>
+          <summary>settings</summary>
+          <div class="details-content">
+            <label>
+              <span>reduced motion</span>
+              <input type="checkbox" checked />
+              <span class="checkmark"></span>
+            </label>
+            <br />
+            <label>
+              <span>lazy loading</span>
+              <input type="checkbox" checked />
+              <span class="checkmark"></span>
+            </label>
+            <br />
+            <label>
+              <span>dyslexia friendly font</span>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <br />
+            <label>
+              <span>alt text below images</span>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </details>
+      </div>
+    </nav>
+
+    <nav class="path columns is-mobile">
+      <button class="column is-narrow">Back</button>
+      <button class="column is-narrow">Forward</button>
+      <a class="column is-hidden-touch">path/to/page</a>
+      <div class="column nav-icon">
+        <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
+        <label for="nav-checkbox">nav</label>
+        <nav class="menu sidebar-mobile">
+          <!-- <p class="menu-label">General</p> -->
+        </nav>
+      </div>
+    </nav>
+
+    <div class="sitebox container is-widescreen">
+      <header class="titlebar">
+        <h1>WELCOME</h1>
+      </header>
+
+      <div class="columns container is-widescreen">
+        <!-- sidebar -->
+        <aside class="column is-hidden-touch">
+          <nav class="menu sidebar">
+            <p class="menu-label">ROOT</p>
+            <ul class="menu-list">
+              <li class="is-active"><a href="../index.html">Home</a></li>
+              <li><a href="../info.html">Info</a></li>
+              <li>
+                <details>
+                  <summary>Art</summary>
+                  <ul>
+                    <li><a href="">Illustrations</a></li>
+                    <li><a href="">Fanart</a></li>
+                    <li><a href="">Sketchbook</a></li>
+                    <li><a href="">Pixel art</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li><a href="">Characters</a></li>
+            </ul>
+
+            <ul class="menu-list">
+              <li>
+                <details>
+                  <summary>Media</summary>
+                  <ul>
+                    <li><a href="">Books</a></li>
+                    <li><a href="">Games</a></li>
+                    <li><a href="">Misc</a></li>
+                    <li><a href="">Music</a></li>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+            <!-- links folder -->
+            <p class="menu-label">LINKS</p>
+            <ul class="menu-list">
+              <li><a href="sites.html">Neighbors</a></li>
+              <li><a href="toybox.html">Fun</a></li>
+              <li><a href="resources.html">Resources</a></li>
+            </ul>
+          </nav>
+
+          <!-- contact-->
+          <article>
+            <h4>Contact me!</h4>
+            <p>
+              <a href="mailto:shrimpcantfryrice@gmail.com">email</a> for
+              personal & business inquiries
+            </p>
+            <hr />
+            <h4>repository</h4>
+            <p>
+              view the source code on
+              <a href="github.com/kiptunes/neocities">github!</a>
+            </p>
+          </article>
+        </aside>
+
+        <!-- sitebox -->
+        <main class="column is-9">
+          <label for="pause-gifs">
+            <span>pause/play</span>
+            <input type="checkbox" id="pause-gifs" />
+          </label>
+          <!-- static pngs -->
+          <div class="static-gifs">
+            <section class="columns">
+              <div class="column">
+                <h3>stamps!</h3>
+                <div class="container">
+                  <img
+                    src="../_assets/img/graphics/Stamps/Animals/Bugs/caught-cicada.png"
+                    alt=""
+                  />
+
+                  <img
+                    src="../_assets/img/graphics/Stamps/About/[STATIC]i-am-way-too-forgetful.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/About/[STATIC]i-love-robots.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/About/i-love-physical-media.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/About/i-love-old-electronics.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/About/[STATIC]makes-typos.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Nature/Sky/clouds.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Nature/Sky/pylons.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Nature/[STATIC]leaves.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Tech/green-pcb.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/About/i-love-old-web.png"
+                    alt=""
+                  />
+
+                  <img
+                    src="../_assets/img/graphics/Stamps/Animals/Marine/[STATIC]aquarium-lamp.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Animals/Marine/[STATIC]whale-shark.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Animals/Marine/[STATIC]ponyo-jellyfish.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Animals/Marine/[STATIC]goldfish-swim.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Tech/y2k-scare.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Tech/overgrown-keyboard.png"
+                    alt=""
+                  />
+
+                  <img
+                    src="../_assets/img/graphics/Stamps/Tech/windows-xp.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Animals/Marine/[STATIC]sharks-swim.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Tech/[STATIC]insert-tape.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Nature/Sky/[STATIC]stormcloud.png"
+                    alt=""
+                  />
+
+                  <img
+                    src="../_assets/img/graphics/Stamps/Animals/Marine/[STATIC]moon-jellyfish-float.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Tech/[STATIC]d55.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Tech/[STATIC]tv-noise.png"
+                    alt=""
+                  />
+
+                  <img
+                    src="../_assets/img/graphics/Stamps/Aes/caution.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Aes/stamp-missing-test-card.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Aes/authorized-personnel-only.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Aes/biological hazard.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Aes/[STATIC]sharp-edges.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Aes/warning-quarantine-area.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Aes/warning-radiation.png"
+                    alt=""
+                  />
+
+                  <img
+                    src="../_assets/img/graphics/Stamps/Aes/[STATIC]emoticon.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Aes/[STATIC]smile-emoticon.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/About/i-love-ascii-art.png"
+                    alt=""
+                  />
+
+                  <hr />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Fandom/Portal/portal-pixel-jump.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Fandom/Portal/aperture-laboratories.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Fandom/Portal/portal1.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Fandom/Portal/portal2.png"
+                    alt=""
+                  />
+
+                  <img
+                    src="../_assets/img/graphics/Stamps/Fandom/Half Life/half-life.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Fandom/Rainworld/stormy-coast.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Fandom/Moominvalley/[STATIC]snufkin-sea.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Fandom/Moominvalley/[STATIC]snufkin-and-moomin-by-the-shore.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Fandom/Ghibli/totoro.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Fandom/Ghibli/[STATIC]kiki-with-seagulls.png"
+                    alt=""
+                  />
+                  <hr />
+                </div>
+              </div>
+            
+              <!-- banners and buttons -->
+              <div class="column is-one-third">
+                <div>
+                  <!-- buttons -->
+                  <h3>buttons :]</h3>
+                  <div>
+                    <img
+                      src="../_assets/img/graphics/Buttons/Tech/[STATIC]dos-page.png"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Buttons/Tech/got-html.pnj"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Buttons/Tech/[STATIC]seed-your-torrents.png"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Buttons/Tech/i-like-computer.jpg"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Buttons/Tech/[STATIC]preserve-internet-archive.png"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Buttons/Food/88x31_milk_tea_now.png"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Buttons/Tech/mobile-friendly.png"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Buttons/Nature/there-is-only-one.png"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Buttons/Tech/[STATIC]emoticons-exclamation.png"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Buttons/Fandom/[STATIC]vidapon-Rain_World_button.png"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Buttons/Fandom/[STATIC]vidapon-ISaT_button.png"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Buttons/Flags/trans.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <!-- banners -->
+                <div>
+                  <h3>Banners</h3>
+                  <div>
+                    <img
+                      src="../_assets/img/graphics/Banners/About/[STATIC]i-support-emoticons.png"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Banners/About/[STATIC]it-its.png"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Banners/About/[STATIC]dishwasher-safe.png"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Banners/Tech/[STATIC]piracy-fun-and-free.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <!-- other graphics -->
+                <h3>Other graphics</h3>
+                <div id="graphics-static">
+                  <!-- porygon keychain -->
+                  <img
+                    src="../_assets/img/graphics/Pixel/Fandom/[STATIC]porygon keychain.png"
+                    alt=""
+                  />
+                  <!-- fan and server gifs -->
+                  <img
+                    src="../_assets/img/graphics/Pixel/Animals/[STATIC]aaa-fan.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Pixel/Tech/[STATIC]server.png"
+                    alt=""
+                  />
+                  <!-- emoticons -->
+                  <div>
+                    <img
+                      src="../_assets/img/graphics/Pixel/Emoticon/[STATIC]sigh.png"
+                      alt=""
+                    />
+                    <br />
+                    <img
+                      src="../_assets/img/graphics/Pixel/Emoticon/[STATIC]dizzy.png"
+                      alt=""
+                    />
+                    <br />
+                    <img
+                      src="../_assets/img/graphics/Pixel/Emoticon/[STATIC]rub-eye.png"
+                      alt=""
+                    />
+                    <br />
+                    <img
+                      src="../_assets/img/graphics/Pixel/Emoticon/[STATIC]snzz.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- moving gifs -->
+          <div class="animated-gifs">
+            <section class="columns">
+              <!-- stamps columns -->
+              <div class="column">
+                <h3>stamps!</h3>
+                <div class="container">
+                  <img
+                    src="../_assets/img/graphics/Stamps/Animals/Bugs/caught-cicada.png"
+                    alt=""
+                  />
+
+                  <img
+                    src="../_assets/img/graphics/Stamps/About/i-am-way-too-forgetful.gif"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/About/i-love-robots.gif"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/About/i-love-physical-media.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/About/i-love-old-electronics.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/About/makes-typos.gif"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Nature/Sky/clouds.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Nature/Sky/pylons.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Nature/leaves.gif"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Tech/green-pcb.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/About/i-love-old-web.png"
+                    alt=""
+                  />
+
+                  <img
+                    src="../_assets/img/graphics/Stamps/Animals/Marine/aquarium-lamp.gif"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Animals/Marine/whale-shark.gif"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Animals/Marine/ponyo-jellyfish.gif"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Animals/Marine/goldfish-swim.gif"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Tech/y2k-scare.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Tech/overgrown-keyboard.png"
+                    alt=""
+                  />
+
+                  <img
+                    src="../_assets/img/graphics/Stamps/Tech/windows-xp.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Animals/Marine/sharks-swim.gif"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Tech/insert-tape.gif"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Nature/Sky/stormcloud.gif"
+                    alt=""
+                  />
+
+                  <img
+                    src="../_assets/img/graphics/Stamps/Animals/Marine/moon-jellyfish-float.gif"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Tech/d55.gif"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Tech/tv-noise.gif"
+                    alt=""
+                  />
+
+                  <img
+                    src="../_assets/img/graphics/Stamps/Aes/caution.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Aes/stamp-missing-test-card.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Aes/authorized-personnel-only.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Aes/biological hazard.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Aes/sharp-edges.gif"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Aes/warning-quarantine-area.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Aes/warning-radiation.png"
+                    alt=""
+                  />
+
+                  <img
+                    src="../_assets/img/graphics/Stamps/Aes/emoticon.gif"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Aes/smile-emoticon.gif"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/About/i-love-ascii-art.png"
+                    alt=""
+                  />
+
+                  <hr />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Fandom/Portal/portal-pixel-jump.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Fandom/Portal/aperture-laboratories.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Fandom/Portal/portal1.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Fandom/Portal/portal2.png"
+                    alt=""
+                  />
+
+                  <img
+                    src="../_assets/img/graphics/Stamps/Fandom/Half Life/half-life.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Fandom/Rainworld/stormy-coast.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Fandom/Moominvalley/snufkin-sea.gif"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Fandom/Moominvalley/snufkin-and-moomin-by-the-shore.gif"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Fandom/Ghibli/totoro.png"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Stamps/Fandom/Ghibli/kiki-with-seagulls.gif"
+                    alt=""
+                  />
+                  <hr />
+                </div>
+              </div>
+
+              <!-- banners and buttons -->
+              <div class="column is-one-third">
+                <div>
+                  <!-- buttons -->
+                  <h3>buttons :]</h3>
+                  <div class="img-wrapper">
+                    <img
+                      src="../_assets/img/graphics/Buttons/Tech/dos-page.gif"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Buttons/Tech/got-html.pnj"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Buttons/Tech/seed-your-torrents.gif"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Buttons/Tech/i-like-computer.jpg"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Buttons/Tech/preserve-internet-archive.gif"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Buttons/Food/88x31_milk_tea_now.png"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Buttons/Tech/mobile-friendly.png"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Buttons/Nature/there-is-only-one.png"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Buttons/Tech/emoticons-exclamation.gif"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Buttons/Fandom/vidapon-Rain_World_button.gif"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Buttons/Fandom/vidapon-ISaT_button.gif"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Buttons/Flags/trans.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <!-- banners -->
+                <div>
+                  <h3>Banners</h3>
+                  <div class="img-wrapper">
+                    <img
+                      src="../_assets/img/graphics/Banners/About/i-support-emoticons.gif"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Banners/About/it-its.gif"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Banners/About/dishwasher-safe.gif"
+                      alt=""
+                    />
+                    <img
+                      src="../_assets/img/graphics/Banners/Tech/piracy-fun-and-free.gif"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <!-- other graphics -->
+                <h3>Other graphics</h3>
+                <div class="img-wrapper" id="graphics-animated">
+                  <!-- porygon keychain -->
+                  <img
+                    src="../_assets/img/graphics/Pixel/Fandom/porygon keychain.gif"
+                    alt=""
+                  />
+                  <!-- fan and server gifs -->
+                  <img
+                    src="../_assets/img/graphics/Pixel/Animals/aaa-fan.gif"
+                    alt=""
+                  />
+                  <img
+                    src="../_assets/img/graphics/Pixel/Tech/server.gif"
+                    alt=""
+                  />
+                  <!-- emoticons -->
+                  <div class="img-wrapper">
+                    <img
+                      src="../_assets/img/graphics/Pixel/Emoticon/sigh.gif"
+                      alt=""
+                    />
+                    <br />
+                    <img
+                      src="../_assets/img/graphics/Pixel/Emoticon/dizzy.gif"
+                      alt=""
+                    />
+                    <br />
+                    <img
+                      src="../_assets/img/graphics/Pixel/Emoticon/rub-eye.gif"
+                      alt=""
+                    />
+                    <br />
+                    <img
+                      src="../_assets/img/graphics/Pixel/Emoticon/snzz.gif"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <section>
+            <h3>yay more links</h3>
+          </section>
+
+          <section>
+            <h3>take me somewhere</h3>
+          </section>
+        </main>
+      </div>
+
+      <!-- footer -->
+      <footer>
+        <a href="">sourcecode</a> / <a href="">credits</a> / public domain under
+        the <a href="https://unlicense.org/">unlicense</a>
+        <br />
+        2026 • malfen
+      </footer>
+    </div>
+  </body>
+</html>
