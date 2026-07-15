@@ -54,6 +54,19 @@
       </div>
     </nav>
 
+    <nav class="path columns is-mobile">
+      <button class="column is-narrow">Back</button>
+      <button class="column is-narrow">Forward</button>
+      <a class="column is-hidden-touch">path/to/page</a>
+      <div class="column nav-icon">
+        <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
+        <label for="nav-checkbox">nav</label>
+        <nav class="menu sidebar-mobile">
+          <!-- <p class="menu-label">General</p> -->
+        </nav>
+      </div>
+    </nav>
+
     <div class="sitebox container is-widescreen">
       <header class="titlebar">
         <h1>INFO</h1>
@@ -61,7 +74,7 @@
 
       <div class="columns container is-widescreen">
         <!-- sidebar -->
-        <aside class="column is-hidden-touch">
+        <aside class="column is-one-fifth is-hidden-touch">
           <nav class="menu sidebar">
             <p class="menu-label">ROOT</p>
             <ul class="menu-list">
@@ -82,7 +95,7 @@
             </ul>
 
             <ul class="menu-list">
-              <li >
+              <li>
                 <details>
                   <summary>Media</summary>
                   <ul>
@@ -99,18 +112,7 @@
             <ul class="menu-list">
               <li><a href="links/sites.html">Neighbors</a></li>
               <li><a href="links/toybox.html">Fun</a></li>
-              <li>
-                <details>
-                  <summary>Resources</summary>
-                  <ul>
-                    <li><a href="">Art</a></li>
-                    <li><a href="">Articles</a></li>
-                    <li><a href="">Coding</a></li>
-                    <li><a href="">Tools</a></li>
-                    <li><a href="">Webdev</a></li>
-                  </ul>
-                </details>
-              </li>
+              <li><a href="links/resources.html">Resources</a></li>
             </ul>
           </nav>
 
@@ -130,57 +132,129 @@
           </article>
         </aside>
 
-        <main class="column is-9">
+        <main class="column">
           <div class="tabs-wrapper">
-            <!-- tab navigation -->
-            <nav class="tabs-nav">
-              <label for="tab0-toggle" class="tab-item">
-                <span>About</span>
-                <input
-                  checked
-                  type="radio"
-                  name="tabs-toggle"
-                  id="tab0-toggle"
-                />
-              </label>
-              <label for="tab1-toggle" class="tab-item">
-                <span>Site</span>
-                <input type="radio" name="tabs-toggle" id="tab1-toggle" />
-              </label>
-              <label for="tab2-toggle" class="tab-item">
-                <span>Comms</span>
-                <input type="radio" name="tabs-toggle" id="tab2-toggle" />
-              </label>
-              <label for="tab3-toggle" class="tab-item">
-                <span>Setup</span>
-                <input type="radio" name="tabs-toggle" id="tab3-toggle" />
-              </label>
-            </nav>
+            <div class="tabs">
+              <!-- tab navigation -->
+              <ul>
+                <li>
+                  <a>
+                    <label for="tab0-toggle" class="tab-item">
+                      <span>About</span>
+                      <input
+                        checked
+                        type="radio"
+                        name="tabs-toggle"
+                        id="tab0-toggle"
+                      />
+                    </label>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <label for="tab1-toggle" class="tab-item">
+                      <span>Site</span>
+                      <input type="radio" name="tabs-toggle" id="tab1-toggle" />
+                    </label>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <label for="tab2-toggle" class="tab-item">
+                      <span>Comms</span>
+                      <input type="radio" name="tabs-toggle" id="tab2-toggle" />
+                    </label>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <label for="tab3-toggle" class="tab-item">
+                      <span>Setup</span>
+                      <input type="radio" name="tabs-toggle" id="tab3-toggle" />
+                    </label>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
             <!-- about me -->
             <div class="tab-content" id="tab0-content">
               <div class="container">
-                <article>
-                  <h2>About Me</h2>
+                <section class="top columns">
+                  <article class="column">
+                    <h2>About Me</h2>
+                    <p>
+                      @kowafi | @malfen
+                      <br />hi, I'm fio! : &#x0029; <br /><br />
+                      I am a rising electrical engineering undergrad student
+                      based in the US Northeast. I really like old tech, unix
+                      systems, and hobby electronics, and sometimes I draw. It's
+                      nice to meet you!
+                    </p>
+                  </article>
+                  <div>
+                    <img src="" alt="" />
+                    <p>
+                      fio <br />
+                      18 <br />
+                      any pronouns <br />
+                      japanese/ukrainian-american <br />
+                      trans and aroace <br />
+                    </p>
+                  </div>
+                </section>
+
+                <div>
+                  <h4>Currently...</h4>
                   <p>
-                    hi : &#x0029; Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Veniam tenetur dolorum repellendus
-                    incidunt rem ratione, neque saepe optio quisquam eos
-                    voluptate? Cum quo exercitationem rerum provident
-                    accusantium earum ea aliquid? Vero facere ut excepturi
-                    labore commodi optio ipsa neque molestias obcaecati non
-                    numquam voluptas dolorem perferendis, esse pariatur.
-                    Voluptatem rerum excepturi asperiores nesciunt quis ea odio
-                    sit facere assumenda officiis? Amet a nostrum, natus
-                    assumenda minima quo rem velit nam vel totam sint molestiae
-                    dolorum sit. Quia, quos ullam dolor quidem fuga eius aut
-                    impedit illo quod nobis. Quia, quae. Suscipit sit amet
-                    quidem fugiat dicta assumenda consequatur magni in, quas
-                    error exercitationem obcaecati, alias nihil necessitatibus
-                    at quibusdam libero tempora ab praesentium provident illo
-                    accusantium doloribus cupiditate pariatur! Consectetur?
+                    reading -> <br />
+                    listening to -> <br />
+                    working on -> this website!
                   </p>
-                  <img src="" alt="" />
+                </div>
+
+                <article>
+                  <h4>why I maintain this site</h4>
+                  <p>
+                    I have always loved old internet aesthetics and will forever
+                    be a proponent of learning to code, especially in today's
+                    age when corporate companies are enforcing a narrative that
+                    knowing the ins and outs of your own technology is some sort
+                    of inaccessible high-skill feat. It's a shame it has to be
+                    said, but, as access to information continues to become more
+                    and more digital, basic tech literacy should be a staple of
+                    learning to be on the internet at all.
+                  </p>
+                  <p>
+                    That being said, you don't have to know how to publish an
+                    app, or code a game, or make a website, although those are
+                    all fun and viable things to do if they interest you. But,
+                    please, know what your directories are for on your computer,
+                    know what companies are doing with your private information,
+                    and know to recognize malicious links.
+                  </p>
+                  <p>
+                    As someone visiting a neocities page, this is all probably
+                    old news to you, but it's an important part of the reason
+                    why I created this site, so I felt obligated to put
+                    this spiel here. I know my friends have heard me say all
+                    this a hundred times. At the risk of sounding overly
+                    earnest, I just believe in the return of autonomy to the
+                    user that a personal page offers. Customization is a sort of
+                    freedom, and every hand-coded website is an expression of
+                    self, to me. Bad websites are beautiful and I'll die on this
+                    hill.
+                  </p>
+                  <p>
+                    If you <i>do</i> happen to be new to coding, and you're
+                    looking for a starting point, hi! Its versatility may feel
+                    overwhelming when you are just beginning. Please don't let
+                    it daunt you! Making a website is a wonderful way to
+                    introduce yourself to programming. I hope you have fun if
+                    you choose to make one, too. <br /><br />
+                    And <i>thank you</i> for visiting my silly corner of the
+                    internet! :)
+                  </p>
                 </article>
               </div>
             </div>
@@ -192,10 +266,7 @@
                   I made this site to use as a css without js sandbox ! It uses
                   the Bulma CSS framework (specifically the alt version without
                   helpers) for theming, responsiveness, and other components
-                  like the breadcrumbs at the bottom of this page. Since it
-                  doesn't come with js, but has components like dropdowns that
-                  assume exterior js implementation to work, I recoded dropdowns
-                  on my own to work with only css.
+                  like the breadcrumbs at the bottom of this page.
                   <br />
                 </p>
                 <article>
@@ -209,25 +280,23 @@
                   <div class="qna">
                     <h6 class="question">Why not use javascript?</h6>
                     <p class="answer">
-                      This site doesn't have to be lightweight, and most
-                      browsers support javascript by now. However, I'd spent
-                      some time away from web development at the time of
-                      building this site and wanted to regain familiarity with
-                      css specifically, so I decided to try and not use any
-                      javascript at all on this site. At some point in the
-                      future, I might overhaul the site to implement js, since a
-                      lot of things are held together with duct tape. For now,
-                      though, if it works, it works.
+                      The point of this site at the time of conception was to
+                      re-familiarize myself with css, so I wanted to do some
+                      silly stuff with css only. In the future, this site will
+                      probably use more js! Just not right now.
+                      <br />
+                      (Although, others might prefer not to use javascript
+                      because it can bloat a website. At the end of the day, it
+                      depends on your usecase and who you want your site to be
+                      seen by.)
                     </p>
                   </div>
                   <div class="qna">
                     <h6 class="question">Why use a framework?</h6>
                     <p class="answer">
-                      Responsiveness (the ability of a website to adapt to
-                      different screen sizes) is important to me, and it's just
-                      a little bit faster to use a framework to accomplish that.
-                      I guess a lot of the bulma css code is redundant, though,
-                      since I didn't use a lot of it.
+                      I wanted to make this site responsive (able to adapt to
+                      different screen sizes), and it's just a little bit faster
+                      to use a framework to accomplish that. tl;dr I'm just lazy
                     </p>
                   </div>
                   <div class="qna">
@@ -236,9 +305,9 @@
                     </h6>
                     <p class="answer">
                       Yes! My code is free use without attribution, but if you
-                      use anything from the source code that requires Bulma CSS,
-                      keep in mind that it uses the MIT license, which has
-                      different requirements. 
+                      also keep the part of the code that uses Bulma CSS, keep
+                      in mind that it uses the MIT license, which has different
+                      requirements.
                     </p>
                   </div>
                 </article>
@@ -267,14 +336,7 @@
                       <li>Huion H1060P</li>
                     </ul>
                   </div>
-                  <hr>
-                  <p>
-                    OS: Linux<br>
-                    Distribution: Arch<br>
-                    Window manager: i3<br>
-                    Display server: X11<br>
-                  </p>
-                  <hr>
+                  <hr />
                   <div>
                     <h4>Applications</h4>
                     <table>
@@ -339,7 +401,7 @@
                       </tbody>
                     </table>
                   </div>
-                  <p>lalalaaaaa</p>
+                  <p>I use arch linux with i3wm (x11).</p>
                 </article>
               </div>
             </div>

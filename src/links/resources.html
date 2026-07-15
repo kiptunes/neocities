@@ -13,10 +13,53 @@
 
   <body>
     <!-- top navigation -->
-    <nav class="top">
-      <a href="">home</a>
-      <button>theme</button>
-      <button>settings</button>
+    <nav class="topbar">
+      <a class="topbar-item" id="home" href="">home</a>
+      <a href="" class="topbar-item">theme</a>
+      <!-- settings -->
+      <div class="topbar-item">
+        <details>
+          <summary>settings</summary>
+          <div class="details-content">
+            <label>
+              <span>reduced motion</span>
+              <input type="checkbox" checked />
+              <span class="checkmark"></span>
+            </label>
+            <br />
+            <label>
+              <span>lazy loading</span>
+              <input type="checkbox" checked />
+              <span class="checkmark"></span>
+            </label>
+            <br />
+            <label>
+              <span>dyslexia friendly font</span>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <br />
+            <label>
+              <span>alt text below images</span>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </details>
+      </div>
+    </nav>
+
+    <nav class="path columns is-mobile">
+      <button class="column is-narrow">Back</button>
+      <button class="column is-narrow">Forward</button>
+      <a class="column is-hidden-touch">path/to/page</a>
+      <div class="column nav-icon">
+        <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
+        <label for="nav-checkbox">nav</label>
+        <nav class="menu sidebar-mobile">
+          <!-- <p class="menu-label">General</p> -->
+        </nav>
+      </div>
     </nav>
 
     <div class="sitebox container is-widescreen">
@@ -25,72 +68,251 @@
       </header>
       <div class="columns container is-widescreen">
         <!-- sidebar -->
-        <nav class="sidebar column">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Info</a></li>
-            <li><a href="">Art</a></li>
-            <li><a href="">Links</a></li>
-          </ul>
-        </nav>
+        <aside class="column is-one-fifth is-hidden-touch">
+          <nav class="menu sidebar">
+            <p class="menu-label">ROOT</p>
+            <ul class="menu-list">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../info.html">Info</a></li>
+              <li>
+                <details>
+                  <summary>Art</summary>
+                  <ul>
+                    <li><a href="">Illustrations</a></li>
+                    <li><a href="">Fanart</a></li>
+                    <li><a href="">Sketchbook</a></li>
+                    <li><a href="">Pixel art</a></li>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+
+            <ul class="menu-list">
+              <li>
+                <details>
+                  <summary>Media</summary>
+                  <ul>
+                    <li><a href="">Books</a></li>
+                    <li><a href="">Games</a></li>
+                    <li><a href="">Misc</a></li>
+                    <li><a href="">Music</a></li>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+            <!-- links folder -->
+            <p class="menu-label">LINKS</p>
+            <ul class="menu-list">
+              <li><a href="">OC Site</a></li>
+              <li><a href="sites.html">Neighbors</a></li>
+              <li><a href="toybox.html">Fun</a></li>
+              <li><a href="resources.html">Resources</a></li>
+            </ul>
+          </nav>
+        </aside>
 
         <main class="column">
           <div class="tabs-wrapper">
-            <nav class="tabs-nav">
-              <label for="tab0-toggle" class="tab-item">
-                <span>Art</span>
-                <input
-                  checked
-                  name="tabs-toggle"
-                  id="tab0-toggle"
-                  type="radio"
-                />
-              </label>
-              <label for="tab1-toggle" class="tab-item">
-                <span>Articles</span>
-                <input name="tabs-toggle" id="tab1-toggle" type="radio" />
-              </label>
-              <label for="tab2-toggle" class="tab-item">
-                <span>Code</span>
-                <input name="tabs-toggle" id="tab2-toggle" type="radio" />
-              </label>
-              <label for="tab3-toggle" class="tab-item">
-                <span>Tools</span>
-                <input name="tabs-toggle" id="tab3-toggle" type="radio" />
-              </label>
-              <label for="tab4-toggle" class="tab-item">
-                <span>Web Dev</span>
-                <input name="tabs-toggle" id="tab4-toggle" type="radio" />
-              </label>
-            </nav>
+            <div class="tabs">
+              <ul>
+                <li>
+                  <a>
+                    <label for="tab0-toggle" class="tab-item">
+                      <span>Art</span>
+                      <input
+                        checked
+                        name="tabs-toggle"
+                        id="tab0-toggle"
+                        type="radio"
+                      />
+                    </label>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <label for="tab1-toggle" class="tab-item">
+                      <span>Code</span>
+                      <input name="tabs-toggle" id="tab1-toggle" type="radio" />
+                    </label>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <label for="tab2-toggle" class="tab-item">
+                      <span>Game Dev</span>
+                      <input name="tabs-toggle" id="tab2-toggle" type="radio" />
+                    </label>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <label for="tab3-toggle" class="tab-item">
+                      <span>Hardware</span>
+                      <input name="tabs-toggle" id="tab3-toggle" type="radio" />
+                    </label>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <label for="tab4-toggle" class="tab-item">
+                      <span>Languages</span>
+                      <input name="tabs-toggle" id="tab4-toggle" type="radio" />
+                    </label>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <label for="tab5-toggle" class="tab-item">
+                      <span>Library</span>
+                      <input name="tabs-toggle" id="tab5-toggle" type="radio" />
+                    </label>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <label for="tab6-toggle" class="tab-item">
+                      <span>Tools</span>
+                      <input name="tabs-toggle" id="tab6-toggle" type="radio" />
+                    </label>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <label for="tab7-toggle" class="tab-item">
+                      <span>Web Dev</span>
+                      <input name="tabs-toggle" id="tab7-toggle" type="radio" />
+                    </label>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
+            <!-- art tab content -->
             <div class="tab-content" id="tab0-content">
               <details>
-                <summary></summary>
+                <summary>Programs</summary>
               </details>
               <details>
-                <summary></summary>
+                <summary>Brushes</summary>
+              </details>
+              <details>
+                <summary>References</summary>
+              </details>
+              <details>
+                <summary>Posts</summary>
+              </details>
+              <details>
+                <summary>Books</summary>
               </details>
             </div>
 
+            <!-- code tab content -->
             <div class="tab-content" id="tab1-content">
-              <label for="articles-lib-dd" class="content-dd">
-                <span>Libraries</span>
-                <input id="articles-lib-dd" type="checkbox" />
-              </label>
               <details>
-                <summary>dropdown</summary>
-                <p>hi</p>
+                <summary>Python</summary>
+              </details>
+              <details>
+                <summary>Java</summary>
+              </details>
+              <details>
+                <summary>Linux</summary>
+              </details>
+              <details>
+                <summary>Desktop Customization</summary>
+              </details>
+              <details>
+                <summary>Books</summary>
               </details>
             </div>
 
+            <!-- gamedev tab content -->
             <div class="tab-content" id="tab2-content">
               <details>
-                <summary></summary>
+                <summary>Engines</summary>
+              </details>
+              <details>
+                <summary>Guides</summary>
+              </details>
+              <details>
+                <summary>Channels</summary>
+              </details>
+              <details>
+                <summary>Cool Projects</summary>
+              </details>
+              <details>
+                <summary>Books</summary>
               </details>
             </div>
 
+            <!-- hardware tab content -->
             <div class="tab-content" id="tab3-content">
+              <details>
+                <summary>Guides</summary>
+              </details>
+              <details>
+                <summary>PCB Design</summary>
+              </details>
+              <details>
+                <summary>PC Assembly</summary>
+              </details>
+              <details>
+                <summary>Cool Projects</summary>
+              </details>
+              <details>
+                <summary>Books</summary>
+              </details>
+            </div>
+
+            <!-- Languages -->
+            <div class="tab-content" id="tab4-content">
+              <details>
+                <summary>English</summary>
+              </details>
+              <details>
+                <summary>ASL</summary>
+              </details>
+              <details>
+                <summary>Japanese</summary>
+              </details>
+              <details>
+                <summary>Spanish</summary>
+              </details>
+              <details>
+                <summary>Mandarin</summary>
+              </details>
+              <details>
+                <summary>Ukrainian</summary>
+              </details>
+            </div>
+
+            <!-- library tab content -->
+            <div class="tab-content" id="tab5-content">
+              <details>
+                <summary>Libraries</summary>
+              </details>
+              <details>
+                <summary>Biology</summary>
+              </details>
+              <details>
+                <summary>Geography</summary>
+              </details>
+              <details>
+                <summary>Health</summary>
+              </details>
+              <details>
+                <summary>Math</summary>
+              </details>
+              <details>
+                <summary>Music</summary>
+              </details>
+              <details>
+                <summary>Physics</summary>
+              </details>
+              <p>(also see the 'books' sections under the other tabs.)</p>
+            </div>
+
+            <!-- tools tab content -->
+            <div class="tab-content" id="tab6-content">
               <details>
                 <summary>Applications</summary>
               </details>
@@ -102,28 +324,38 @@
               </details>
             </div>
 
-            <div class="tab-content" id="tab4-content">I am Tab C content</div>
+            <!-- webdev tab content -->
+            <div class="tab-content" id="tab7-content">
+              <details>
+                <summary>Learning Resources</summary>
+                <p></p>
+              </details>
+              <details>
+                <summary>CSS Snippets</summary>
+                <p></p>
+              </details>
+              <details>
+                <summary>JS/TS</summary>
+                <p></p>
+              </details>
+              <details>
+                <summary>Graphics</summary>
+                <p></p>
+              </details>
+              <details>
+                <summary>Channels</summary>
+                <p></p>
+              </details>
+              <details>
+                <summary>Books</summary>
+                <p></p>
+              </details>
+            </div>
           </div>
+
+          <button>back to top</button>
         </main>
       </div>
-
-      <!-- quicklinks -->
-      <aside class="column">
-        <!-- contact-->
-        <article>
-          <h4>Contact me!</h4>
-          <img src="" alt="" />
-          <p></p>
-        </article>
-        <!-- webrings -->
-        <article>
-          <h4>Webrings</h4>
-          <div class="outgoing"></div>
-          <br />
-          <h4>Link back</h4>
-          <div></div>
-        </article>
-      </aside>
 
       <!-- footer -->
       <footer>

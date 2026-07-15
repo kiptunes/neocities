@@ -1,0 +1,46 @@
+#graphics-static, #graphics-animated {
+  width: fit-content;
+  display: grid;
+  grid-template-areas:
+    "keychain cat    cat    emoticon"
+    "keychain cat    cat    emoticon"
+    "keychain cat    cat    emoticon"
+    "keychain server server emoticon"
+    "keychain server server emoticon"
+    "keychain server server emoticon"
+    "keychain server server emoticon";
+}
+
+#graphics-static div, #graphics-animated div {
+  padding: 1em;
+}
+
+#graphics-static :first-child, #graphics-animated :first-child {
+  grid-area: keychain;
+}
+#graphics-static :nth-child(2), #graphics-animated :nth-child(2) {
+  grid-area: cat;
+}
+#graphics-static :nth-child(3), #graphics-animated :nth-child(3) {
+  grid-area: server;
+}
+#graphics-static :last-child, #graphics-animated :last-child {
+  grid-area: emoticon;
+}
+
+.static-gifs {
+  display: none;
+}
+
+.animated-gifs {
+  display: block;
+}
+
+main:has(#pause-gifs:checked) .static-gifs {
+  display: block;
+}
+main:has(#pause-gifs:checked) .animated-gifs {
+  display: none;
+}
+
+

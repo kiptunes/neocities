@@ -1,7 +1,3 @@
-.tabs-nav {
-    display: flex;
-}
-
 .tab-content, .tab-item input{
   display: none;
 }
@@ -19,5 +15,14 @@
   display: block;
 }
 .tabs-wrapper:has(#tab4-toggle:checked) #tab4-content{
+  display: block;
+}
+.tabs-wrapper:has(#tab5-toggle:checked) #tab5-content{
+  display: block;
+}
+.tabs-wrapper:has(#tab6-toggle:checked) #tab6-content{
+  display: block;
+}
+.tabs-wrapper:has(#tab7-toggle:checked) #tab7-content{
   display: block;
 }
