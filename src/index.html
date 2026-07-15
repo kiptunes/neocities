@@ -22,34 +22,36 @@
       <a class="topbar-item" id="home" href="">home</a>
       <a href="" class="topbar-item">theme</a>
       <!-- settings -->
-      <div class="topbar-item dd" tabindex="0">
-        settings
-        <form class="dd-group">
-          <label class="dd-item">
-            reduced motion
-            <input type="checkbox" checked="checked" />
+      <div class="topbar-item dd-wrapper">
+        <label for="settings-dd" class="dd-toggle">
+          <span>Settings</span>
+          <input type="checkbox" id="settings-dd" />
+        </label>
+        <div class="dd-content is-hoverable">
+          <label>
+            <span>reduced motion</span>
+            <input type="checkbox" checked />
             <span class="checkmark"></span>
           </label>
           <br />
-          <label class="dd-item">
-            lazy loading
-            <input type="checkbox" checked="true" />
+          <label>
+            <span>lazy loading</span>
+            <input type="checkbox" checked />
             <span class="checkmark"></span>
           </label>
           <br />
-          <label class="dd-item">
-            dyslexia friendly font
+          <label>
+            <span>dyslexia friendly font</span>
             <input type="checkbox" />
             <span class="checkmark"></span>
           </label>
           <br />
-          <label class="dd-item">
-            alt text below images
+          <label>
+            <span>alt text below images</span>
             <input type="checkbox" />
             <span class="checkmark"></span>
           </label>
-          <input type="submit" value="Apply" />
-        </form>
+        </div>
       </div>
     </nav>
 
@@ -92,10 +94,10 @@
               <input type="checkbox" id="media-dd" checked="false" />
               <label for="media-dd">Media </label>
               <ul class="dd-group">
-                <li class="dd-item"><a href="">Music</a></li>
-                <li class="dd-item"><a href="">Games</a></li>
-                <li class="dd-item"><a href="">Books</a></li>
-                <li class="dd-item"><a href="">Other</a></li>
+                <li><a href="">Music</a></li>
+                <li><a href="">Games</a></li>
+                <li><a href="">Books</a></li>
+                <li><a href="">Other</a></li>
               </ul>
             </li>
           </ul>
@@ -107,17 +109,17 @@
               <input type="checkbox" id="resources-dd" checked="false" />
               <label for="resources-dd">Resources </label>
               <ul class="dd-group">
-                <li class="dd-item"><a href="resources.html#art">Art</a></li>
-                <li class="dd-item">
+                <li><a href="resources.html#art">Art</a></li>
+                <li>
                   <a href="resources.html#articles">Articles</a>
                 </li>
-                <li class="dd-item">
+                <li>
                   <a href="resources.html#code">Coding</a>
                 </li>
-                <li class="dd-item">
+                <li>
                   <a href="resources.html#tools">Tools</a>
                 </li>
-                <li class="dd-item">
+                <li>
                   <a href="resources.html#webdev">Web dev</a>
                 </li>
               </ul>
@@ -140,20 +142,24 @@
             <p class="menu-label">ROOT</p>
             <ul class="menu-list">
               <li><a class="is-active" href="index.html">Home</a></li>
-              <li class="dd">
-                <input type="checkbox" id="info-dd" />
-                <label for="info-dd">Info</label>
-                <ul class="dd-group">
+              <li class="dd-wrapper">
+                <label for="info-dd" class="dd-toggle">
+                  <span>Info</span>
+                  <input type="checkbox" id="info-dd" />
+                </label>
+                <ul class="dd-content">
                   <li><a href="info.html#about">About</a></li>
                   <li><a href="info.html#site">Site</a></li>
                   <li><a href="info.html#comms">Comms</a></li>
                   <li><a href="info.html#setup">Setup</a></li>
                 </ul>
               </li>
-              <li class="dd">
-                <input type="checkbox" id="art-dd" />
-                <label for="art-dd">Art</label>
-                <ul class="dd-group">
+              <li class="dd-wrapper">
+                <label for="art-dd" class="dd-toggle">
+                  <span>Art</span>
+                  <input type="checkbox" id="art-dd" />
+                </label>
+                <ul class="dd-content">
                   <li><a href="art/illustrations.html">Illustrations</a></li>
                   <li><a href="art/fanart.html">Fanart</a></li>
                   <li><a href="art/sketchbook.html">Sketchbook</a></li>
@@ -162,12 +168,19 @@
               </li>
               <li><a href="">Characters</a></li>
             </ul>
-            
+
             <ul class="menu-list">
-              <li class="dd">
-                <input type="checkbox" id="media-dd" checked="false" />
-                <label for="media-dd">Media </label>
-                <ul class="dd-group">
+              <li class="dd-wrapper">
+                <label for="media-dd" class="dd-toggle">
+                  <span>Media</span>
+                  <input
+                    type="checkbox"
+                   
+                    id="media-dd"
+                    checked="false"
+                  />
+                </label>
+                <ul class="dd-content">
                   <li class="dd-item"><a href="media/music.html">Music</a></li>
                   <li class="dd-item"><a href="media/games.html">Games</a></li>
                   <li class="dd-item"><a href="media/books.html">Books</a></li>
@@ -180,10 +193,17 @@
             <ul class="menu-list">
               <li><a href="links/sites.html">Neighbors</a></li>
               <li><a href="links/toybox.html">Fun</a></li>
-              <li class="dd">
-                <input type="checkbox" id="resources-dd" checked="false" />
-                <label for="resources-dd">Resources </label>
-                <ul class="dd-group">
+              <li class="dd-wrapper">
+                <label for="resources-dd" class="dd-toggle">
+                  <span>Resources</span>
+                  <input
+                    type="checkbox"
+                   
+                    id="resources-dd"
+                    checked="false"
+                  />
+                </label>
+                <ul class="dd-content">
                   <li class="dd-item">
                     <a href="links/resources.html#art">Art</a>
                   </li>

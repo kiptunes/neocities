@@ -1,35 +1,31 @@
-
 /* dropdown menu for navbar */
-.dd {
+.dd-wrapper {
   position: relative;
 }
 
-.input:hover{
-  background-color:blue;
+.dd-content {
+  display: none;
 }
 
-.dd-group {
+.dd-toggle input {
   display: none;
+}
+
+.dd-wrapper:has(input.dd-toggle:checked) .dd-content {
+  display: block;
 }
 
 /* sidebar specific dropdown styling */
-li.dd {
+li.dd-wrapper {
   margin: 12px;
 }
 
-input.checkbox-hidden, li.dd input{
-  display: none;
-}
-.dd input:checked + label + .dd-group{
-  color: aliceblue;
+/* settings specific dropdown styling */
+.dd-wrapper:hover .dd-content.is-hoverable {
   display: block;
 }
 
-/* settings specific dropdown styling */
-.dd:hover form.dd-group {
-  display: block;
-}
-form.dd-group {
+.dd-content.is-hoverable {
   position: absolute;
   top: auto;
   right: 0px;
@@ -37,13 +33,4 @@ form.dd-group {
   min-width: 220px;
   min-height: 150px;
   padding: 12px 16px;
-}
-.dd-group input[type="submit"] {
-  position: absolute;
-  margin: 1rem;
-  inset: auto 0 0 auto;
-}
-
-.dd-group li a {
-  padding: 4px;
 }

@@ -5,6 +5,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../_css/bulma/bulma-no-helpers.css" />
+    <link rel="stylesheet" href="../_css/style.css" />
+    <link rel="stylesheet" href="../_css/dropdown.css" />
     <title>malfen</title>
   </head>
 
@@ -16,23 +19,126 @@
       <button>settings</button>
     </nav>
 
-    <header class="titlebar">
-      <h1>RESOURCES</h1>
-    </header>
+    <div class="sitebox container is-widescreen">
+      <header class="titlebar">
+        <h1>RESOURCES</h1>
+      </header>
+      <div class="columns container is-widescreen">
+        <!-- sidebar -->
+        <nav class="sidebar column">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Info</a></li>
+            <li><a href="">Art</a></li>
+            <li><a href="">Links</a></li>
+          </ul>
+        </nav>
 
-    <div class="content">
-      <!-- sidebar -->
-      <nav class="sidebar">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Info</a></li>
-          <li><a href="">Art</a></li>
-          <li><a href="">Links</a></li>
-        </ul>
-      </nav>
+        <main class="sitebox column">
+          <div class="tabs-wrapper">
+            <nav class="tabs-nav">
+              <label for="art-toggle" class="tab-item">
+                <span>Art</span>
+                <input
+                  checked
+                  name="tabs-toggle"
+                  id="art-toggle"
+                  type="radio"
+                />
+              </label>
+              <label for="articles-toggle" class="tab-item">
+                <span>Articles</span>
+                <input name="tabs-toggle" id="articles-toggle" type="radio" />
+              </label>
+              <label for="code-toggle" class="tab-item">
+                <span>Code</span>
+                <input name="tabs-toggle" id="code-toggle" type="radio" />
+              </label>
+              <label for="tools-toggle" class="tab-item">
+                <span>Tools</span>
+                <input name="tabs-toggle" id="tools-toggle" type="radio" />
+              </label>
+              <label for="webdev-toggle" class="tab-item">
+                <span>Web Dev</span>
+                <input name="tabs-toggle" id="webdev-toggle" type="radio" />
+              </label>
+            </nav>
+
+            <div class="tab-content" id="art-content">
+              <div class="dd">
+                <label for="art-refs-dd" class="content-dd">
+                  <span>References</span>
+                  <input id="art-refs-dd" type="checkbox" />
+                </label>
+              </div>
+              <div class="dd">
+                <label for="art-brushes-dd" class="content-dd">
+                  <span>Brushes</span>
+                  <input id="art-brushes-dd" type="checkbox" />
+                </label>
+              </div>
+            </div>
+
+            <div class="tab-content" id="articles-content">
+              <div class="dd">
+                <label for="articles-lib-dd" class="content-dd">
+                  <span>Libraries</span>
+                  <input id="articles-lib-dd" type="checkbox" />
+                </label>
+              </div>
+              <div class="dd">
+                <label for="articles-bio-dd" class="content-dd">
+                  <span>Biology</span>
+                  <input id="articles-bio-dd" type="checkbox" />
+                </label>
+              </div>
+            </div>
+
+            <div class="tab-content" id="code-content">
+              <div class="dd">
+                <label for="code-learn-dd" class="content-dd">
+                  <span>Learn</span>
+                  <input id="code-learn-dd" type="checkbox" />
+                </label>
+              </div>
+            </div>
+
+            <div class="tab-content" id="tools-content">
+              <div class="dd-wrapper">
+                <label for="tools-apps-dd" class="content-dd">
+                  <span>Applications</span>
+                  <input id="tools-apps-dd" type="checkbox" />
+                </label>
+                <ul class="dd-content">
+                  <li><a href="">About</a></li>
+                  <li><a href="">Site</a></li>
+                  <li><a href="">Comms</a></li>
+                  <li><a href="">Setup</a></li>
+                </ul>
+              </div>
+              <div class="dd-wrapper">
+                <label for="tools-ext-dd" class="content-dd">
+                  <span>Extensions</span>
+                  <input id="tools-ext-dd" type="checkbox" />
+                </label>
+              </div>
+              <div class="dd-wrapper">
+                <label for="tools-util-dd" class="content-dd">
+                  <span>Utilities</span>
+                  <input id="art-util-dd" type="checkbox" />
+                </label>
+              </div>
+            </div>
+
+            <div class="tab-content" id="webdev-content">
+              I am Tab C content
+            </div>
+          </div>
+        </main>
+      </div>
 
       <!-- quicklinks -->
-      <aside>
+      <aside class="column">
         <!-- contact-->
         <article>
           <h4>Contact me!</h4>
