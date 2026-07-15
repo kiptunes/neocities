@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../_css/bulma/bulma-no-helpers.css" />
     <link rel="stylesheet" href="../_css/style.css" />
-    <link rel="stylesheet" href="../_css/dropdown.css" />
+    <link rel="stylesheet" href="../_css/components.css" />
     <title>malfen</title>
   </head>
 
@@ -34,37 +34,37 @@
           </ul>
         </nav>
 
-        <main class="sitebox column">
+        <main class="column">
           <div class="tabs-wrapper">
             <nav class="tabs-nav">
-              <label for="art-toggle" class="tab-item">
+              <label for="tab0-toggle" class="tab-item">
                 <span>Art</span>
                 <input
                   checked
                   name="tabs-toggle"
-                  id="art-toggle"
+                  id="tab0-toggle"
                   type="radio"
                 />
               </label>
-              <label for="articles-toggle" class="tab-item">
+              <label for="tab1-toggle" class="tab-item">
                 <span>Articles</span>
-                <input name="tabs-toggle" id="articles-toggle" type="radio" />
+                <input name="tabs-toggle" id="tab1-toggle" type="radio" />
               </label>
-              <label for="code-toggle" class="tab-item">
+              <label for="tab2-toggle" class="tab-item">
                 <span>Code</span>
-                <input name="tabs-toggle" id="code-toggle" type="radio" />
+                <input name="tabs-toggle" id="tab2-toggle" type="radio" />
               </label>
-              <label for="tools-toggle" class="tab-item">
+              <label for="tab3-toggle" class="tab-item">
                 <span>Tools</span>
-                <input name="tabs-toggle" id="tools-toggle" type="radio" />
+                <input name="tabs-toggle" id="tab3-toggle" type="radio" />
               </label>
-              <label for="webdev-toggle" class="tab-item">
+              <label for="tab4-toggle" class="tab-item">
                 <span>Web Dev</span>
-                <input name="tabs-toggle" id="webdev-toggle" type="radio" />
+                <input name="tabs-toggle" id="tab4-toggle" type="radio" />
               </label>
             </nav>
 
-            <div class="tab-content" id="art-content">
+            <div class="tab-content" id="tab0-content">
               <div class="dd">
                 <label for="art-refs-dd" class="content-dd">
                   <span>References</span>
@@ -79,7 +79,7 @@
               </div>
             </div>
 
-            <div class="tab-content" id="articles-content">
+            <div class="tab-content" id="tab1-content">
               <div class="dd">
                 <label for="articles-lib-dd" class="content-dd">
                   <span>Libraries</span>
@@ -94,7 +94,7 @@
               </div>
             </div>
 
-            <div class="tab-content" id="code-content">
+            <div class="tab-content" id="tab2-content">
               <div class="dd">
                 <label for="code-learn-dd" class="content-dd">
                   <span>Learn</span>
@@ -103,7 +103,7 @@
               </div>
             </div>
 
-            <div class="tab-content" id="tools-content">
+            <div class="tab-content" id="tab3-content">
               <div class="dd-wrapper">
                 <label for="tools-apps-dd" class="content-dd">
                   <span>Applications</span>
@@ -111,9 +111,6 @@
                 </label>
                 <ul class="dd-content">
                   <li><a href="">About</a></li>
-                  <li><a href="">Site</a></li>
-                  <li><a href="">Comms</a></li>
-                  <li><a href="">Setup</a></li>
                 </ul>
               </div>
               <div class="dd-wrapper">
@@ -130,7 +127,7 @@
               </div>
             </div>
 
-            <div class="tab-content" id="webdev-content">
+            <div class="tab-content" id="tab4-content">
               I am Tab C content
             </div>
           </div>
