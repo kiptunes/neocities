@@ -22,36 +22,35 @@
       <a class="topbar-item" id="home" href="">home</a>
       <a href="" class="topbar-item">theme</a>
       <!-- settings -->
-      <div class="topbar-item dd-wrapper">
-        <label for="settings-dd">
-          <span>Settings</span>
-          <input type="checkbox" id="settings-dd" class="dd-toggle" />
-        </label>
-        <div class="dd-content is-hoverable">
-          <label>
-            <span>reduced motion</span>
-            <input type="checkbox" checked />
-            <span class="checkmark"></span>
-          </label>
-          <br />
-          <label>
-            <span>lazy loading</span>
-            <input type="checkbox" checked />
-            <span class="checkmark"></span>
-          </label>
-          <br />
-          <label>
-            <span>dyslexia friendly font</span>
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-          </label>
-          <br />
-          <label>
-            <span>alt text below images</span>
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-          </label>
-        </div>
+      <div class="topbar-item">
+        <details>
+          <summary>settings</summary>
+          <div class="details-content">
+            <label>
+              <span>reduced motion</span>
+              <input type="checkbox" checked />
+              <span class="checkmark"></span>
+            </label>
+            <br />
+            <label>
+              <span>lazy loading</span>
+              <input type="checkbox" checked />
+              <span class="checkmark"></span>
+            </label>
+            <br />
+            <label>
+              <span>dyslexia friendly font</span>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <br />
+            <label>
+              <span>alt text below images</span>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </details>
       </div>
     </nav>
 
@@ -68,38 +67,31 @@
             <ul class="menu-list">
               <li><a href="index.html">Home</a></li>
               <li class="is-active"><a href="info.html">Info</a></li>
-              <li class="dd-wrapper">
-                <label for="art-dd">
-                  <span>Art</span>
-                  <input type="checkbox" id="art-dd" class="dd-toggle" />
-                </label>
-                <ul class="dd-content">
-                  <li><a href="art/illustrations.html">Illustrations</a></li>
-                  <li><a href="art/fanart.html">Fanart</a></li>
-                  <li><a href="art/sketchbook.html">Sketchbook</a></li>
-                  <li><a href="art/pixel-art.html">Pixel art</a></li>
-                </ul>
+              <li>
+                <details>
+                  <summary>Art</summary>
+                  <ul>
+                    <li><a href="">Illustrations</a></li>
+                    <li><a href="">Fanart</a></li>
+                    <li><a href="">Sketchbook</a></li>
+                    <li><a href="">Pixel art</a></li>
+                  </ul>
+                </details>
               </li>
               <li><a href="">Characters</a></li>
             </ul>
 
             <ul class="menu-list">
-              <li class="dd-wrapper">
-                <label for="media-dd">
-                  <span>Media</span>
-                  <input
-                    type="checkbox"
-                    class="dd-toggle"
-                    id="media-dd"
-                    checked="false"
-                  />
-                </label>
-                <ul class="dd-content">
-                  <li class="dd-item"><a href="media/music.html">Music</a></li>
-                  <li class="dd-item"><a href="media/games.html">Games</a></li>
-                  <li class="dd-item"><a href="media/books.html">Books</a></li>
-                  <li class="dd-item"><a href="media/other.html">Other</a></li>
-                </ul>
+              <li >
+                <details>
+                  <summary>Media</summary>
+                  <ul>
+                    <li><a href="">Books</a></li>
+                    <li><a href="">Games</a></li>
+                    <li><a href="">Misc</a></li>
+                    <li><a href="">Music</a></li>
+                  </ul>
+                </details>
               </li>
             </ul>
             <!-- links folder -->
@@ -107,33 +99,17 @@
             <ul class="menu-list">
               <li><a href="links/sites.html">Neighbors</a></li>
               <li><a href="links/toybox.html">Fun</a></li>
-              <li class="dd-wrapper">
-                <label for="resources-dd">
-                  <span>Resources</span>
-                  <input
-                    type="checkbox"
-                    class="dd-toggle"
-                    id="resources-dd"
-                    checked="false"
-                  />
-                </label>
-                <ul class="dd-content">
-                  <li class="dd-item">
-                    <a href="links/resources.html#art">Art</a>
-                  </li>
-                  <li class="dd-item">
-                    <a href="links/resources.html#articles">Articles</a>
-                  </li>
-                  <li class="dd-item">
-                    <a href="links/resources.html#code">Coding</a>
-                  </li>
-                  <li class="dd-item">
-                    <a href="links/resources.html#tools">Tools</a>
-                  </li>
-                  <li class="dd-item">
-                    <a href="links/resources.html#webdev">Web dev</a>
-                  </li>
-                </ul>
+              <li>
+                <details>
+                  <summary>Resources</summary>
+                  <ul>
+                    <li><a href="">Art</a></li>
+                    <li><a href="">Articles</a></li>
+                    <li><a href="">Coding</a></li>
+                    <li><a href="">Tools</a></li>
+                    <li><a href="">Webdev</a></li>
+                  </ul>
+                </details>
               </li>
             </ul>
           </nav>
