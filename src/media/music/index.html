@@ -1,0 +1,195 @@
+<!-- media/books/index.html -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal page for all my art and things. Welcome!"
+    />
+    <!-- <link rel="icon" type="image/x-icon" href=""> -->
+    <link rel="stylesheet" href="../../_css/bulma/bulma-no-helpers.css" />
+    <link rel="stylesheet" href="../../_css/style.css" />
+    <link rel="stylesheet" href="../../_css/mod/media.css" />
+    <link rel="stylesheet" href="../../_css/components.css" />
+    <title>malfen</title>
+  </head>
+
+  <body>
+    <!-- top navigation -->
+    <nav class="topbar">
+      <a class="topbar-item" id="home" href="">home</a>
+      <a href="" class="topbar-item">theme</a>
+      <!-- settings -->
+      <div class="topbar-item">
+        <details>
+          <summary>settings</summary>
+          <div class="details-content">
+            <label>
+              <span>reduced motion</span>
+              <input type="checkbox" checked />
+              <span class="checkmark"></span>
+            </label>
+            <br />
+            <label>
+              <span>lazy loading</span>
+              <input type="checkbox" checked />
+              <span class="checkmark"></span>
+            </label>
+            <br />
+            <label>
+              <span>dyslexia friendly font</span>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <br />
+            <label>
+              <span>alt text below images</span>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </details>
+      </div>
+    </nav>
+
+    <nav class="path columns is-mobile">
+      <button class="column is-narrow">Back</button>
+      <button class="column is-narrow">Forward</button>
+      <a class="column is-hidden-touch">path/to/page</a>
+      <div class="column nav-icon">
+        <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
+        <label for="nav-checkbox">nav</label>
+        <nav class="menu sidebar-mobile">
+          <!-- <p class="menu-label">General</p> -->
+        </nav>
+      </div>
+    </nav>
+
+    <div class="sitebox container is-widescreen">
+      <header>
+        <nav class="columns" id="page-nav">
+          <h2 class="column">MUSIC</h2>
+          <ul class="column is-narrow">
+            <li><a href="../books/index.html"></a>Books</li>
+            <li><a href="../games.html">Games</a></li>
+            <li><a href="#">Music</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="sitebox container is-fluid">
+        <nav class="tabs">
+          <ul>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="links.html">Links</a></li>
+          </ul>
+        </nav>
+
+        <div class="middle columns">
+          <!-- album scrollbox -->
+          <!-- vertical on desktop and horizontal on mobile -->
+          <div class="album-wrapper column is-narrow">
+            <button class="album" onclick="openAlbum(event, '')">
+              <figure>
+                <img src="" alt="" />
+                <figcaption class="media-title">Album</figcaption>
+              </figure>
+            </button>
+          </div>
+
+          <div class="column">
+            <!-- before an album is opened -->
+            <article hidden>
+              <h3>Welcome</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus omnis dolores ad, obcaecati aliquam deleniti mollitia,
+                possimus eaque voluptatibus deserunt, illum quae laborum ipsum
+                impedit fugit saepe corrupti voluptas atque?
+              </p>
+            </article>
+
+            <!-- if an album is opened -->
+            <!-- top area -->
+            <div class="columns">
+              <!-- left: opened song commentary -->
+              <div class="column">
+                <section class="song-info">
+                  <h5>Now Playing:</h5>
+                  <div class="tag-wrapper"></div>
+                </section>
+                <article class="song-notes">
+                  <h4>Commentary</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae, vero tenetur veniam pariatur excepturi provident
+                    fuga a porro similique officia dolor voluptatibus ut, qui
+                    sed modi sint dicta expedita ad! Assumenda possimus optio
+                    dicta voluptatum obcaecati molestias deleniti autem earum
+                    hic incidunt culpa sint velit, tenetur enim doloribus quas?
+                    Delectus officiis ullam ratione nam voluptatum est culpa
+                    eligendi velit magnam?
+                  </p>
+                </article>
+              </div>
+              <!-- right: album cover and list of songs -->
+              <div class="column is-narrow">
+                <figure>
+                  <img src="" alt="" />
+                  <figcaption>Album Title</figcaption>
+                </figure>
+                <!-- songlist -->
+                <section class="songlist">
+                  <h4>List</h4>
+                  <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+            <!-- bottom area -->
+            <section class="album-info">
+              <h4 class="album-name">Album Name</h4>
+              <div class="columns">
+                <table class="table column is-narrow">
+                  <tr>
+                    <th>date</th>
+                    <td>xxxx</td>
+                  </tr>
+                  <tr>
+                    <th>genre</th>
+                    <td>genre</td>
+                  </tr>
+                </table>
+                <section class="album-notes">
+                  <h5>Notes</h5>
+                  <span>Overall rating:</span>
+                  <br />
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam obcaecati aut voluptatibus et quia laborum,
+                    excepturi provident cum, fugit necessitatibus totam dolores
+                    ex repellat dolor id quod autem! Doloremque, asperiores.
+                  </p>
+                </section>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <!-- footer -->
+      <footer>
+        <a href="">sourcecode</a> / <a href="">credits</a> / public domain under
+        the <a href="https://unlicense.org/">unlicense</a>
+        <br />
+        2026 • malfen
+      </footer>
+    </div>
+  </body>
+</html>

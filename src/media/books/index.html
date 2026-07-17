@@ -1,0 +1,253 @@
+<!-- media/books/index.html -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal page for all my art and things. Welcome!"
+    />
+    <!-- <link rel="icon" type="image/x-icon" href=""> -->
+    <link rel="stylesheet" href="../../_css/bulma/bulma-no-helpers.css" />
+    <link rel="stylesheet" href="../../_css/style.css" />
+    <link rel="stylesheet" href="../../_css/mod/media.css" />
+    <link rel="stylesheet" href="../../_css/components.css" />
+    <title>malfen</title>
+  </head>
+
+  <body>
+    <!-- top navigation -->
+    <nav class="topbar">
+      <a class="topbar-item" id="home" href="">home</a>
+      <a href="" class="topbar-item">theme</a>
+      <!-- settings -->
+      <div class="topbar-item">
+        <details>
+          <summary>settings</summary>
+          <div class="details-content">
+            <label>
+              <span>reduced motion</span>
+              <input type="checkbox" checked />
+              <span class="checkmark"></span>
+            </label>
+            <br />
+            <label>
+              <span>lazy loading</span>
+              <input type="checkbox" checked />
+              <span class="checkmark"></span>
+            </label>
+            <br />
+            <label>
+              <span>dyslexia friendly font</span>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <br />
+            <label>
+              <span>alt text below images</span>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </details>
+      </div>
+    </nav>
+
+    <nav class="path columns is-mobile">
+      <button class="column is-narrow">Back</button>
+      <button class="column is-narrow">Forward</button>
+      <a class="column is-hidden-touch">path/to/page</a>
+      <div class="column nav-icon">
+        <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
+        <label for="nav-checkbox">nav</label>
+        <nav class="menu sidebar-mobile">
+          <!-- <p class="menu-label">General</p> -->
+        </nav>
+      </div>
+    </nav>
+
+    <div class="sitebox container is-widescreen">
+      <header>
+        <nav class="tabs is-centered is-toggle">
+          <ul>
+            <li><a href="#">Books</a></li>
+            <li><a href="../games.html">Games</a></li>
+            <li><a href="../music.html">Music</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="sitebox container is-fluid">
+        <!-- scrollbox for books -->
+        <nav class="columns" id="page-nav">
+          <h2 class="column">BOOKS</h2>
+          <ul class="column is-narrow">
+            <li><a href="#"></a>2026</li>
+            <li><a href="">2025</a></li>
+            <li><a href="#links">before 2024</a></li>
+          </ul>
+        </nav>
+
+        <div class="book-wrapper">
+          <button class="book" onclick="openBook(event, '')">
+            <figure>
+              <img src="" alt="" width="121" height="196" />
+              <figcaption>Book 1</figcaption>
+            </figure>
+          </button>
+
+          <button class="book" onclick="openBook(event, '')">
+            <figure>
+              <img src="" alt="" width="121" height="196" />
+              <figcaption class="media-title">Book 2</figcaption>
+            </figure>
+          </button>
+
+          <button class="book" onclick="openBook(event, '')">
+            <figure>
+              <img src="" alt="" width="121" height="196" />
+              <figcaption class="media-title">Book 3</figcaption>
+            </figure>
+          </button>
+
+          <button class="book" onclick="openBook(event, '')">
+            <figure>
+              <img src="" alt="" width="121" height="196" />
+              <figcaption class="media-title">Book 4</figcaption>
+            </figure>
+          </button>
+
+          <button class="book" onclick="openBook(event, '')">
+            <figure>
+              <img src="" alt="" width="121" height="196" />
+              <figcaption class="media-title">Book 5</figcaption>
+            </figure>
+          </button>
+
+          <button class="book" onclick="openBook(event, '')">
+            <figure>
+              <img src="" alt="" width="121" height="196" />
+              <figcaption class="media-title">Book 6</figcaption>
+            </figure>
+          </button>
+
+          <button class="book" onclick="openBook(event, '')">
+            <figure>
+              <img src="" alt="" width="121" height="196" />
+              <figcaption class="media-title">Book 7</figcaption>
+            </figure>
+          </button>
+
+          <button class="book" onclick="openBook(event, '')">
+            <figure>
+              <img src="" alt="" width="121" height="196" />
+              <figcaption class="media-title">Book 8</figcaption>
+            </figure>
+          </button>
+        </div>
+
+        <!-- middle content area -->
+        <div class="main-content">
+          <!-- before a book is opened -->
+          <div class="columns is-mobile">
+            <article class="column">
+              <h3>Welcome</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus omnis dolores ad, obcaecati aliquam deleniti mollitia,
+                possimus eaque voluptatibus deserunt, illum quae laborum ipsum
+                impedit fugit saepe corrupti voluptas atque?
+              </p>
+            </article>
+            <aside class="column is-narrow">
+              <h4>Currently reading:</h4>
+              <figure>
+                <img src="" alt="" />
+                <figcaption></figcaption>
+              </figure>
+            </aside>
+          </div>
+          <!-- if a book is opened -->
+          <div class="columns">
+            <div class="column is-narrow">
+              <figure>
+                <img src="" alt="" />
+                <figcaption>Book Title</figcaption>
+              </figure>
+              <table class="table">
+                <tr>
+                  <th>Author</th>
+                  <td>Author name</td>
+                </tr>
+                <tr>
+                  <th>Genre</th>
+                  <td>genre</td>
+                </tr>
+                <tr>
+                  <th>Rating</th>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+            <article class="column">
+              <h3>notes</h3>
+              <p tabindex="0">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
+                numquam velit aliquid, cupiditate, aspernatur vel quis repellat
+                qui deserunt esse tempore eligendi officiis reprehenderit quam,
+                quo odio illo aliquam dolorum. Eligendi, inventore obcaecati,
+                illo ea alias natus magnam iusto nisi ullam velit, nihil
+                nostrum. Reiciendis maxime sint illo? Temporibus iusto voluptate
+                dignissimos ut! Sequi, nostrum iure autem ipsa qui quod. Culpa
+                saepe minima nulla assumenda molestias quis provident eos fugit
+                distinctio earum nesciunt commodi, explicabo quas in cupiditate
+                a laborum reiciendis soluta nisi et fuga. Tempora labore eveniet
+                non vitae!
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <!-- extra info and links -->
+        <div class="columns">
+          <article class="column is-7" id="info">
+            <h3>Info</h3>
+            <p tabindex="0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              perferendis in maiores? Ratione similique veniam laborum
+              repellendus aut dolor, iure odio ducimus nihil, aspernatur
+              tempora? Blanditiis recusandae reiciendis illum facilis? Commodi
+              quam, voluptatibus quos officia unde doloribus natus dolores nisi
+              architecto accusamus aspernatur possimus harum quidem provident,
+              vitae deserunt recusandae. Adipisci similique enim tenetur natus
+              deserunt illum tempore at quos.
+            </p>
+          </article>
+          <aside class="column" id="links">
+            <h3>Online Libraries</h3>
+            <p tabindex="0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              inventore laborum accusamus, ducimus exercitationem magnam aliquid
+              quod eaque dolor, nobis veniam suscipit quibusdam maxime! Deleniti
+              sunt quia vel nihil porro. In laborum officia recusandae ducimus
+              consequatur dolorem distinctio vitae eaque quaerat assumenda
+              aliquam, aspernatur accusamus a maxime! Debitis iste earum veniam
+              aliquam, temporibus facere, dolore quod eligendi totam, laudantium
+              autem.
+            </p>
+          </aside>
+        </div>
+      </main>
+
+      <!-- footer -->
+      <footer>
+        <a href="">sourcecode</a> / <a href="">credits</a> / public domain under
+        the <a href="https://unlicense.org/">unlicense</a>
+        <br />
+        2026 • malfen
+      </footer>
+    </div>
+  </body>
+</html>
