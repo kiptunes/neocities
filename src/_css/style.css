@@ -16,7 +16,7 @@ button {
   font-family: SpaceGrotesk;
 }
 .has-shadow {
-  box-shadow: 4px 4px;
+  box-shadow: 4px 4px #5f5d58;
 }
 .topbar {
   display: flex;
