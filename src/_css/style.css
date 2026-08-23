@@ -1,19 +1,48 @@
 @font-face {
-  font-family: SpaceGrotesk;
-  src: url("../_assets/fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf");
+  font-family: Chivo;
+  src: url("../_assets/fonts/body/Chivo/Chivo-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: Archivo;
+  src: url(../_assets/fonts/body/Archivo/Archivo-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+  font-family: AudioNugget;
+  src: url(../_assets/fonts/title/audio-nugget/AudioNugget.ttf);
+}
+@font-face {
+  font-family: HomeVideo;
+  src: url(../_assets/fonts/header/home-video/HomeVideo-Regular.otf);
+}
+@font-face {
+  font-family: GoodLookingFont;
+  src: url(../_assets/fonts/header/goodlookingfont/GoodLookingFont.otf);
+}
+@font-face {
+  font-family: IBM-Plex-Mono;
+  src: url(../_assets/fonts/body/IBM_Plex_Mono/IBMPlexMono-Medium.ttf);
 }
 html {
   font-size: 16px;
 }
 p,
 a,
-h1,
-h2,
-h3,
 h4,
 h5,
-button {
-  font-family: SpaceGrotesk;
+button,
+li {
+  font-family: Chivo;
+}
+h1 {
+  font-family: AudioNugget;
+}
+h2 {
+  font-family: GoodLookingFont;
+  font-size: 1.6rem;
+}
+h4,
+summary {
+  font-family: HomeVideo;
 }
 .has-shadow {
   box-shadow: 4px 4px #5f5d58;
@@ -151,17 +180,8 @@ header hr {
   text-align: center;
 }
 #titlebar h1 {
-  font-size: large;
+  font-size: 60px;
   color: #ddd4a8;
-}
-#greeter {
-  min-height: 220px;
-}
-#greeter p {
-  color: #342929;
-}
-#greeter img {
-  float: right;
 }
 #sidebar {
   padding-bottom: 12px;
@@ -185,8 +205,43 @@ header hr {
 }
 #greeter {
   background-color: #ddd4a8;
-  color: #16184d;
   padding: 8px;
+  min-height: 220px;
+}
+#greeter p,
+#greeter ul {
+  color: #342929;
+}
+#greeter img {
+  float: right;
+  margin: 4px;
+}
+#greeter h2 {
+  color: #342929;
+}
+#greeter hr {
+  background-color: inherit;
+  height: 4px;
+  margin: 4px 0;
+  border-top: 1px solid #342929;
+  border-bottom: 1px solid #342929;
+}
+.bcrumbs {
+  text-align: center;
+  margin: 4px auto 10px auto;
+}
+.bcrumbs li {
+  display: inline-block;
+  background-color: #69849b;
+  min-width: 80px;
+  padding: 5px;
+  margin: 8px;
+  box-shadow: 2px 2px #5e6d8a;
+}
+.bcrumbs a {
+  font-family: IBM-Plex-Mono;
+  font-size: 0.9rem;
+  color: #ece8d8;
 }
 #todo {
   background-color: #9bbdbc;
