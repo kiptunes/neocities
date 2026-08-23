@@ -1,9 +1,23 @@
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
+@font-face {
+  font-family: SpaceGrotesk;
+  src: url("../_assets/fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf");
 }
-
+html {
+  font-size: 16px;
+}
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+button {
+  font-family: SpaceGrotesk;
+}
+.has-shadow {
+  box-shadow: 4px 4px;
+}
 .topbar {
   display: flex;
   width: 100%;
@@ -11,21 +25,22 @@ body {
   top: 0;
   z-index: 10;
 }
-
-.topbar > * {
+.topbar-item {
   margin: 10px;
+}
+.left {
+  min-width: 160px;
 }
 
 /* settings specific dropdown styling */
 .topbar-item details {
-  position:relative;
+  position: relative;
 }
 .details-content {
   position: absolute;
   top: auto;
   right: 0px;
-  background-color: blueviolet;
-  min-width: 220px;
+  /* min-width: 220px; */
   min-height: 150px;
   padding: 12px 16px;
 }
@@ -33,27 +48,13 @@ body {
 #home {
   flex: 1;
 }
-
-.titlebar {
-  text-align: center;
-  padding: 5vw 0vw;
+#nav-checkbox {
+  display: none;
 }
 
-.sidebar {
-  min-height: 60%;
+#sidebar {
+  min-height: 50vh;
 }
-
-.site-updates > * {
-  height: 260px;
-  overflow-wrap: break-word;
-  overflow-y: scroll;
-}
-
-.site-updates > * > h4 {
-  top: 0;
-  position: sticky;
-}
-
 footer {
   text-align: center;
   padding: 3vw 0vw 10vw;
@@ -80,34 +81,221 @@ footer {
     text-align: end;
   }
 
-  .sidebar-mobile {
-    background-color: black;
+  .left {
     position: absolute;
-    top: auto;
+    top: -150px;
     right: 0;
-    width: 75%;
-    z-index: 10;
+    width: 200px;
+    height: auto;
+    z-index: 9;
+  }
+  #sidebar {
+    min-height: auto;
   }
 
-  .nav-icon:has(#nav-checkbox:checked) .sidebar-mobile {
+  .left {
     display: block;
-    /* animation: 0.5s ease-in 0s slideInRight; */
+    opacity: 1;
+    transform: translateY(0);
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease,
+      display 0.3s allow-discrete;
   }
-
-  .nav-icon:has(#nav-checkbox:not(:checked)) .sidebar-mobile {
+  .sitebox:has(#nav-checkbox:not(:checked)) .left {
+    opacity: 0;
+    transform: translateY(-8px);
     display: none;
   }
 
-  @keyframes slideInRight {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(0);
+  /* 
+    This is supposed to animate the display: none property on the
+    nav menu exit but it doesn't work on firefox so I don't know if
+    it is doing what it's supposed to. (??)
+  */
+
+  @starting-style {
+    .sitebox:has(#nav-checkbox:checked) .left {
+      opacity: 0;
+      transform: translateY(-8px);
+      display: block;
     }
   }
 
   #guestbook {
     grid-area: footer;
   }
+}
+
+html {
+  background-color: #ece8d8;
+}
+
+.topbar,
+#sidebar {
+  background-color: #69849b;
+}
+header {
+  width: 75%;
+  margin: auto;
+}
+header hr {
+  background-color: #95a561;
+  height: 12px;
+  width: 100%;
+  margin: 4px auto;
+}
+#titlebar {
+  height: 80px;
+  background-color: #698458;
+  text-align: center;
+}
+#titlebar h1 {
+  font-size: large;
+  color: #ddd4a8;
+}
+#greeter {
+  min-height: 220px;
+}
+#greeter p {
+  color: #342929;
+}
+#greeter img {
+  float: right;
+}
+#sidebar {
+  padding-bottom: 12px;
+}
+#sidebar summary {
+  margin: 8px;
+  padding: 4px;
+  color: #1f3974;
+  background-color: #bfcdce;
+}
+#sidebar details {
+  overflow-x: hidden;
+}
+#sidebar a {
+  padding-left: 12px;
+  color: #ece8d8;
+  background-color: transparent;
+}
+#changelog {
+  background-color: #95a561;
+}
+#greeter {
+  background-color: #ddd4a8;
+  color: #16184d;
+  padding: 8px;
+}
+#todo {
+  background-color: #9bbdbc;
+}
+#changelog,
+#todo {
+  margin: 0 5px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+}
+#todo .heading,
+#changelog .heading {
+  position: sticky;
+  top: 0;
+  padding: 5px;
+}
+#changelog .scrollbox,
+#todo .scrollbox {
+  height: 100%;
+  margin-top: 8px;
+  overflow-y: scroll;
+}
+#changelog .heading {
+  background-color: #698458;
+}
+#todo .heading {
+  background-color: #69849b;
+}
+#changelog .scrollbox {
+  scrollbar-color: #698458;
+}
+#todo .scrollbox {
+  background-color: #ece8d8;
+  scrollbar-color: #69849b;
+  color: #69849b;
+  padding: 6px;
+}
+#changelog h4,
+#todo h4 {
+  color: #ece8d8;
+}
+#changelog .log-wrapper {
+  padding: 10px;
+  background-color: #c2cb74;
+}
+.log-wrapper article {
+  background-color: #ece8d8;
+  margin: 0 auto 8px auto;
+  padding: 6px;
+}
+.log-header {
+  color: #698458;
+  display: flex;
+  justify-content: space-between;
+  border-bottom-style: dashed;
+  border-bottom-width: 2px;
+  border-bottom-color: #c2cb74;
+}
+.log-wrapper p {
+  color: #698458;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+#guestbook,
+#buttons-aside {
+  padding: 8px;
+}
+#guestbook,
+#webrings {
+  color: #16184d;
+  height: 100px;
+}
+#guestbook {
+  background-color: #9bbdbc;
+  margin-bottom: 12px;
+}
+#img-window {
+  background-color: #95a561;
+  margin-bottom: 12px;
+  flex-grow: 1;
+}
+#img-window h4 {
+  background-color: #698458;
+  color: #ece8d8;
+  padding: 2px 4px;
+  width: 100%;
+  height: 1.6em;
+}
+#img-window img {
+  border: 2px solid #698458;
+  margin: 8px 8px 0 8px;
+  width: calc(100% - 16px);
+  object-fit: contain;
+  box-sizing: border-box;
+}
+#buttons-aside {
+  background-color: #69849b;
+}
+#buttons-aside h4 {
+  background-color: #bfcdce;
+  color: #16184d;
+  padding: 4px;
+}
+#buttons-aside button {
+  position: relative;
+  width: 100%;
+  margin: 8px auto 0 auto;
 }

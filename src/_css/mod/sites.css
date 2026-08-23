@@ -1,0 +1,14 @@
+#webrings div aside p {
+    max-height: 260px;
+    min-width: 260px;
+    overflow-y: scroll;
+    text-align: justify;
+    padding: 12px;
+}
+
+aside article p {
+    max-height: 200px;
+    text-align: justify;
+    overflow-y: scroll;
+    padding-right: 12px;
+}

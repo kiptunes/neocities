@@ -1,0 +1,21 @@
+html,
+body {
+  max-width: 98%;
+}
+
+.titlebar {
+  padding: 8px;
+}
+
+#page-nav ul li {
+  display: inline-block;
+}
+
+.book-wrapper {
+  overflow: auto;
+  white-space: nowrap;
+}
+.book-wrapper button {
+  display: inline-block;
+  margin: 8px;
+}

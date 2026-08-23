@@ -10,16 +10,17 @@
       content="Personal page for all my art and things. Welcome!"
     />
     <!-- <link rel="icon" type="image/x-icon" href=""> -->
-    <link rel="stylesheet" href="_css/bulma/bulma-no-helpers.css" />
-    <link rel="stylesheet" href="_css/style.css" />
-    <link rel="stylesheet" href="_css/components.css" />
+    <link rel="stylesheet" href="../_css/bulma/bulma-no-helpers.css" />
+    <link rel="stylesheet" href="../_css/style.css" />
+    <link rel="stylesheet" href="../_css/mod/links/style.css" />
+    <link rel="stylesheet" href="../_css/components.css" />
     <title>malfen</title>
   </head>
 
   <body>
     <!-- top navigation -->
     <nav class="topbar">
-      <a class="topbar-item" id="home" href="">home</a>
+      <a class="topbar-item" id="home" href="../index.html">home</a>
       <a href="" class="topbar-item">theme</a>
       <!-- settings -->
       <div class="topbar-item">
@@ -68,68 +69,172 @@
     </nav>
 
     <div class="sitebox container is-widescreen">
-      <header class="titlebar">
-        <h1>INFO</h1>
+      <header>
+        <div id="titlebar"><h1>INFO</h1></div>
+        <hr />
       </header>
 
       <div class="columns container is-widescreen">
         <!-- sidebar -->
-        <aside class="column is-one-fifth is-hidden-touch">
-          <nav class="menu sidebar">
-            <p class="menu-label">ROOT</p>
-            <ul class="menu-list">
-              <li><a href="index.html">Home</a></li>
-              <li class="is-active"><a href="info.html">Info</a></li>
-              <li>
-                <details>
-                  <summary>Art</summary>
-                  <ul>
-                    <li><a href="">Illustrations</a></li>
-                    <li><a href="">Fanart</a></li>
-                    <li><a href="">Sketchbook</a></li>
-                    <li><a href="">Pixel art</a></li>
-                  </ul>
-                </details>
-              </li>
-              <li><a href="">Characters</a></li>
-            </ul>
+        <aside class="left column is-hidden-touch is-one-fifth">
+          <nav class="menu" id="sidebar">
+            <details class="folder-label" open>
+              <summary>Root</summary>
+              <ul>
+                <li class="is-active">
+                  <a href="../index.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-home.png"
+                      alt="home icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="on-page">
+                    <img
+                      src="../_assets/img/icons/nav/icon-info.png"
+                      alt="question mark icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Info</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../info/sitemap.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-map.png"
+                      alt="map icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Sitemap</span>
+                  </a>
+                </li>
+              </ul>
+            </details>
 
-            <ul class="menu-list">
-              <li>
-                <details>
-                  <summary>Media</summary>
-                  <ul>
-                    <li><a href="">Books</a></li>
-                    <li><a href="">Games</a></li>
-                    <li><a href="">Misc</a></li>
-                    <li><a href="">Music</a></li>
-                  </ul>
-                </details>
-              </li>
-            </ul>
+            <details class="folder-label" open>
+              <summary>Art</summary>
+              <ul>
+                <li>
+                  <a href="">
+                    <img
+                      src="../_assets/img/icons/nav/icon-easel.png"
+                      alt="easel icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Illustrations</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="../_assets/img/icons/nav/icon-notebook.png"
+                      alt="notebook icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Sketchbook</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="../_assets/img/icons/nav/icon-pixel.png"
+                      alt="pixel icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Pixel art</span>
+                  </a>
+                </li>
+              </ul>
+            </details>
+
+            <details class="folder-label" open>
+              <summary>Media</summary>
+              <ul>
+                <li>
+                  <a href="../media/books/index.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-books.png"
+                      alt="books icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Books</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../media/games.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-joystick.png"
+                      alt="joystick icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Games</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../media/music/index.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-music.png"
+                      alt="music icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Music</span>
+                  </a>
+                </li>
+              </ul>
+            </details>
+
             <!-- links folder -->
-            <p class="menu-label">LINKS</p>
-            <ul class="menu-list">
-              <li><a href="links/sites.html">Neighbors</a></li>
-              <li><a href="links/toybox.html">Fun</a></li>
-              <li><a href="links/resources.html">Resources</a></li>
-            </ul>
+            <details class="folder-label" open>
+              <summary>Links</summary>
+              <ul>
+                <li>
+                  <a href="../links/sites.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-site.png"
+                      alt="site icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Sites</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../links/toybox.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-kite.png"
+                      alt="kite icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Toybox</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../links/resources.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-link.png"
+                      alt="link icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Resources</span>
+                  </a>
+                </li>
+              </ul>
+            </details>
           </nav>
-
-          <!-- contact-->
-          <article>
-            <h4>Contact me!</h4>
-            <p>
-              <a href="mailto:shrimpcantfryrice@gmail.com">email</a> for
-              personal & business inquiries
-            </p>
-            <hr />
-            <h4>repository</h4>
-            <p>
-              view the source code on
-              <a href="github.com/kiptunes/neocities">github!</a>
-            </p>
-          </article>
         </aside>
 
         <main class="column">
@@ -179,83 +284,44 @@
 
             <!-- about me -->
             <div class="tab-content" id="tab0-content">
-              <div class="container">
+              <div>
                 <section class="top columns">
                   <article class="column">
                     <h2>About Me</h2>
                     <p>
-                      @kowafi | @malfen
-                      <br />hi, I'm fio! : &#x0029; <br /><br />
-                      I am a rising electrical engineering undergrad student
-                      based in the US Northeast. I really like old tech, unix
-                      systems, and hobby electronics, and sometimes I draw. It's
-                      nice to meet you!
+                      Hi! : &#x0029; <br /><br />
+                      I am an electrical engineering undergrad student based in
+                      the US Northeast. I like computing history, unix systems,
+                      and ergo keyboards! Sometimes I also draw. It's nice to
+                      meet you! <br /><br />
+                      I have an email if you would like to talk to me.
                     </p>
+                    <article>
+                      <h4>why I maintain this site</h4>
+                      <p></p>
+                      <p>Thank you for visiting my page :)</p>
+                    </article>
                   </article>
-                  <div>
-                    <img src="" alt="" />
-                    <p>
-                      fio <br />
-                      18 <br />
-                      any pronouns <br />
-                      japanese/ukrainian-american <br />
-                      trans and aroace <br />
-                    </p>
-                  </div>
+                  <aside class="column is-narrow">
+                    <div>
+                      <img src="" alt="" />
+                      <p>
+                        fio <br />
+                        18 <br />
+                        any pronouns <br />
+                        japanese-american <br />
+                      </p>
+                    </div>
+                    <div>
+                      <h4>Currently...</h4>
+                      <p>
+                        reading -> <br />
+                        listening to -> <br />
+                        working on -> this website!
+                      </p>
+                    </div>
+                  </aside>
                 </section>
-
-                <div>
-                  <h4>Currently...</h4>
-                  <p>
-                    reading -> <br />
-                    listening to -> <br />
-                    working on -> this website!
-                  </p>
-                </div>
-
-                <article>
-                  <h4>why I maintain this site</h4>
-                  <p>
-                    I have always loved old internet aesthetics and will forever
-                    be a proponent of learning to code, especially in today's
-                    age when corporate companies are enforcing a narrative that
-                    knowing the ins and outs of your own technology is some sort
-                    of inaccessible high-skill feat. It's a shame it has to be
-                    said, but, as access to information continues to become more
-                    and more digital, basic tech literacy should be a staple of
-                    learning to be on the internet at all.
-                  </p>
-                  <p>
-                    That being said, you don't have to know how to publish an
-                    app, or code a game, or make a website, although those are
-                    all fun and viable things to do if they interest you. But,
-                    please, know what your directories are for on your computer,
-                    know what companies are doing with your private information,
-                    and know to recognize malicious links.
-                  </p>
-                  <p>
-                    As someone visiting a neocities page, this is all probably
-                    old news to you, but it's an important part of the reason
-                    why I created this site, so I felt obligated to put
-                    this spiel here. I know my friends have heard me say all
-                    this a hundred times. At the risk of sounding overly
-                    earnest, I just believe in the return of autonomy to the
-                    user that a personal page offers. Customization is a sort of
-                    freedom, and every hand-coded website is an expression of
-                    self, to me. Bad websites are beautiful and I'll die on this
-                    hill.
-                  </p>
-                  <p>
-                    If you <i>do</i> happen to be new to coding, and you're
-                    looking for a starting point, hi! Its versatility may feel
-                    overwhelming when you are just beginning. Please don't let
-                    it daunt you! Making a website is a wonderful way to
-                    introduce yourself to programming. I hope you have fun if
-                    you choose to make one, too. <br /><br />
-                    And <i>thank you</i> for visiting my silly corner of the
-                    internet! :)
-                  </p>
-                </article>
               </div>
             </div>
             <!-- about site -->
@@ -331,15 +397,14 @@
                     <h4>Devices</h4>
                     <ul>
                       <li>Thinkpad X280</li>
-                      <li>iPad (9th generation)</li>
-                      <li>Apple Pencil (1st generation)</li>
                       <li>Huion H1060P</li>
+                      <li>VXE Dragonfly R1 (mouse)</li>
                     </ul>
                   </div>
                   <hr />
                   <div>
                     <h4>Applications</h4>
-                    <table>
+                    <table class="table">
                       <thead>
                         <tr>
                           <th>Name</th>
@@ -348,11 +413,6 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <tr>
-                          <td>Procreate</td>
-                          <td>Drawing</td>
-                          <td>iPad</td>
-                        </tr>
                         <tr>
                           <td>Krita</td>
                           <td>Drawing</td>
@@ -409,7 +469,7 @@
           <!-- socials -->
           <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
             <ul>
-              <li><a href="https://malfen.tumblr.com">tumblr</a></li>
+              <li><a href="https://miyufen.tumblr.com">tumblr</a></li>
               <li><a href="">toyhouse</a></li>
               <li><a href="">artfight</a></li>
               <li><a href="https://github.com/kiptunes">github</a></li>
@@ -424,7 +484,7 @@
         <a href="">sourcecode</a> / <a href="">credits</a> / public domain under
         the <a href="https://unlicense.org/">unlicense</a>
         <br />
-        2026 • malfen
+        2026 • miyufen
       </footer>
     </div>
   </body>

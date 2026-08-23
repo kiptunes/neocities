@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="_css/bulma/bulma-no-helpers.css" />
     <link rel="stylesheet" href="_css/style.css" />
     <link rel="stylesheet" href="_css/components.css" />
+
     <title>malfen</title>
   </head>
 
@@ -57,143 +58,284 @@
     <nav class="path columns is-mobile">
       <button class="column is-narrow">Back</button>
       <button class="column is-narrow">Forward</button>
-      <a class="column is-hidden-touch">path/to/page</a>
+      <a class="column is-hidden-touch" hidden>path/to/page</a>
       <div class="column nav-icon">
-        <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
-        <label for="nav-checkbox">nav</label>
-        <nav class="menu sidebar-mobile">
-          <!-- <p class="menu-label">General</p> -->
-        </nav>
+        <label for="nav-checkbox">
+          <span>nav</span>
+        </label>
       </div>
     </nav>
 
-    <div class="sitebox container is-widescreen">
-      <header class="titlebar">
-        <h1>WELCOME</h1>
+    <div class="container is-widescreen">
+      <header>
+        <div id="titlebar"><h1>WELCOME</h1></div>
+        <hr />
       </header>
 
-      <div class="columns container is-widescreen">
+      <div class="sitebox columns container is-widescreen">
         <!-- sidebar -->
-        <aside class="column is-hidden-touch">
-          <nav class="menu sidebar">
-            <p class="menu-label">Root</p>
-            <ul class="menu-list">
-              <li class="is-active"><a href="index.html">Home</a></li>
-              <li><a href="info.html">Info</a></li>
-              <li><a href="sitemap.html">Sitemap</a></li>
-            </ul>
-            <p class="menu-label">My things</p>
-            <ul class="menu-list">
-              <li>
-                <details>
-                  <summary>Art</summary>
-                  <ul>
-                    <li><a href="">Illustrations</a></li>
-                    <li><a href="">Fanart</a></li>
-                    <li><a href="">Sketchbook</a></li>
-                    <li><a href="">Pixel art</a></li>
-                  </ul>
-                </details>
-              </li>
-              <li>
-                <details>
-                  <summary>Media</summary>
-                  <ul>
-                    <li><a href="">Books</a></li>
-                    <li><a href="">Games</a></li>
-                    <li><a href="">Misc</a></li>
-                    <li><a href="">Music</a></li>
-                  </ul>
-                </details>
-              </li>
-              <li><a href="">Characters</a></li>
-            </ul>
-            <!-- links folder -->
-            <p class="menu-label">Links</p>
-            <ul class="menu-list">
-              <li><a href="links/sites.html">Neighbors</a></li>
-              <li><a href="links/toybox.html">Fun</a></li>
-              <li><a href="links/resources.html">Resources</a></li>
-            </ul>
-          </nav>
+        <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
+        <aside class="left column is-hidden-touch">
+          <nav class="menu has-shadow" id="sidebar">
+            <details class="folder-label" open>
+              <summary>Root</summary>
+              <ul>
+                <li class="is-active">
+                  <a href="index.html">
+                    <img
+                      src="_assets/img/icons/nav/icon-home.png"
+                      alt="home icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="info/index.html">
+                    <img
+                      src="_assets/img/icons/nav/icon-info.png"
+                      alt="question mark icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Info</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="info/sitemap.html">
+                    <img
+                      src="_assets/img/icons/nav/icon-map.png"
+                      alt="map icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Sitemap</span>
+                  </a>
+                </li>
+              </ul>
+            </details>
 
-          <!-- contact-->
-          <article>
-            <h4>Contact me!</h4>
-            <p>
-              <a href="mailto:shrimpcantfryrice@gmail.com">email</a> for
-              personal & business inquiries
-            </p>
-            <hr />
-            <h4>repository</h4>
-            <p>
-              view the source code on
-              <a href="github.com/kiptunes/neocities">github!</a>
-            </p>
-          </article>
+            <details class="folder-label" open>
+              <summary>Art</summary>
+              <ul>
+                <li>
+                  <a href="">
+                    <img
+                      src="_assets/img/icons/nav/icon-easel.png"
+                      alt="easel icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Illustrations</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="_assets/img/icons/nav/icon-pencil.png"
+                      alt="pencil icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Fanart</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="_assets/img/icons/nav/icon-notebook.png"
+                      alt="notebook icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Sketchbook</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="_assets/img/icons/nav/icon-pixel.png"
+                      alt="pixel icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Pixel art</span>
+                  </a>
+                </li>
+              </ul>
+            </details>
+
+            <details class="folder-label" open>
+              <summary>Media</summary>
+              <ul>
+                <li>
+                  <a href="media/books/index.html">
+                    <img
+                      src="_assets/img/icons/nav/icon-books.png"
+                      alt="books icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Books</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="media/games.html">
+                    <img
+                      src="_assets/img/icons/nav/icon-joystick.png"
+                      alt="joystick icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Games</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="media/music/index.html">
+                    <img
+                      src="_assets/img/icons/nav/icon-music.png"
+                      alt="music icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Music</span>
+                  </a>
+                </li>
+              </ul>
+            </details>
+
+            <!-- <li hidden>
+                <details>
+                  <summary>Interests</summary>
+                  <ul>
+                    <li><a href="interests/pylons">Pylons</a></li>
+                    <li><a href="interests/wind-turbines">Wind Turbines</a></li>
+                  </ul>
+                </details>
+              </li> -->
+            <li hidden><a href="">Characters</a></li>
+
+            <!-- links folder -->
+            <details class="folder-label" open>
+              <summary>Links</summary>
+              <ul>
+                <li>
+                  <a href="links/sites.html">
+                    <img
+                      src="_assets/img/icons/nav/icon-site.png"
+                      alt="site icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Sites</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="links/toybox.html">
+                    <img
+                      src="_assets/img/icons/nav/icon-kite.png"
+                      alt="kite icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Toybox</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="links/resources.html">
+                    <img
+                      src="_assets/img/icons/nav/icon-link.png"
+                      alt="link icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Resources</span>
+                  </a>
+                </li>
+              </ul>
+            </details>
+          </nav>
         </aside>
 
         <!-- sitebox -->
         <main class="sitebox column is-7">
           <!-- greeter -->
-          <article>
+          <article id="greeter" class="has-shadow">
             <!-- general site info-->
-            <section>
-              <img src="" alt="" />
-              <p>
-                Hi, welcome to my site! Constantly a work in progress; last updated 2026.07.15. <br>
-                - you can change motion settings in the top right <br>
-                - about page is under "info" <br>
-                - site is hand coded and open source
-              </p>
-            </section>
-            <!-- socials -->
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-              <ul>
-                <li><a href="https://malfen.tumblr.com">tumblr</a></li>
-                <li><a href="">toyhouse</a></li>
-                <li><a href="">artfight</a></li>
-                <li><a href="https://github.com/kiptunes">github</a></li>
-                <li><a href="">ko-fi</a></li>
-              </ul>
-            </nav>
+            <img src="" alt="" width="280" height="200" />
+            <p>
+              Hi, welcome to my site! Constantly a work in progress; last
+              updated 2026.07.15. <br />
+              - you can change motion settings in the top right <br />
+              - about page is under "info" <br />
+              - site is hand coded and open source
+            </p>
           </article>
-          <hr />
+
+          <!-- socials -->
+          <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
+            <ul>
+              <li><a href="https://miyufen.tumblr.com">tumblr</a></li>
+              <li><a href="">toyhouse</a></li>
+              <li><a href="">artfight</a></li>
+              <li><a href="https://github.com/kiptunes">github</a></li>
+              <li><a href="">ko-fi</a></li>
+            </ul>
+          </nav>
+
           <!-- site updates -->
           <section class="site-updates columns is-mobile">
             <!-- todo -->
-            <aside class="column is-one-third" tabindex="0">
-              <h4>To-Do</h4>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Voluptatibus mollitia accusantium aliquam, fuga quasi ratione
-                repellendus, sequi, molestias fugiat culpa magni eaque et. Sequi
-                libero, maiores corrupti fuga ratione qui!
-              </p>
+            <aside
+              class="column is-one-third has-shadow"
+              tabindex="0"
+              id="todo"
+            >
+              <div class="heading">
+                <h4>To-Do</h4>
+              </div>
+              <div class="scrollbox">
+                <ul>
+                  <li>Replace toybox icon</li>
+                  <li>Write first changelog</li>
+                  <li>Make site buttons</li>
+                  <li>Add img to window</li>
+                </ul>
+              </div>
             </aside>
             <!-- changelog -->
-            <div class="column" tabindex="0">
-              <h4>Changelog</h4>
-              <section>
-                <article>
-                  <h5>Log 1 title</h5>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Delectus ea vitae explicabo, eius maiores eveniet quibusdam
-                    expedita optio iusto! Quia ut odit dolor necessitatibus non
-                    illo totam repellendus laudantium ipsam.
-                  </p>
-                </article>
-                <article>
-                  <h5>Log 2 title</h5>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Delectus ea vitae explicabo, eius maiores eveniet quibusdam
-                    expedita optio iusto! Quia ut odit dolor necessitatibus non
-                    illo totam repellendus laudantium ipsam.
-                  </p>
-                </article>
-              </section>
+            <div class="column has-shadow" id="changelog">
+              <div class="heading">
+                <h4>Changelog</h4>
+              </div>
+              <div class="scrollbox" tabindex="0">
+                <div class="log-wrapper">
+                  <article>
+                    <div class="log-header">
+                      <h5>Log 1 title</h5>
+                      <p>01.01.2026</p>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Delectus ea vitae explicabo, eius maiores eveniet
+                      quibusdam expedita optio iusto! Quia ut odit dolor
+                      necessitatibus non illo totam repellendus laudantium
+                      ipsam.
+                    </p>
+                  </article>
+                  <article>
+                    <h5>Log 2 title</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Delectus ea vitae explicabo, eius maiores eveniet
+                      quibusdam expedita optio iusto! Quia ut odit dolor
+                      necessitatibus non illo totam repellendus laudantium
+                      ipsam.
+                    </p>
+                  </article>
+                </div>
+              </div>
             </div>
           </section>
         </main>
@@ -202,25 +344,60 @@
         <aside class="right column">
           <!-- onsite links -->
           <div id="guestbook">
-            <p>sign my<a href="guestbook.html">guestbook!</a></p>
+            <p>sign my <a href="guestbook.html">guestbook!</a></p>
           </div>
           <!-- separator image -->
-          <div class="window is-hidden-touch">
-            <img src="" alt="" />
+          <div class="is-hidden-touch has-shadow" id="img-window">
+            <h4>Window</h4>
+            <img
+              src="_assets/img/window/clouds1.png"
+              alt="A big cloud."
+              title="A big cloud."
+            />
           </div>
 
-          <section class="grid-links">
+          <aside id="buttons-aside has-shadow">
             <!-- webrings -->
-            <div>
+            <div id="webrings">
               <h4>Webrings</h4>
               <div class="outgoing"></div>
             </div>
             <!-- link back stamp -->
-            <div>
+            <div id="link-back">
               <h4>Link back</h4>
-              <div></div>
+              <div class="button-wrapper">
+                <button>
+                  <a href="">
+                    <img src="" alt="" width="88" height="31" />
+                  </a>
+                </button>
+                <button>
+                  <a href="" class="copy-button"> </a>
+                  <img src="" alt="" width="88" height="31" />
+                </button>
+                <details>
+                  <summary>Copy code:</summary>
+                  <p>
+                    <code>
+                      <!-- <button>
+                        <a href="" class="copy-button"> </a>
+                        <img src="" alt="" width="88" height="31" />
+                      </button> -->
+                    </code>
+                  </p>
+                </details>
+              </div>
             </div>
-          </section>
+          </aside>
+
+          <!-- contact-->
+          <article>
+            <h4>Contact me!</h4>
+            <p>
+              <a href="mailto:shrimpcantfryrice@gmail.com">email</a> for
+              personal & business inquiries
+            </p>
+          </article>
         </aside>
       </div>
 
