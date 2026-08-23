@@ -1,0 +1,194 @@
+<!-- ../tools/template.html -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal page for all my art and things. Welcome!"
+    />
+    <!-- <link rel="icon" type="image/x-icon" href=""> -->
+    <link rel="stylesheet" href="../_css/bulma/bulma-no-helpers.css" />
+    <link rel="stylesheet" href="../_css/style.css" />
+    <link rel="stylesheet" href="../_css/mod/media.css" />
+    <link rel="stylesheet" href="../_css/components.css" />
+    <title>malfen</title>
+  </head>
+
+  <body>
+    <!-- top navigation -->
+    <nav class="topbar">
+      <a class="topbar-item" id="home" href="">home</a>
+      <a href="" class="topbar-item">theme</a>
+      <!-- settings -->
+      <div class="topbar-item">
+        <details>
+          <summary>settings</summary>
+          <div class="details-content">
+            <label>
+              <span>reduced motion</span>
+              <input type="checkbox" checked />
+              <span class="checkmark"></span>
+            </label>
+            <br />
+            <label>
+              <span>lazy loading</span>
+              <input type="checkbox" checked />
+              <span class="checkmark"></span>
+            </label>
+            <br />
+            <label>
+              <span>dyslexia friendly font</span>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <br />
+            <label>
+              <span>alt text below images</span>
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </details>
+      </div>
+    </nav>
+
+    <nav class="path columns is-mobile">
+      <button class="column is-narrow">Back</button>
+      <button class="column is-narrow">Forward</button>
+      <a class="column is-hidden-touch">path/to/page</a>
+      <div class="column nav-icon">
+        <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
+        <label for="nav-checkbox">nav</label>
+        <nav class="menu sidebar-mobile">
+          <!-- <p class="menu-label">General</p> -->
+        </nav>
+      </div>
+    </nav>
+
+    <div class="container is-widescreen">
+      <header>
+        <nav class="columns" id="page-nav">
+          <h2 class="column">GAMES</h2>
+          <ul class="column is-narrow">
+            <li><a href="books/index.html"></a>Books</li>
+            <li><a href="#">Games</a></li>
+            <li><a href="music.html">Music</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <nav class="tabs">
+          <ul>
+            <li><a href="#">Links</a></li>
+            <li><a href="#">Emulators</a></li>
+            <li><a href="#">Thoughts</a></li>
+          </ul>
+        </nav>
+
+        <ul class="game-wrapper" tabindex="0">
+          <!-- TEMPLATE -->
+          <!-- 
+            <li class="game-item">
+                <div class="columns">
+                <figure class="column is-narrow">
+                    <ficaption>Inscryption</ficaption>
+                    <img src="" alt="" />
+                </figure>
+                <section class="column">
+                    <h3>Notes</h3>
+                    <p tabindex="0"></p>
+                </section>
+                </div>
+                <details>
+                <summary>Screenshots</summary>
+                <div class="img-wrapper"></div>
+                </details>
+            </li>
+          -->
+
+          <!-- LIST -->
+          <!-- 
+                Inscryption
+                Arctic Eggs
+                Portal
+                Portal Stories: Mel
+                Half Life 1
+                In Stars and Time
+                Rain World
+                Sky: Children of the Light
+            -->
+
+          <li class="game-item">
+            <div class="columns">
+              <figure class="column is-narrow">
+                <ficaption>Inscryption</ficaption>
+                <img src="" alt="" />
+              </figure>
+              <section class="column">
+                <h3>Notes</h3>
+                <p tabindex="0"></p>
+              </section>
+            </div>
+            <details>
+              <summary>Screenshots</summary>
+              <div class="img-wrapper"></div>
+            </details>
+          </li>
+        </ul>
+
+        <div class="columns" id="info">
+          <aside class="column" id="links">
+            <h4>Links</h4>
+            <ul tabindex="0">
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </aside>
+          <aside class="column" id="emulators">
+            <h4>Emulators</h4>
+            <ul tabindex="0">
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </aside>
+        </div>
+
+        <section id="thoughts">
+          <h4>Bad opinion zone</h4>
+          <p tabindex="0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+            dicta veniam! Enim velit tempora id delectus adipisci minima odit
+            nostrum molestias hic aliquid, necessitatibus corrupti minus
+            laboriosam esse ex ab. Officia quibusdam neque quos voluptatibus
+            officiis magnam dolor. Corrupti eveniet officiis voluptatem quae
+            iusto, obcaecati accusantium deserunt cum suscipit nam neque
+            recusandae voluptatibus debitis ipsam possimus dolorem quas error
+            pariatur.
+          </p>
+        </section>
+
+        <section id="see-also">
+            <h4>See Also:</h4>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <footer>
+        <a href="">sourcecode</a> / <a href="">credits</a> / public domain under
+        the <a href="https://unlicense.org/">unlicense</a>
+        <br />
+        2026 • malfen
+      </footer>
+    </div>
+  </body>
+</html>

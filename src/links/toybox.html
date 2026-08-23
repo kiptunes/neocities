@@ -11,9 +11,9 @@
     />
     <!-- <link rel="icon" type="image/x-icon" href=""> -->
     <link rel="stylesheet" href="../_css/bulma/bulma-no-helpers.css" />
-    <link rel="stylesheet" href="../_css/links.css" />
     <link rel="stylesheet" href="../_css/style.css" />
-    <link rel="stylesheet" href=",,/_css/components.css" />
+    <link rel="stylesheet" href="../_css/mod/links/style.css" />
+    <link rel="stylesheet" href="../_css/components.css" />
     <title>malfen</title>
   </head>
 
@@ -70,720 +70,1343 @@
 
     <div class="sitebox container is-widescreen">
       <header class="titlebar">
-        <h1>WELCOME</h1>
+        <h1>TOYBOX</h1>
       </header>
+
+      <nav class="tabs is-centered">
+        <ul>
+          <li><a href="#graphics">Collection</a></li>
+          <li><a href="#about">Notes</a></li>
+          <li><a href="#links">Links</a></li>
+        </ul>
+      </nav>
 
       <div class="columns container is-widescreen">
         <!-- sidebar -->
-        <aside class="column is-hidden-touch">
-          <nav class="menu sidebar">
-            <p class="menu-label">ROOT</p>
-            <ul class="menu-list">
-              <li class="is-active"><a href="../index.html">Home</a></li>
-              <li><a href="../info.html">Info</a></li>
-              <li>
-                <details>
-                  <summary>Art</summary>
-                  <ul>
-                    <li><a href="">Illustrations</a></li>
-                    <li><a href="">Fanart</a></li>
-                    <li><a href="">Sketchbook</a></li>
-                    <li><a href="">Pixel art</a></li>
-                  </ul>
-                </details>
-              </li>
-              <li><a href="">Characters</a></li>
-            </ul>
+        <aside class="left column is-hidden-touch is-one-fifth">
+          <nav class="menu" id="sidebar">
+            <details class="folder-label" open>
+              <summary>Root</summary>
+              <ul>
+                <li class="is-active">
+                  <a href="../index.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-home.png"
+                      alt="home icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="on-page">
+                    <img
+                      src="../_assets/img/icons/nav/icon-info.png"
+                      alt="question mark icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Info</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../info/sitemap.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-map.png"
+                      alt="map icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Sitemap</span>
+                  </a>
+                </li>
+              </ul>
+            </details>
 
-            <ul class="menu-list">
-              <li>
-                <details>
-                  <summary>Media</summary>
-                  <ul>
-                    <li><a href="">Books</a></li>
-                    <li><a href="">Games</a></li>
-                    <li><a href="">Misc</a></li>
-                    <li><a href="">Music</a></li>
-                  </ul>
-                </details>
-              </li>
-            </ul>
+            <details class="folder-label" open>
+              <summary>Art</summary>
+              <ul>
+                <li>
+                  <a href="">
+                    <img
+                      src="../_assets/img/icons/nav/icon-easel.png"
+                      alt="easel icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Illustrations</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="../_assets/img/icons/nav/icon-pencil.png"
+                      alt="pencil icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Fanart</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="../_assets/img/icons/nav/icon-notebook.png"
+                      alt="notebook icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Sketchbook</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="../_assets/img/icons/nav/icon-pixel.png"
+                      alt="pixel icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Pixel art</span>
+                  </a>
+                </li>
+              </ul>
+            </details>
+
+            <details class="folder-label" open>
+              <summary>Media</summary>
+              <ul>
+                <li>
+                  <a href="../media/books/index.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-books.png"
+                      alt="books icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Books</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../media/games.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-joystick.png"
+                      alt="joystick icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Games</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../media/music/index.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-music.png"
+                      alt="music icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Music</span>
+                  </a>
+                </li>
+              </ul>
+            </details>
+
             <!-- links folder -->
-            <p class="menu-label">LINKS</p>
-            <ul class="menu-list">
-              <li><a href="sites.html">Neighbors</a></li>
-              <li><a href="toybox.html">Fun</a></li>
-              <li><a href="resources.html">Resources</a></li>
-            </ul>
+            <details class="folder-label" open>
+              <summary>Links</summary>
+              <ul>
+                <li>
+                  <a href="../links/sites.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-site.png"
+                      alt="site icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Sites</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../links/toybox.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-kite.png"
+                      alt="kite icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Toybox</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../links/resources.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-link.png"
+                      alt="link icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Resources</span>
+                  </a>
+                </li>
+              </ul>
+            </details>
           </nav>
-
-          <!-- contact-->
-          <article>
-            <h4>Contact me!</h4>
-            <p>
-              <a href="mailto:shrimpcantfryrice@gmail.com">email</a> for
-              personal & business inquiries
-            </p>
-            <hr />
-            <h4>repository</h4>
-            <p>
-              view the source code on
-              <a href="github.com/kiptunes/neocities">github!</a>
-            </p>
-          </article>
         </aside>
 
         <!-- sitebox -->
-        <main class="column is-9">
-          <label for="pause-gifs">
-            <span>pause/play</span>
-            <input type="checkbox" id="pause-gifs" />
-          </label>
-          <!-- static pngs -->
-          <div class="static-gifs">
-            <section class="columns">
-              <div class="column">
-                <h3>stamps!</h3>
-                <div class="container">
-                  <img
-                    src="../_assets/img/graphics/Stamps/Animals/Bugs/caught-cicada.png"
-                    alt=""
-                  />
+        <main class="column">
+          <!-- info before stamps -->
+          <details open class="info">
+            <summary>Info</summary>
+            <p tabindex="0">
+              Welcome to my graphics collection! I am in the process of adding
+              links to each stamp so that they take you to the place that I
+              found them when you click on them. This won't necessarily be the
+              original source, unfortunately. <br /><br />
 
-                  <img
-                    src="../_assets/img/graphics/Stamps/About/[STATIC]i-am-way-too-forgetful.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/About/[STATIC]i-love-robots.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/About/i-love-physical-media.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/About/i-love-old-electronics.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/About/[STATIC]makes-typos.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Nature/Sky/clouds.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Nature/Sky/pylons.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Nature/[STATIC]leaves.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Tech/green-pcb.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/About/i-love-old-web.png"
-                    alt=""
-                  />
+              Pause the gifs at any time by pressing the "pause/play" button
+              below. <br /><br />
 
-                  <img
-                    src="../_assets/img/graphics/Stamps/Animals/Marine/[STATIC]aquarium-lamp.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Animals/Marine/[STATIC]whale-shark.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Animals/Marine/[STATIC]ponyo-jellyfish.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Animals/Marine/[STATIC]goldfish-swim.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Tech/y2k-scare.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Tech/overgrown-keyboard.png"
-                    alt=""
-                  />
+              There are links to more graphics collections at the bottom of this
+              page. Please be aware that a large majority of them contain BRIGHT
+              COLORS and FLASHING LIGHTS. Be sure to only go to the sites I have
+              listed if it is safe for you to do so.
+            </p>
+          </details>
 
-                  <img
-                    src="../_assets/img/graphics/Stamps/Tech/windows-xp.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Animals/Marine/[STATIC]sharks-swim.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Tech/[STATIC]insert-tape.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Nature/Sky/[STATIC]stormcloud.png"
-                    alt=""
-                  />
-
-                  <img
-                    src="../_assets/img/graphics/Stamps/Animals/Marine/[STATIC]moon-jellyfish-float.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Tech/[STATIC]d55.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Tech/[STATIC]tv-noise.png"
-                    alt=""
-                  />
-
-                  <img
-                    src="../_assets/img/graphics/Stamps/Aes/caution.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Aes/stamp-missing-test-card.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Aes/authorized-personnel-only.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Aes/biological hazard.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Aes/[STATIC]sharp-edges.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Aes/warning-quarantine-area.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Aes/warning-radiation.png"
-                    alt=""
-                  />
-
-                  <img
-                    src="../_assets/img/graphics/Stamps/Aes/[STATIC]emoticon.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Aes/[STATIC]smile-emoticon.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/About/i-love-ascii-art.png"
-                    alt=""
-                  />
-
-                  <hr />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Fandom/Portal/portal-pixel-jump.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Fandom/Portal/aperture-laboratories.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Fandom/Portal/portal1.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Fandom/Portal/portal2.png"
-                    alt=""
-                  />
-
-                  <img
-                    src="../_assets/img/graphics/Stamps/Fandom/Half Life/half-life.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Fandom/Rainworld/stormy-coast.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Fandom/Moominvalley/[STATIC]snufkin-sea.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Fandom/Moominvalley/[STATIC]snufkin-and-moomin-by-the-shore.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Fandom/Ghibli/totoro.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Fandom/Ghibli/[STATIC]kiki-with-seagulls.png"
-                    alt=""
-                  />
-                  <hr />
-                </div>
-              </div>
-            
-              <!-- banners and buttons -->
-              <div class="column is-one-third">
-                <div>
-                  <!-- buttons -->
-                  <h3>buttons :]</h3>
-                  <div>
-                    <img
-                      src="../_assets/img/graphics/Buttons/Tech/[STATIC]dos-page.png"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Buttons/Tech/got-html.pnj"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Buttons/Tech/[STATIC]seed-your-torrents.png"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Buttons/Tech/i-like-computer.jpg"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Buttons/Tech/[STATIC]preserve-internet-archive.png"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Buttons/Food/88x31_milk_tea_now.png"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Buttons/Tech/mobile-friendly.png"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Buttons/Nature/there-is-only-one.png"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Buttons/Tech/[STATIC]emoticons-exclamation.png"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Buttons/Fandom/[STATIC]vidapon-Rain_World_button.png"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Buttons/Fandom/[STATIC]vidapon-ISaT_button.png"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Buttons/Flags/trans.jpg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-
-                <!-- banners -->
-                <div>
-                  <h3>Banners</h3>
-                  <div>
-                    <img
-                      src="../_assets/img/graphics/Banners/About/[STATIC]i-support-emoticons.png"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Banners/About/[STATIC]it-its.png"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Banners/About/[STATIC]dishwasher-safe.png"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Banners/Tech/[STATIC]piracy-fun-and-free.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-
-                <!-- other graphics -->
-                <h3>Other graphics</h3>
-                <div id="graphics-static">
-                  <!-- porygon keychain -->
-                  <img
-                    src="../_assets/img/graphics/Pixel/Fandom/[STATIC]porygon keychain.png"
-                    alt=""
-                  />
-                  <!-- fan and server gifs -->
-                  <img
-                    src="../_assets/img/graphics/Pixel/Animals/[STATIC]aaa-fan.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Pixel/Tech/[STATIC]server.png"
-                    alt=""
-                  />
-                  <!-- emoticons -->
-                  <div>
-                    <img
-                      src="../_assets/img/graphics/Pixel/Emoticon/[STATIC]sigh.png"
-                      alt=""
-                    />
-                    <br />
-                    <img
-                      src="../_assets/img/graphics/Pixel/Emoticon/[STATIC]dizzy.png"
-                      alt=""
-                    />
-                    <br />
-                    <img
-                      src="../_assets/img/graphics/Pixel/Emoticon/[STATIC]rub-eye.png"
-                      alt=""
-                    />
-                    <br />
-                    <img
-                      src="../_assets/img/graphics/Pixel/Emoticon/[STATIC]snzz.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
           <!-- moving gifs -->
-          <div class="animated-gifs">
+          <div>
+            <!-- pause/play button for gif to png switch -->
+            <label for="pause-gifs" id="graphics">
+              <input type="checkbox" id="pause-gifs" checked />
+              <span>pause/play</span>
+            </label>
             <section class="columns">
               <!-- stamps columns -->
-              <div class="column">
+              <section class="column" id="stamps">
                 <h3>stamps!</h3>
-                <div class="container">
-                  <img
-                    src="../_assets/img/graphics/Stamps/Animals/Bugs/caught-cicada.png"
-                    alt=""
-                  />
+                <div class="stamp-wrapper img-wrapper">
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Animals/Bugs/caught-cicada.png"
+                      alt="A cartoon hand holding a large cicada."
+                      title="A cartoon hand holding a large cicada."
+                      width="99"
+                      height="56"
+                  /></a>
 
-                  <img
-                    src="../_assets/img/graphics/Stamps/About/i-am-way-too-forgetful.gif"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/About/i-love-robots.gif"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/About/i-love-physical-media.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/About/i-love-old-electronics.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/About/makes-typos.gif"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Nature/Sky/clouds.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Nature/Sky/pylons.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Nature/leaves.gif"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Tech/green-pcb.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/About/i-love-old-web.png"
-                    alt=""
-                  />
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/About/i-am-way-too-forgetful.gif"
+                      alt="'I am way too forgetful' gif."
+                      title="'I am way too forgetful' gif."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/About/[STATIC]i-am-way-too-forgetful.png"
+                      alt="'I am way too forgetful' stamp."
+                      title="'I am way too forgetful' stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/About/i-love-robots.gif"
+                      alt="Heart robots stamp."
+                      title="Heart robots stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/About/[STATIC]i-love-robots.png"
+                      alt="Heart robots stamp."
+                      title="Heart robots stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/About/i-love-physical-media.png"
+                      alt="I heart physical media stamp."
+                      title="I heart physical media stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/About/i-love-old-electronics.png"
+                      alt="I heart old electronics stamp."
+                      title="I heart old electronics stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/About/makes-typos.gif"
+                      alt="I make typos gif."
+                      title="I make typos gif."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/About/[STATIC]makes-typos.png"
+                      alt="I make typos stamp."
+                      title="I make typos stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Nature/Sky/clouds.png"
+                      alt="Clouds stamp."
+                      title="Clouds stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Nature/Sky/pylons.png"
+                      alt="Powerline against the sky stamp."
+                      title="Powerline against the sky stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Nature/leaves.gif"
+                      alt="Rain on leaves stamp."
+                      title="Rain on leaves stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Nature/[STATIC]leaves.png"
+                      alt="Rain on leaves stamp."
+                      title="Rain on leaves stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Tech/green-pcb.png"
+                      alt="Green PCB stamp."
+                      title="Green PCB stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/About/i-love-old-web.png"
+                      alt="Blue 'i love old web' stamp."
+                      title="Blue 'i love old web' stamp."
+                      width="99"
+                      height="56"
+                  /></a>
 
-                  <img
-                    src="../_assets/img/graphics/Stamps/Animals/Marine/aquarium-lamp.gif"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Animals/Marine/whale-shark.gif"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Animals/Marine/ponyo-jellyfish.gif"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Animals/Marine/goldfish-swim.gif"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Tech/y2k-scare.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Tech/overgrown-keyboard.png"
-                    alt=""
-                  />
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Animals/Marine/aquarium-lamp.gif"
+                      alt="Rotating aquarium lamp gif."
+                      title="Rotating aquarium lamp gif."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Animals/Marine/[STATIC]aquarium-lamp.png"
+                      alt="Rotating aquarium lamp stamp."
+                      title="Rotating aquarium lamp stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Animals/Marine/whale-shark.gif"
+                      alt="Whale shark swims with remoras gif."
+                      title="Whale shark swims with remoras gif."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Animals/Marine/[STATIC]whale-shark.png"
+                      alt="Whale shark swims with remoras stamp."
+                      title="Whale shark swims with remoras stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Animals/Marine/ponyo-jellyfish.gif"
+                      alt="Animated jellyfish drift upwards gif."
+                      title="Animated jellyfish drift upwards gif."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Animals/Marine/[STATIC]ponyo-jellyfish.png"
+                      alt="Animated jellyfish drift upwards gif."
+                      title="Animated jellyfish drift upwards gif."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Animals/Marine/[STATIC]goldfish-swim.png"
+                      alt="Goldfish in a fishtank stamp."
+                      title="Goldfish in a fishtank stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Animals/Marine/goldfish-swim.gif"
+                      alt="Goldfish in a fishtank stamp."
+                      title="Goldfish in a fishtank stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Tech/y2k-scare.png"
+                      alt="'Remember: turn your computer off before midnight on 12/31/99' stamp."
+                      title="'Remember: turn your computer off before midnight on 12/31/99' stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Tech/overgrown-keyboard.png"
+                      alt="Sprouts growing through a keyboard stamp."
+                      title="Sprouts growing through a keyboard stamp."
+                      width="99"
+                      height="56"
+                  /></a>
 
-                  <img
-                    src="../_assets/img/graphics/Stamps/Tech/windows-xp.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Animals/Marine/sharks-swim.gif"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Tech/insert-tape.gif"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Nature/Sky/stormcloud.gif"
-                    alt=""
-                  />
-
-                  <img
-                    src="../_assets/img/graphics/Stamps/Animals/Marine/moon-jellyfish-float.gif"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Tech/d55.gif"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Tech/tv-noise.gif"
-                    alt=""
-                  />
-
-                  <img
-                    src="../_assets/img/graphics/Stamps/Aes/caution.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Aes/stamp-missing-test-card.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Aes/authorized-personnel-only.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Aes/biological hazard.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Aes/sharp-edges.gif"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Aes/warning-quarantine-area.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Aes/warning-radiation.png"
-                    alt=""
-                  />
-
-                  <img
-                    src="../_assets/img/graphics/Stamps/Aes/emoticon.gif"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Aes/smile-emoticon.gif"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/About/i-love-ascii-art.png"
-                    alt=""
-                  />
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Tech/windows-95.png"
+                      alt="Windows 95 stamp."
+                      title="Windows 95 stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Animals/Marine/sharks-swim.gif"
+                      alt="A shiver of sharks swim together gif."
+                      title="A shiver of sharks swim together gif."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Animals/Marine/[STATIC]sharks-swim.png"
+                      alt="A shiver of sharks swim together stamp."
+                      title="A shiver of sharks swim together stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Tech/insert-tape.gif"
+                      alt="Animated character inserts a tape into a vhs player gif."
+                      title="Animated character inserts a tape into a vhs player gif."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Tech/[STATIC]insert-tape.png"
+                      alt="Animated character inserts a tape into a vhs player."
+                      title="Animated character inserts a tape into a vhs player."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Nature/Sky/stormcloud.gif"
+                      alt="Lightning illuminates a stormcloud gif."
+                      title="Lightning illuminates a stormcloud gif."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Nature/Sky/[STATIC]stormcloud.png"
+                      alt="Lightning illuminating a stormcloud."
+                      title="Lightning illuminating a stormcloud."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Animals/Marine/moon-jellyfish-float.gif"
+                      alt="Blue jellyfish float on a black background gif."
+                      title="Blue jellyfish float on a black background gif."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Animals/Marine/[STATIC]moon-jellyfish-float.png"
+                      alt="Blue jellyfish float on a black background."
+                      title="Blue jellyfish float on a black background."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Tech/d55.gif"
+                      alt="Stamp of the DVD logo bouncing around the screen."
+                      title="Stamp of the DVD logo bouncing around the screen."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Tech/[STATIC]d55.png"
+                      alt="Stamp of the DVD logo bouncing around the screen."
+                      title="Stamp of the DVD logo bouncing around the screen."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Tech/tv-noise.gif"
+                      alt="Multicolor TV interference gif."
+                      title="Multicolor TV interference gif."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Tech/[STATIC]tv-noise.png"
+                      alt="Multicolor TV interference stamp."
+                      title="Multicolor TV interference stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Aes/stamp-missing-test-card.png"
+                      alt="'Stamp missing' on TV test card stamp."
+                      title="'Stamp missing' on TV test card stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Aes/warning-radiation.png"
+                      alt="'Warning: radiation' symbol stamp."
+                      title="'Warning: radiation' symbol stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Aes/emoticon.gif"
+                      alt="Various emoticons gif."
+                      title="Various emoticons gif."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Aes/[STATIC]emoticon.png"
+                      alt="Emoticon stamp."
+                      title="Emoticon stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Aes/smile-emoticon.gif"
+                      alt="Smiling emoticon gif."
+                      title="Smiling emoticon gif."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Aes/[STATIC]smile-emoticon.png"
+                      alt="Smiling emoticon stamp."
+                      title="Smiling emoticon stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/About/i-love-ascii-art.png"
+                      alt="I heart ASCII art stamp."
+                      title="I heart ASCII art stamp."
+                      width="99"
+                      height="56"
+                  /></a>
 
                   <hr />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Fandom/Portal/portal-pixel-jump.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Fandom/Portal/aperture-laboratories.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Fandom/Portal/portal1.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Fandom/Portal/portal2.png"
-                    alt=""
-                  />
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Fandom/Portal/portal-pixel-jump.png"
+                      alt="Pixelated figure jumps through portal stamp."
+                      title="Pixelated figure jumps through portal stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Fandom/Portal/aperture-laboratories.png"
+                      alt="Aperture Laboratories stamp."
+                      title="Aperture Laboratories stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Fandom/Portal/portal1.png"
+                      alt="Portal stamp goes into blue portal."
+                      title="Portal stamp goes into blue portal."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Fandom/Portal/portal2.png"
+                      alt="Portal stamp comes out of orange portal."
+                      title="Portal stamp comes out of orange portal."
+                      width="99"
+                      height="56"
+                  /></a>
 
-                  <img
-                    src="../_assets/img/graphics/Stamps/Fandom/Half Life/half-life.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Fandom/Rainworld/stormy-coast.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Fandom/Moominvalley/snufkin-sea.gif"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Fandom/Moominvalley/snufkin-and-moomin-by-the-shore.gif"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Fandom/Ghibli/totoro.png"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Stamps/Fandom/Ghibli/kiki-with-seagulls.gif"
-                    alt=""
-                  />
-                  <hr />
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Fandom/Half Life/half-life.png"
+                      alt="Half Life stamp."
+                      title="Half Life stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Fandom/Rainworld/stormy-coast.png"
+                      alt="Rainworld stormy coast stamp."
+                      title="Rainworld stormy coast stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Fandom/Moominvalley/snufkin-sea.gif"
+                      alt="Snufkin faces the ocean gif."
+                      title="Snufkin faces the ocean gif."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Fandom/Moominvalley/[STATIC]snufkin-sea.png"
+                      alt="Snufkin faces the ocean."
+                      title="Snufkin faces the ocean."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Fandom/Moominvalley/snufkin-and-moomin-by-the-shore.gif"
+                      alt="Gif of Moomin and Snufkin on the shore."
+                      title="Gif of Moomin and Snufkin on the shore."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Fandom/Moominvalley/[STATIC]snufkin-and-moomin-by-the-shore.png"
+                      alt="Moomin and Snufkin on the shore."
+                      title="Moomin and Snufkin on the shore."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Fandom/Ghibli/totoro.png"
+                      alt="Small totoros move through the grass stamp."
+                      title="Small totoros move through the grass stamp."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Fandom/Ghibli/kiki-with-seagulls.gif"
+                      alt="Kiki flies with seagulls gif."
+                      title="Kiki flies with seagulls gif."
+                      width="99"
+                      height="56"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Stamps/Fandom/Ghibli/[STATIC]kiki-with-seagulls.png"
+                      alt="Kiki flies with seagulls."
+                      title="Kiki flies with seagulls."
+                      width="99"
+                      height="56"
+                  /></a>
                 </div>
-              </div>
+              </section>
 
-              <!-- banners and buttons -->
-              <div class="column is-one-third">
-                <div>
+              <!-- banners and buttons section on the right-->
+              <div class="column is-one-quarter">
+                <div id="buttons">
                   <!-- buttons -->
                   <h3>buttons :]</h3>
-                  <div class="img-wrapper">
-                    <img
-                      src="../_assets/img/graphics/Buttons/Tech/dos-page.gif"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Buttons/Tech/got-html.pnj"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Buttons/Tech/seed-your-torrents.gif"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Buttons/Tech/i-like-computer.jpg"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Buttons/Tech/preserve-internet-archive.gif"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Buttons/Food/88x31_milk_tea_now.png"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Buttons/Tech/mobile-friendly.png"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Buttons/Nature/there-is-only-one.png"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Buttons/Tech/emoticons-exclamation.gif"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Buttons/Fandom/vidapon-Rain_World_button.gif"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Buttons/Fandom/vidapon-ISaT_button.gif"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Buttons/Flags/trans.jpg"
-                      alt=""
-                    />
+                  <div class="img-wrapper button-wrapper">
+                    <a class="animated-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Buttons/Tech/dos-page.gif"
+                        alt="Dos page button."
+                        title="Dos page button."
+                        width="88"
+                        height="31"
+                    /></a>
+                    <a class="static-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Buttons/Tech/[STATIC]dos-page.png"
+                        alt="Dos page button."
+                        title="Dos page button."
+                        width="88"
+                        height="31"
+                    /></a>
+                    <a href=""
+                      ><img
+                        src="../_assets/img/graphics/Buttons/Tech/got-html.pnj"
+                        alt="'Got HTML?' button."
+                        width="88"
+                        height="31"
+                    /></a>
+                    <a class="animated-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Buttons/Tech/seed-your-torrents.gif"
+                        alt="'Sharing is caring; seed your torrents' gif."
+                        width="88"
+                        height="31"
+                    /></a>
+                    <a class="static-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Buttons/Tech/[STATIC]seed-your-torrents.png"
+                        alt="'Sharing is caring; seed your torrents' button."
+                        width="88"
+                        height="31"
+                    /></a>
+                    <a href=""
+                      ><img
+                        src="../_assets/img/graphics/Buttons/Tech/i-like-computer.jpg"
+                        alt="'I like computer' button."
+                        width="88"
+                        height="31"
+                    /></a>
+                    <a class="animated-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Buttons/Tech/preserve-internet-archive.gif"
+                        alt="'Preserve history' Internet Archive gif."
+                        width="88"
+                        height="31"
+                    /></a>
+                    <a class="static-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Buttons/Tech/[STATIC]preserve-internet-archive.png"
+                        alt="'Preserve history' Internet Archive button."
+                        width="88"
+                        height="31"
+                    /></a>
+                    <a href=""
+                      ><img
+                        src="../_assets/img/graphics/Buttons/Food/88x31_milk_tea_now.png"
+                        alt="'Milk tea now!' button."
+                        width="88"
+                        height="31"
+                    /></a>
+                    <a href=""
+                      ><img
+                        src="../_assets/img/graphics/Buttons/Tech/mobile-friendly.png"
+                        alt="'Mobile friendly' button."
+                        width="88"
+                        height="31"
+                    /></a>
+                    <a href=""
+                      ><img
+                        src="../_assets/img/graphics/Buttons/Nature/there-is-only-one.png"
+                        alt="There is only one Earth button."
+                        width="88"
+                        height="31"
+                    /></a>
+                    <a class="animated-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Buttons/Tech/emoticons-exclamation.gif"
+                        alt="Emoticonos with a star button."
+                        width="88"
+                        height="31"
+                    /></a>
+                    <a class="static-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Buttons/Tech/[STATIC]emoticons-exclamation.png"
+                        alt="Emoticonos with a star button."
+                        width="88"
+                        height="31"
+                    /></a>
+                    <a href=""
+                      ><img
+                        src="../_assets/img/graphics/Buttons/About/right2repair.png"
+                        alt="Right to repair support button."
+                        width="88"
+                        height="31"
+                    /></a>
+                    <a class="animated-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Buttons/Fandom/vidapon-Rain_World_button.gif"
+                        alt="Rain World gif."
+                        width="88"
+                        height="31"
+                    /></a>
+                    <a class="static-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Buttons/Fandom/[STATIC]vidapon-Rain_World_button.png"
+                        alt="Rain World button."
+                        width="88"
+                        height="31"
+                    /></a>
+                    <a class="animated-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Buttons/Fandom/vidapon-ISaT_button.gif"
+                        alt="In Stars and Time gif."
+                        width="88"
+                        height="31"
+                    /></a>
+                    <a class="static-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Buttons/Fandom/[STATIC]vidapon-ISaT_button.png"
+                        alt="In Stars and Time button."
+                        width="88"
+                        height="31"
+                    /></a>
+                    <a href=""
+                      ><img
+                        src="../_assets/img/graphics/Buttons/Flags/trans.jpg"
+                        alt="Trans flag button."
+                        width="88"
+                        height="31"
+                    /></a>
+                    <a href=""
+                      ><img
+                        src="../_assets/img/graphics/Buttons/Food/peach.png"
+                        alt="Peach button."
+                        width="88"
+                        height="31"
+                    /></a>
                   </div>
                 </div>
 
-                <!-- banners -->
-                <div>
-                  <h3>Banners</h3>
-                  <div class="img-wrapper">
-                    <img
-                      src="../_assets/img/graphics/Banners/About/i-support-emoticons.gif"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Banners/About/it-its.gif"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Banners/About/dishwasher-safe.gif"
-                      alt=""
-                    />
-                    <img
-                      src="../_assets/img/graphics/Banners/Tech/piracy-fun-and-free.gif"
-                      alt=""
-                    />
+                <!-- blinkies -->
+                <div id="blinkies">
+                  <h3>Blinkies</h3>
+                  <div class="img-wrapper blinkie-wrapper">
+                    <a class="animated-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Banners/About/i-support-emoticons.gif"
+                        alt="I support emoticons blinkie."
+                        width="150"
+                        height="20"
+                      />
+                    </a>
+                    <a class="static-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Banners/About/[STATIC]i-support-emoticons.png"
+                        alt="I support emoticons blinkie."
+                        width="150"
+                        height="20"
+                      />
+                    </a>
+                    <a class="animated-gifs" href="">
+                      <img
+                        src="../_assets/img/graphics/Banners/About/it-its.gif"
+                        alt="'It/its' blinkie with computer icon blinkie."
+                        width="150"
+                        height="20"
+                    /></a>
+                    <a class="static-gifs" href="">
+                      <img
+                        src="../_assets/img/graphics/Banners/About/[STATIC]it-its.png"
+                        alt="'It/its' blinkie with computer icon blinkie."
+                        width="150"
+                        height="20"
+                    /></a>
+                    <a class="animated-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Banners/About/dishwasher-safe.gif"
+                        alt="'Dishwasher safe' blinkie with smiley faces."
+                        width="150"
+                        height="20"
+                    /></a>
+                    <a class="static-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Banners/About/[STATIC]dishwasher-safe.png"
+                        alt="'Dishwasher safe' blinkie with smiley faces."
+                        width="150"
+                        height="20"
+                    /></a>
+                    <!--
+                    <a class="animated-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Banners/Tech/piracy-fun-and-free.gif"
+                        alt="'Piracy is fun and free' blinkie."
+                        width="150"
+                        height="20"
+                    /></a>
+                    <a class="static-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Banners/Tech/[STATIC]piracy-fun-and-free.png"
+                        alt="'Piracy is fun and free' blinkie."
+                        width="150"
+                        height="20"
+                    /></a>
+                     -->
                   </div>
                 </div>
 
                 <!-- other graphics -->
-                <h3>Other graphics</h3>
-                <div class="img-wrapper" id="graphics-animated">
-                  <!-- porygon keychain -->
-                  <img
-                    src="../_assets/img/graphics/Pixel/Fandom/porygon keychain.gif"
-                    alt=""
-                  />
-                  <!-- fan and server gifs -->
-                  <img
-                    src="../_assets/img/graphics/Pixel/Animals/aaa-fan.gif"
-                    alt=""
-                  />
-                  <img
-                    src="../_assets/img/graphics/Pixel/Tech/server.gif"
-                    alt=""
-                  />
-                  <!-- emoticons -->
-                  <div class="img-wrapper">
-                    <img
-                      src="../_assets/img/graphics/Pixel/Emoticon/sigh.gif"
-                      alt=""
-                    />
-                    <br />
-                    <img
-                      src="../_assets/img/graphics/Pixel/Emoticon/dizzy.gif"
-                      alt=""
-                    />
-                    <br />
-                    <img
-                      src="../_assets/img/graphics/Pixel/Emoticon/rub-eye.gif"
-                      alt=""
-                    />
-                    <br />
-                    <img
-                      src="../_assets/img/graphics/Pixel/Emoticon/snzz.gif"
-                      alt=""
-                    />
+                <div id="other-graphics">
+                  <h3>Other graphics</h3>
+                  <div class="img-wrapper" id="graphics-grid">
+                    <!-- porygon keychain -->
+                    <a class="animated-gifs" href="">
+                      <img
+                        src="../_assets/img/graphics/Pixel/Fandom/porygon keychain.gif"
+                        alt="Pixelated porygon keychain."
+                        title="Pixelated porygon keychain."
+                      />
+                    </a>
+                    <a class="static-gifs" href="">
+                      <img
+                        src="../_assets/img/graphics/Pixel/Fandom/[STATIC]porygon keychain.png"
+                        alt="Pixelated porygon keychain."
+                        title="Pixelated porygon keychain."
+                      />
+                    </a>
+                    <!-- fan and server gifs -->
+                    <a class="animated-gifs" href="">
+                      <br />
+                      <img
+                        src="../_assets/img/graphics/Pixel/Animals/aaa-fan.gif"
+                        alt="Cat going 'aaa' in front of a fan gif."
+                        title="Cat going 'aaa' in front of a fan gif."
+                      />
+                    </a>
+                    <a class="static-gifs" href="">
+                      <br />
+                      <img
+                        src="../_assets/img/graphics/Pixel/Animals/[STATIC]aaa-fan.png"
+                        alt="Cat going 'aaa' in front of a fan."
+                        title="Cat going 'aaa' in front of a fan."
+                      />
+                    </a>
+
+                    <a class="animated-gifs" href="">
+                      <img
+                        src="../_assets/img/graphics/Pixel/Tech/server.gif"
+                        alt="Server rack lighting up gif."
+                        title="Server rack lighting up gif."
+                      />
+                    </a>
+                    <a class="static-gifs" href="">
+                      <img
+                        src="../_assets/img/graphics/Pixel/Tech/[STATIC]server.png"
+                        alt="Server rack."
+                        title="Server rack."
+                      />
+                    </a>
+
+                    <!-- emoticons -->
+                    <div class="img-wrapper">
+                      <a href=""
+                        ><img
+                          src="../_assets/img/graphics/Pixel/Food/ramune.png"
+                          alt="ramune bottle"
+                          title="ramune bottle"
+                      /></a>
+                      <br />
+                      <a class="animated-gifs" href="">
+                        <img
+                          src="../_assets/img/graphics/Pixel/Emoticon/sigh.gif"
+                          alt="Emoticon sighs gif."
+                          title="Emoticon sighs gif."
+                        />
+                      </a>
+                      <a class="static-gifs" href="">
+                        <img
+                          src="../_assets/img/graphics/Pixel/Emoticon/[STATIC]sigh.png"
+                          alt="Emoticon sighing."
+                          title="Emoticon sighing."
+                        />
+                      </a>
+                      <br />
+                      <a class="animated-gifs" href=""
+                        ><img
+                          src="../_assets/img/graphics/Pixel/Emoticon/dizzy.gif"
+                          alt="Emoticon with at symbols for eyes gif."
+                          title="Emoticon with at symbols for eyes gif."
+                      /></a>
+                      <a class="static-gifs" href=""
+                        ><img
+                          src="../_assets/img/graphics/Pixel/Emoticon/[STATIC]dizzy.png"
+                          alt="Emoticon with at symbols for eyes."
+                          title="Emoticon with at symbols for eyes."
+                      /></a>
+                      <br />
+                      <a class="animated-gifs" href=""
+                        ><img
+                          src="../_assets/img/graphics/Pixel/Emoticon/rub-eye.gif"
+                          alt="Emoticon rubs its eye gif."
+                          title="Emoticon rubs its eye gif."
+                      /></a>
+                      <a class="static-gifs" href=""
+                        ><img
+                          src="../_assets/img/graphics/Pixel/Emoticon/[STATIC]rub-eye.png"
+                          alt="Emoticon rubbing its eye."
+                          title="moticon rubbing its eye."
+                      /></a>
+                      <br />
+                      <a class="animated-gifs" href=""
+                        ><img
+                          src="../_assets/img/graphics/Pixel/Emoticon/snzz.gif"
+                          alt="Emoticon dozes off."
+                          title="Emoticon dozes off."
+                      /></a>
+                      <a class="static-gifs" href=""
+                        ><img
+                          src="../_assets/img/graphics/Pixel/Emoticon/[STATIC]snzz.png"
+                          alt="Emoticon dozing off."
+                          title="Emoticon dozing off."
+                      /></a>
+                    </div>
                   </div>
                 </div>
               </div>
             </section>
           </div>
 
-          <section>
-            <h3>yay more links</h3>
-          </section>
+          <div class="pokemon">
+            <h3>Pokemon</h3>
 
-          <section>
-            <h3>take me somewhere</h3>
-          </section>
+            <div class="img-wrapper">
+              <a href="https://pokemondb.net/pokedex/mantine"
+                ><img
+                  src="https://img.pokemondb.net/sprites/sword-shield/normal/mantine.png"
+                  alt="Mantine"
+                  title="Mantine"
+                  width="120"
+                  height="112"
+              /></a>
+              <a href="https://pokemondb.net/pokedex/lileep"
+                ><img
+                  src="https://img.pokemondb.net/sprites/sword-shield/normal/lileep.png"
+                  alt="Lileep"
+                  title="Lileep"
+                  width="120"
+                  height="112"
+              /></a>
+              <a href="https://pokemondb.net/pokedex/magnemite"
+                ><img
+                  src="https://img.pokemondb.net/sprites/sword-shield/normal/magnemite.png"
+                  alt="Magnemite"
+                  title="Magnemite"
+                  width="120"
+                  height="112"
+              /></a>
+              <a href="https://pokemondb.net/pokedex/meltan"
+                ><img
+                  src="https://img.pokemondb.net/sprites/sword-shield/normal/meltan.png"
+                  alt="Meltan"
+                  title="Meltan"
+                  width="120"
+                  height="112"
+              /></a>
+              <a href="https://pokemondb.net/pokedex/klefki"
+                ><img
+                  src="https://img.pokemondb.net/sprites/sword-shield/normal/klefki.png"
+                  alt="Klefki"
+                  title="Klefki"
+                  width="120"
+                  height="112"
+              /></a>
+              <a href="https://pokemondb.net/pokedex/klinklang"
+                ><img
+                  src="https://img.pokemondb.net/sprites/sword-shield/normal/klinklang.png"
+                  alt="Klinklang"
+                  title="Klinklang"
+                  width="120"
+                  height="112"
+              /></a>
+            </div>
+          </div>
+          <!-- DELETE LATER -->
+          <hr />
+          <!-- table with info placed below stamps -->
+          <aside class="about-graphics" id="about">
+            <h3>About</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Size [px]</th>
+                  <th>Use</th>
+                  <th>References</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>Stamp</td>
+                <td>99 x 56</td>
+                <td>
+                  Originated on DeviantArt around 2005 to promote their first
+                  convention.
+                </td>
+                <td>
+                  <a href="https://ballonlea.net/articles/stamp">
+                    <i>A Brief History of DeviantART Stamps</i></a
+                  >, Ballonlea
+                </td>
+              </tr>
+              <tr>
+                <td>Button</td>
+                <td>88 x 31</td>
+                <td>
+                  Likely started by Netscape with their 'Netscape Now!' buttons
+                  in the 1990's.
+                </td>
+                <td>
+                  <a href="https://88x31.nl/history.html"
+                    ><i>88x31 Collection - History</i></a
+                  >, Paulus Hollander
+                </td>
+              </tr>
+              <tr>
+                <td>Blinkie</td>
+                <td>150 x 20</td>
+                <td>Popularized as site decorations on Geocities.</td>
+                <td>
+                  <a href="https://blinkies.cafe/"><i>About Blinkie GIFs</i></a
+                  >, blinkies.cafe
+                </td>
+              </tr>
+            </table>
+          </aside>
+
+          <!-- DELETE LATER -->
+          <hr />
+          <article class="info" id="links">
+            <p>
+              WARNING: Sites listed below contain large swaths of bright colors
+              and flashing lights.
+            </p>
+          </article>
+          <!-- 2-column links and resources area -->
+          <div class="columns is-mobile">
+            <!-- links to graphics collections -->
+            <section class="column is-half">
+              <h3>Find More</h3>
+              <div>
+                <details class="linkbox">
+                  <summary><h4>Collections</h4></summary>
+                  <ul tabindex="0">
+                    <li>
+                      <a href="https://lazer-bunny.neocities.org/graphics"
+                        >Lazer-Bunny</a
+                      >
+                    </li>
+                    <li><a href="https://blinkie.world/">blinkie.world</a></li>
+                    <li><a href="https://blinkie.wiki/">BlinkieWiki</a></li>
+                    <li>
+                      <a href="https://adriansblinkiecollection.neocities.org/"
+                        >Adrian's Blinkie Collection</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://y2k.neocities.org/collections"
+                        >Y2K Collections</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://raining-starss.neocities.org/stampcollection"
+                        >Raining Starss Collections</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://pixelsafari.neocities.org/"
+                        >Coco's Pixel Safari</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://vesselvindicate.nekoweb.org/shrines/blinkies.html"
+                        >vesselvindicate</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://www.glitter-graphics.com/"
+                        >Glitter Graphics</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://jansuta.neocities.org/graphics#txt"
+                        >Jan Suta</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://nonexistentfandomsfandom.neocities.org/graphics/"
+                        >The Nonexistent Fandoms Fandom</a
+                      >
+                    </li>
+                  </ul>
+                </details>
+                <details class="linkbox">
+                  <summary><h4>Artists</h4></summary>
+                  <ul tabindex="0">
+                    <li>
+                      <a href="https://sillyblinkies.nekoweb.org/"
+                        >Silly Blinkies</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://blinkie-autism.neocities.org/"
+                        >Blinkie Autism</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://sydsblinkies.neocities.org/"
+                        >syds blinkies</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://transbro.neocities.org/Graphics"
+                        >TransBro</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://kotatsu.me/creations/blinkies/"
+                        >kotatsu.me</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://wynns-wonderful-pixel-paradise.neocities.org/"
+                        >Wynn's Wonderful Pixel Paradise</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://wrender.neocities.org/graphics"
+                        >Wrender</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://plasticdino.net/graphics">plasticdino</a>
+                    </li>
+                    <li><a href="https://omfg.neocities.org/">omfg</a></li>
+                    <li>
+                      <a
+                        href="https://sillybeanies.neocities.org/mywork/graphics/graphicsindex"
+                        >sillybeanies</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://svnhrtz.neocities.org/graphics"
+                        >svnhrtz</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://vesselvindicate.nekoweb.org/shrines/blinkies.html"
+                        >Graphics by Jay</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://jack-dawlia.neocities.org/page/graphics"
+                        >Jack Dawlia</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="http://blinkieobsession.freeservers.com/2/list.htm"
+                        >Blinkie Obsession</a
+                      >
+                    </li>
+                  </ul>
+                </details>
+                <details class="linkbox">
+                  <summary><h4>Blogs</h4></summary>
+                  <ul tabindex="0">
+                    <li>
+                      <a href="https://www.tumblr.com/blinkees">@blinkees</a>
+                    </li>
+                    <li>
+                      <a href="https://hyprmobile.tumblr.com/">@hyprmobile</a>
+                    </li>
+                  </ul>
+                </details>
+              </div>
+            </section>
+
+            <!-- links to templates and borders -->
+            <section class="column">
+              <h3>Make Your Own</h3>
+              <div>
+                <!-- links to guides -->
+                <details class="linkbox">
+                  <summary><h4>Graphic Makers</h4></summary>
+                  <ul tabindex="0">
+                    <li><a href="https://blinkies.cafe/">blinkies.cafe</a></li>
+                    <li>
+                      <a href="https://gerudovalley.net/blinkie_maker.html"
+                        >Gerudo Valley Blinkie Maker</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://myblinkie.dazzlejunction.net/"
+                        >MyBlinkie</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://websetsbylynn.neocities.org/"></a>Graphic
+                      Makers
+                    </li>
+                  </ul>
+                </details>
+                <details class="linkbox">
+                  <summary><h4>Guides</h4></summary>
+                  <ul tabindex="0">
+                    <li><a href="https://blinkies.cafe/">blinkies.cafe</a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                  </ul>
+                </details>
+                <!-- links to templates -->
+                <details class="linkbox">
+                  <summary><h4>Templates</h4></summary>
+                </details>
+                <!-- links to borders -->
+                <details class="linkbox">
+                  <summary><h4>Borders</h4></summary>
+                </details>
+              </div>
+            </section>
+          </div>
         </main>
       </div>
 
@@ -792,7 +1415,7 @@
         <a href="">sourcecode</a> / <a href="">credits</a> / public domain under
         the <a href="https://unlicense.org/">unlicense</a>
         <br />
-        2026 • malfen
+        2026 • miyufen
       </footer>
     </div>
   </body>
