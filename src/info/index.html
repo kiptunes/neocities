@@ -7,22 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Personal page for all my art and things. Welcome!"
+      content="Information about me, this site, and my setup."
     />
     <!-- <link rel="icon" type="image/x-icon" href=""> -->
     <link rel="stylesheet" href="../_css/bulma/bulma-no-helpers.css" />
     <link rel="stylesheet" href="../_css/style.css" />
-    <link rel="stylesheet" href="../_css/mod/links/style.css" />
+    <link rel="stylesheet" href="../_css/mod/info/style.css" />
     <link rel="stylesheet" href="../_css/components.css" />
-    <title>malfen</title>
+    <title>miyu > info</title>
   </head>
 
   <body>
     <!-- top navigation -->
     <nav class="topbar">
-      <a class="topbar-item" id="home" href="../index.html">home</a>
-      <a href="" class="topbar-item">theme</a>
-      <!-- settings -->
+      <a class="topbar-item" id="home" href="../index.html">Miyufen</a>
+      <!-- theme
+      <a href="" class="topbar-item">theme</a> -->
+      <!-- settings 
       <div class="topbar-item">
         <details>
           <summary>settings</summary>
@@ -53,12 +54,14 @@
           </div>
         </details>
       </div>
+      -->
     </nav>
 
     <nav class="path columns is-mobile">
-      <button class="column is-narrow">Back</button>
-      <button class="column is-narrow">Forward</button>
-      <a class="column is-hidden-touch">path/to/page</a>
+      <span
+        ><a href="../index.html"><u>/</u></a
+        ><a href="info"><u>info</u></a></span
+      >
       <div class="column nav-icon">
         <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
         <label for="nav-checkbox">nav</label>
@@ -77,6 +80,11 @@
       <div class="columns container is-widescreen">
         <!-- sidebar -->
         <aside class="left column is-hidden-touch is-one-fifth">
+          <div class="notched-header">
+            <h3>Navigation</h3>
+            <div class="notch-right"></div>
+            <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
+          </div>
           <nav class="menu" id="sidebar">
             <details class="folder-label" open>
               <summary>Root</summary>
@@ -121,7 +129,7 @@
               <summary>Art</summary>
               <ul>
                 <li>
-                  <a href="">
+                  <a href="../art/illustrations.html">
                     <img
                       src="../_assets/img/icons/nav/icon-easel.png"
                       alt="easel icon"
@@ -132,7 +140,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="../art/sketchbook.html">
                     <img
                       src="../_assets/img/icons/nav/icon-notebook.png"
                       alt="notebook icon"
@@ -143,9 +151,9 @@
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="../art/pixel-art.html">
                     <img
-                      src="../_assets/img/icons/nav/icon-pixel.png"
+                      src="../_assets/img/icons/nav/icon-pencil.png"
                       alt="pixel icon"
                       width="16"
                       height="16"
@@ -213,7 +221,7 @@
                 <li>
                   <a href="../links/toybox.html">
                     <img
-                      src="../_assets/img/icons/nav/icon-kite.png"
+                      src="../_assets/img/icons/nav/icon-pixel.png"
                       alt="kite icon"
                       width="16"
                       height="16"
@@ -239,13 +247,13 @@
 
         <main class="column">
           <div class="tabs-wrapper">
-            <div class="tabs">
+            <nav id="folder-tabs">
               <!-- tab navigation -->
               <ul>
                 <li>
                   <a>
                     <label for="tab0-toggle" class="tab-item">
-                      <span>About</span>
+                      <h4>About</h4>
                       <input
                         checked
                         type="radio"
@@ -258,7 +266,7 @@
                 <li>
                   <a>
                     <label for="tab1-toggle" class="tab-item">
-                      <span>Site</span>
+                      <h4>Site</h4>
                       <input type="radio" name="tabs-toggle" id="tab1-toggle" />
                     </label>
                   </a>
@@ -266,7 +274,7 @@
                 <li>
                   <a>
                     <label for="tab2-toggle" class="tab-item">
-                      <span>Comms</span>
+                      <h4>Comms</h4>
                       <input type="radio" name="tabs-toggle" id="tab2-toggle" />
                     </label>
                   </a>
@@ -274,19 +282,19 @@
                 <li>
                   <a>
                     <label for="tab3-toggle" class="tab-item">
-                      <span>Setup</span>
+                      <h4>Setup</h4>
                       <input type="radio" name="tabs-toggle" id="tab3-toggle" />
                     </label>
                   </a>
                 </li>
               </ul>
-            </div>
+            </nav>
 
             <!-- about me -->
             <div class="tab-content" id="tab0-content">
-              <div>
-                <section class="top columns">
-                  <article class="column">
+              <div class="columns">
+                <section class="column">
+                  <article id="about-me">
                     <h2>About Me</h2>
                     <p>
                       Hi! : &#x0029; <br /><br />
@@ -294,89 +302,142 @@
                       the US Northeast. I like computing history, unix systems,
                       and ergo keyboards! Sometimes I also draw. It's nice to
                       meet you! <br /><br />
-                      I have an email if you would like to talk to me.
+                      I have an
+                      <u><a href="mailto:miyufenn@gmail.com">email</a></u> if
+                      you would like to talk to me.
                     </p>
-                    <article>
-                      <h4>why I maintain this site</h4>
-                      <p></p>
-                      <p>Thank you for visiting my page :)</p>
-                    </article>
                   </article>
-                  <aside class="column is-narrow">
-                    <div>
-                      <img src="" alt="" />
-                      <p>
-                        fio <br />
-                        18 <br />
-                        any pronouns <br />
-                        japanese-american <br />
-                      </p>
-                    </div>
-                    <div>
-                      <h4>Currently...</h4>
-                      <p>
-                        reading -> <br />
-                        listening to -> <br />
-                        working on -> this website!
-                      </p>
-                    </div>
-                  </aside>
+                  <article id="about-maintain">
+                    <h4>Why I maintain this site</h4>
+                    <p>Thank you for visiting my page :)</p>
+                  </article>
                 </section>
+                <aside class="column is-4">
+                  <div id="about-quickrefs">
+                    <h3>Quickrefs</h3>
+                    <img src="" alt="" />
+                    <table>
+                      <tr>
+                        <td><h5>Name</h5></td>
+                        <td><p>Mari</p></td>
+                      </tr>
+                      <tr>
+                        <td><h5>Prns</h5></td>
+                        <td><p>Any</p></td>
+                      </tr>
+                      <tr>
+                        <td>Yr</td>
+                        <td>2</td>
+                      </tr>
+                    </table>
+                    <p>My favorite language to code in is typescript!</p>
+                  </div>
+                  <div id="about-currently">
+                    <div class="notched-header">
+                      <h3>Currently...</h3>
+                      <div class="notch-right"></div>
+                    </div>
+                    <div class="table-wrapper">
+                      <table>
+                        <tr>
+                          <td><h5>reading</h5></td>
+                          <td>
+                            <p><span>-></span> 100 Years of Solitude</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><h5>listening to</h5></td>
+                          <td>
+                            <p><span>-></span> saintseneca</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><h5>working on</h5></td>
+                          <td>
+                            <p><span>-></span> this website</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </aside>
               </div>
             </div>
             <!-- about site -->
             <div class="tab-content" id="tab1-content">
-              <div class="container">
-                <h2>About the Site</h2>
-                <p class="main-abt">
-                  I made this site to use as a css without js sandbox ! It uses
-                  the Bulma CSS framework (specifically the alt version without
-                  helpers) for theming, responsiveness, and other components
-                  like the breadcrumbs at the bottom of this page.
-                  <br />
-                </p>
-                <article>
-                  <h2>FAQ</h2>
-                  <div class="qna">
-                    <h6 class="question">How long did this take you?</h6>
-                    <p class="answer">
-                      According to <a href="">Wakatime</a>, as of now, 15 hours!
-                    </p>
-                  </div>
-                  <div class="qna">
-                    <h6 class="question">Why not use javascript?</h6>
-                    <p class="answer">
-                      The point of this site at the time of conception was to
-                      re-familiarize myself with css, so I wanted to do some
-                      silly stuff with css only. In the future, this site will
-                      probably use more js! Just not right now.
-                      <br />
-                      (Although, others might prefer not to use javascript
-                      because it can bloat a website. At the end of the day, it
-                      depends on your usecase and who you want your site to be
-                      seen by.)
-                    </p>
-                  </div>
-                  <div class="qna">
-                    <h6 class="question">Why use a framework?</h6>
-                    <p class="answer">
-                      I wanted to make this site responsive (able to adapt to
-                      different screen sizes), and it's just a little bit faster
-                      to use a framework to accomplish that. tl;dr I'm just lazy
-                    </p>
-                  </div>
-                  <div class="qna">
-                    <h6 class="question">
-                      Can I copy or modify this site's code?
-                    </h6>
-                    <p class="answer">
-                      Yes! My code is free use without attribution, but if you
-                      also keep the part of the code that uses Bulma CSS, keep
-                      in mind that it uses the MIT license, which has different
-                      requirements.
-                    </p>
-                  </div>
-                </article>
+              <div class="columns">
+                <section class="column">
+                  <h2>About the Site</h2>
+                  <p class="main-abt">
+                    This site is mainly my place to separate personal things
+                    from my other devwork. It uses the Bulma CSS framework
+                    (specifically the alt version without helpers) for theming,
+                    responsiveness, and other components like the breadcrumbs at
+                    the bottom of this page.
+                    <br />
+                  </p>
+                  <article>
+                    <h2>FAQ</h2>
+                    <div class="qna">
+                      <h6 class="question">Why make a website?</h6>
+                      <p class="answer">
+                        Among other reasons: for fun, to keep the old web alive,
+                        to make a corner of the internet yours and yours alone.
+                      </p>
+                    </div>
+                    <div class="qna">
+                      <h6 class="question">Why not use javascript?</h6>
+                      <p class="answer">
+                        The point of this site at the time of conception was to
+                        re-familiarize myself with css, so I wanted to do some
+                        silly stuff with css only. In the future, this site will
+                        probably use more js! Just not right now.
+                        <br />
+                        (Although, others might prefer not to use javascript
+                        because it can bloat a website. At the end of the day,
+                        it depends on your usecase and who you want your site to
+                        be seen by.)
+                      </p>
+                    </div>
+                    <div class="qna">
+                      <h6 class="question">Why use a framework?</h6>
+                      <p class="answer">
+                        I wanted to make this site responsive (able to adapt to
+                        different screen sizes), and it's just a little bit
+                        faster to use a framework to accomplish that. tl;dr I'm
+                        just lazy
+                      </p>
+                    </div>
+                    <div class="qna">
+                      <h6 class="question">
+                        Can I copy or modify this site's code?
+                      </h6>
+                      <p class="answer">
+                        Yes! My code is free use without attribution, but if you
+                        also keep the part of the code that uses Bulma CSS, keep
+                        in mind that it uses the MIT license, which has
+                        different requirements.
+                      </p>
+                    </div>
+                  </article>
+                </section>
+                <div class="column is-3">
+                  <aside id="site-latest-update">
+                    <div class="log-header">
+                      <h5>Latest Update</h5>
+                      <p>2026.08.24</p>
+                    </div>
+                    <p>Made this page.</p>
+                  </aside>
+                  <article id="site-credits">
+                    <h5>Credits</h5>
+                    <ul>
+                      <li><a href="">Hack Club</a></li>
+                      <li><a href="">Bulma CSS</a></li>
+                      <li><a href="">Deploy to Neocities</a></li>
+                    </ul>
+                  </article>
+                </div>
               </div>
             </div>
             <!-- commission info -->
@@ -390,19 +451,10 @@
             </div>
             <!-- about setup -->
             <div class="tab-content" id="tab3-content">
-              <div class="container">
-                <h2>Setup</h2>
-                <article>
-                  <div>
-                    <h4>Devices</h4>
-                    <ul>
-                      <li>Thinkpad X280</li>
-                      <li>Huion H1060P</li>
-                      <li>VXE Dragonfly R1 (mouse)</li>
-                    </ul>
-                  </div>
-                  <hr />
-                  <div>
+              <div class="columns">
+                <div class="column">
+                  <h2>Setup</h2>
+                  <section id="applications">
                     <h4>Applications</h4>
                     <table class="table">
                       <thead>
@@ -460,14 +512,106 @@
                         </tr>
                       </tbody>
                     </table>
-                  </div>
-                  <p>I use arch linux with i3wm (x11).</p>
-                </article>
+                  </section>
+                  <section class="mobile-wrapper" id="devices">
+                    <h4>Devices</h4>
+                    <div class="device">
+                      <h5>Laptop</h5>
+                      <figure>
+                        <img src="" alt="" />
+                        <figcaption></figcaption>
+                      </figure>
+                      <table>
+                        <thead>
+                          <th>Specs</th>
+                        </thead>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </table>
+                      <article class="setup-notes">
+                        <h5>Notes</h5>
+                        <p>
+                          The x280 has served me well. I use microSD cards for
+                          playing music so its many ports are helpful to me.
+                          Cheap, sturdy, and light, my only complaint is that
+                          the color profile sometimes bothers me no matter how
+                          much I tinker with it. Beware that it has soldered
+                          RAM.
+                        </p>
+                      </article>
+                    </div>
+                    <div class="device">
+                      <h5>Pen tablet</h5>
+                      <figure>
+                        <img src="" alt="" />
+                        <figcaption>Huion 1060P</figcaption>
+                      </figure>
+                      <table>
+                        <thead>
+                          <th>Specs</th>
+                        </thead>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </table>
+                      <article class="setup-notes">
+                        <h5>Notes</h5>
+                        <p></p>
+                      </article>
+                    </div>
+                  </section>
+                </div>
+                <aside class="column is-4">
+                  <section id="setup-resources">
+                    <h4>Resources</h4>
+                  </section>
+                  <section id="setup-os">
+                    <h4>OS Setup</h4>
+                    <table>
+                      <tr>
+                        <td>Kernel</td>
+                        <td>Linux</td>
+                      </tr>
+                      <tr>
+                        <td>Server</td>
+                        <td>x11</td>
+                      </tr>
+                      <tr>
+                        <td>Distro</td>
+                        <td>Arch</td>
+                      </tr>
+                      <tr>
+                        <td>WM/DE</td>
+                        <td>i3wm, no de</td>
+                      </tr>
+                    </table>
+                  </section>
+                  <section class="button-wrapper"></section>
+                </aside>
               </div>
             </div>
           </div>
           <!-- socials -->
-          <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
+          <nav class="bcrumbs" aria-label="breadcrumbs">
             <ul>
               <li><a href="https://miyufen.tumblr.com">tumblr</a></li>
               <li><a href="">toyhouse</a></li>

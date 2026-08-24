@@ -1,0 +1,149 @@
+html {
+  background-color: #cccabb;
+}
+.topbar,
+#sidebar,
+.notched-header {
+  background-color: #635c53;
+}
+#sidebar {
+  box-shadow: 3px 3px #383430;
+}
+#sidebar li:hover {
+  background-color: #383430;
+}
+#sidebar summary {
+  background-color: #b8ac92;
+  color: #383430;
+}
+#sidebar summary:hover {
+  color: #756b5b;
+}
+.bcrumbs li {
+  background-color: #635c53;
+  box-shadow: 2px 2px #383430;
+}
+.left .notch-right:before {
+  border-left: 24px solid #635c53;
+}
+.left h3,
+.sidebar a {
+  color: #ddd4a8;
+}
+#titlebar {
+  background-color: #383430;
+}
+header hr {
+  background-color: #635c53;
+}
+#folder-tabs ul {
+  display: flex;
+  text-align: center;
+}
+#folder-tabs li {
+  min-width: 68px;
+  border-radius: 8px 8px 0 0;
+  padding: 2px 6px 6px;
+  margin: 2px;
+  background-color: #b8ac92;
+}
+#folder-tabs a {
+  color: #3b3a26;
+}
+#folder-tabs a:hover {
+  color: #ece8d8;
+}
+#tab0-content aside {
+  margin: 0;
+  padding: 0;
+}
+#about-me,
+#about-maintain {
+  padding: 8px;
+  margin: 0 12px 12px 12px;
+}
+#about-me {
+  background-color: #b8ac92;
+  box-shadow: 3px 3px #756b5b;
+  color: #3b3a26;
+}
+#about-me h2 {
+  border-bottom: 3px dotted #756b5b;
+  margin: 0 0 12px 4px;
+}
+#about-me a {
+  color: #312e21;
+}
+#about-me a:hover {
+  color: #ece8d8;
+}
+#about-me p {
+  margin: 0 4px 4px 4px;
+}
+#about-maintain {
+  background-color: #b8ac92;
+  box-shadow: 3px 3px #635c53;
+}
+#about-maintain h4 {
+  background-color: #635c53;
+  color: #ddd4a8;
+  padding: 4px;
+}
+#about-maintain p {
+  margin-top: 6px;
+  padding: 4px;
+  color: #3b3a26;
+}
+#tab0-content section {
+  padding: 0;
+  margin: 0;
+}
+#about-quickrefs {
+  padding: 8px;
+  background-color: #635c53;
+  box-shadow: 3px 3px #383430;
+}
+#about-quickrefs h3 {
+  background-color: #383430;
+  color: #ddd4a8;
+}
+#about-quickrefs table,
+#about-quickrefs h3 {
+  width: 100%;
+  padding: 4px;
+}
+#about-quickrefs td,
+#about-quickrefs p {
+  padding: 0 4px;
+  color: #b8ac92;
+}
+#about-currently {
+  margin: 12px 0;
+}
+#about-currently .table-wrapper,
+#about-currently .notched-header {
+  background-color: #383430;
+  color: #b8ac92;
+}
+#about-currently .table-wrapper {
+  padding: 4px;
+  box-shadow: 3px 3px #635c53;
+}
+#about-currently table {
+  width: 100%;
+  font-family: IBM-Plex-Mono;
+  font-size: 0.9rem;
+}
+#about-currently span {
+  color: #756b5b;
+}
+#about-currently h3 {
+  padding: 2px 0 1px 4px;
+}
+#about-currently .notch-right:before {
+  border-left: 24px solid #383430;
+  height: 26px;
+}
+#about-currently td {
+  padding: 0 4px;
+}

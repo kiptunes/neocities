@@ -1,3 +1,7 @@
+.path {
+  display: inline-block;
+  margin: 4px;
+}
 .info {
   padding: 4px;
   background-color: #cccccc;
