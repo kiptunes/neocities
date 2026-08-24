@@ -3,6 +3,9 @@
   src: url("../_assets/fonts/body/Chivo/Chivo-VariableFont_wght.ttf");
 }
 @font-face {
+  font-family: Chivo;
+}
+@font-face {
   font-family: AudioNugget;
   src: url(../_assets/fonts/title/audio-nugget/AudioNugget.ttf);
 }
@@ -22,12 +25,16 @@ html {
   font-size: 16px;
   background-color: #ece8d8;
 }
+body {
+  overflow-x: clip;
+}
 p,
 a,
 h5,
 button,
 li {
   font-family: Chivo;
+  font-weight: 300;
 }
 h1 {
   font-family: AudioNugget;
@@ -117,12 +124,6 @@ header hr {
   font-size: 60px;
   color: #ddd4a8;
 }
-#sidebar {
-  background-color: #69849b;
-  box-shadow: 3px 3px #5e6d8a;
-  padding-bottom: 12px;
-  min-height: 50vh;
-}
 .notched-header {
   background-color: #69849b;
   display: inline-flex;
@@ -141,6 +142,11 @@ header hr {
   border-top: 24px solid transparent;
   border-left: 24px solid #69849b;
 }
+#sidebar {
+  background-color: #69849b;
+  box-shadow: 3px 3px #5e6d8a;
+  padding-bottom: 12px;
+}
 #sidebar summary {
   margin: 8px;
   padding: 4px;
@@ -155,10 +161,18 @@ header hr {
   color: #ece8d8;
   background-color: transparent;
 }
+#sidebar li:hover {
+  margin: 0 4px;
+  border-radius: 4px;
+  background-color: #4a5979d0;
+}
+#sidebar summary:hover {
+  color: #5e6d8a;
+}
 #greeter {
   background-color: #ddd4a8;
   box-shadow: 3px 3px #b6a688;
-  padding: 8px;
+  padding: 0 8px;
   min-height: 220px;
 }
 #greeter p,
@@ -171,6 +185,11 @@ header hr {
 }
 #greeter h2 {
   color: #342929;
+  border-bottom: 2px dotted #342929;
+}
+#greeter h3 {
+  color: #698458;
+  text-align: right;
 }
 #greeter hr {
   background-color: inherit;
@@ -181,15 +200,20 @@ header hr {
 }
 .bcrumbs {
   text-align: center;
-  margin: 4px auto 10px auto;
+  margin: 10px auto 20px;
 }
 .bcrumbs li {
   display: inline-block;
   background-color: #69849b;
   min-width: 80px;
   padding: 5px;
-  margin: 8px;
+  margin: 4px;
   box-shadow: 2px 2px #5e6d8a;
+}
+.bcrumbs li:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 0 0 0;
+  background-color: #5e6d8a;
 }
 .bcrumbs a {
   font-family: IBM-Plex-Mono;
@@ -281,13 +305,30 @@ header hr {
   box-shadow: 3px 3px #849ba5;
   margin-bottom: 12px;
 }
+#guestbook p {
+  color: #69849b;
+  padding: 4px;
+  width: 60%;
+  height: 100%;
+  background-color: #ece8d8;
+}
+#guestbook a {
+  color: #69849b;
+}
+#guestbook a:hover {
+  color: #1f3974;
+}
 #buttons-aside {
   background-color: #69849b;
+  box-shadow: 3px 3px #5e6d8a;
 }
 #buttons-aside h4 {
   background-color: #bfcdce;
   color: #1f3974;
   padding: 4px;
+}
+#link-back summary {
+  color: #ece8d8;
 }
 .button-wrapper {
   position: relative;
@@ -296,6 +337,29 @@ header hr {
 }
 .button-wrapper button {
   display: inline-block;
+}
+#contact {
+  padding: 8px;
+  text-align: left;
+}
+#contact a,
+#contact h4,
+#contact p {
+  color: #342929;
+  font-weight: 300;
+}
+#contact a:hover {
+  color: #64574e;
+}
+#contact img {
+  vertical-align: middle;
+  opacity: 0.8;
+}
+footer p {
+  color: #738650;
+}
+footer a {
+  color: #95a561;
 }
 
 /* styling for mobile devices */
