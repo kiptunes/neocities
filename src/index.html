@@ -14,15 +14,16 @@
     <link rel="stylesheet" href="_css/style.css" />
     <link rel="stylesheet" href="_css/components.css" />
 
-    <title>malfen</title>
+    <title>miyufen</title>
   </head>
 
   <body>
     <!-- top navigation -->
     <nav class="topbar">
-      <a class="topbar-item" id="home" href="">home</a>
-      <a href="" class="topbar-item">theme</a>
-      <!-- settings -->
+      <a class="topbar-item" id="home" href="#">Miyufen</a>
+      <!-- theme
+       <a href="" class="topbar-item">theme</a> -->
+      <!-- settings 
       <div class="topbar-item">
         <details>
           <summary>settings</summary>
@@ -53,12 +54,11 @@
           </div>
         </details>
       </div>
+      -->
     </nav>
 
     <nav class="path columns is-mobile">
-      <button class="column is-narrow">Back</button>
-      <button class="column is-narrow">Forward</button>
-      <a class="column is-hidden-touch" hidden>path/to/page</a>
+      <a href="#" class="column"><u>/...</u></a>
       <div class="column nav-icon">
         <label for="nav-checkbox">
           <span>nav</span>
@@ -74,8 +74,14 @@
 
       <div class="sitebox columns container is-widescreen">
         <!-- sidebar -->
-        <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
+        <div id="grey"></div>
         <aside class="left column is-hidden-touch">
+          <div class="notched-header">
+            <h3>Navigation</h3>
+            <div class="notch-right"></div>
+            <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
+          </div>
+
           <nav class="menu has-shadow" id="sidebar">
             <details class="folder-label" open>
               <summary>Root</summary>
@@ -133,17 +139,6 @@
                 <li>
                   <a href="">
                     <img
-                      src="_assets/img/icons/nav/icon-pencil.png"
-                      alt="pencil icon"
-                      width="16"
-                      height="16"
-                    />
-                    <span>Fanart</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <img
                       src="_assets/img/icons/nav/icon-notebook.png"
                       alt="notebook icon"
                       width="16"
@@ -155,7 +150,7 @@
                 <li>
                   <a href="">
                     <img
-                      src="_assets/img/icons/nav/icon-pixel.png"
+                      src="_assets/img/icons/nav/icon-pencil.png"
                       alt="pixel icon"
                       width="16"
                       height="16"
@@ -234,7 +229,7 @@
                 <li>
                   <a href="links/toybox.html">
                     <img
-                      src="_assets/img/icons/nav/icon-kite.png"
+                      src="_assets/img/icons/nav/icon-pixel.png"
                       alt="kite icon"
                       width="16"
                       height="16"
@@ -262,19 +257,25 @@
         <main class="sitebox column is-7">
           <!-- greeter -->
           <article id="greeter" class="has-shadow">
-            <!-- general site info-->
-            <img src="" alt="" width="280" height="200" />
             <h2>Miyufen</h2>
-            <p>
-              Hi, welcome to my site! Constantly a work in progress; last
-              updated 2026.07.15.
-            </p>
-            <hr />
-            <ul>
-              <li>you can change motion settings in the top right</li>
-              <li>about page is under "info"</li>
-              <li>site is hand coded and open source</li>
-            </ul>
+            <div class="columns">
+              <!-- general site info-->
+              <div class="column">
+                <p>
+                  Hi, welcome to my site! Constantly a work in progress; last
+                  updated 2026.07.15.
+                </p>
+                <hr />
+                <ul>
+                  <li>you can change motion settings in the top right</li>
+                  <li>about page is under "info"</li>
+                  <li>site is hand coded and open source</li>
+                </ul>
+              </div>
+              <div class="column">
+                <img src="" alt="" height="200" />
+              </div>
+            </div>
           </article>
 
           <!-- socials -->
@@ -299,10 +300,8 @@
               </div>
               <div class="scrollbox">
                 <ul>
-                  <li>Replace toybox icon</li>
                   <li>Write first changelog</li>
                   <li>Make site buttons</li>
-                  <li>Add img to window</li>
                 </ul>
               </div>
             </aside>
@@ -348,17 +347,8 @@
           <div id="guestbook">
             <p>sign my <a href="guestbook.html">guestbook!</a></p>
           </div>
-          <!-- separator image -->
-          <div class="is-hidden-touch has-shadow" id="img-window">
-            <h4>Window</h4>
-            <img
-              src="_assets/img/window/clouds1.png"
-              alt="A big cloud."
-              title="A big cloud."
-            />
-          </div>
 
-          <aside id="buttons-aside has-shadow">
+          <aside id="buttons-aside">
             <!-- webrings -->
             <div id="webrings">
               <h4>Webrings</h4>

@@ -3,10 +3,6 @@
   src: url("../_assets/fonts/body/Chivo/Chivo-VariableFont_wght.ttf");
 }
 @font-face {
-  font-family: Archivo;
-  src: url(../_assets/fonts/body/Archivo/Archivo-VariableFont_wdth\,wght.ttf);
-}
-@font-face {
   font-family: AudioNugget;
   src: url(../_assets/fonts/title/audio-nugget/AudioNugget.ttf);
 }
@@ -24,10 +20,10 @@
 }
 html {
   font-size: 16px;
+  background-color: #ece8d8;
 }
 p,
 a,
-h4,
 h5,
 button,
 li {
@@ -40,12 +36,13 @@ h2 {
   font-family: GoodLookingFont;
   font-size: 1.6rem;
 }
+h3 {
+  font-family: HomeVideo;
+  font-size: 0.9rem;
+}
 h4,
 summary {
   font-family: HomeVideo;
-}
-.has-shadow {
-  box-shadow: 4px 4px #5f5d58;
 }
 .topbar {
   display: flex;
@@ -69,100 +66,37 @@ summary {
   position: absolute;
   top: auto;
   right: 0px;
-  /* min-width: 220px; */
   min-height: 150px;
   padding: 12px 16px;
 }
 
 #home {
   flex: 1;
+  font-family: HomeVideo;
+  font-size: 1.2rem;
+}
+.path a,
+.path div {
+  margin: 0 10px;
+  color: #5e6d8a;
 }
 #nav-checkbox {
   display: none;
-}
-
-#sidebar {
-  min-height: 50vh;
 }
 footer {
   text-align: center;
   padding: 3vw 0vw 10vw;
 }
-
 .nav-icon {
   display: none;
 }
-
-/* styling for mobile devices */
-@media (max-width: 769px) {
-  .is-hidden-touch {
-    display: none;
-  }
-  .grid-links {
-    display: grid;
-    grid-template: "side main" "footer footer";
-    gap: 10px;
-  }
-
-  .nav-icon {
-    display: block;
-    margin: 1rem;
-    text-align: end;
-  }
-
-  .left {
-    position: absolute;
-    top: -150px;
-    right: 0;
-    width: 200px;
-    height: auto;
-    z-index: 9;
-  }
-  #sidebar {
-    min-height: auto;
-  }
-
-  .left {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-    transition:
-      opacity 0.3s ease,
-      transform 0.3s ease,
-      display 0.3s allow-discrete;
-  }
-  .sitebox:has(#nav-checkbox:not(:checked)) .left {
-    opacity: 0;
-    transform: translateY(-8px);
-    display: none;
-  }
-
-  /* 
-    This is supposed to animate the display: none property on the
-    nav menu exit but it doesn't work on firefox so I don't know if
-    it is doing what it's supposed to. (??)
-  */
-
-  @starting-style {
-    .sitebox:has(#nav-checkbox:checked) .left {
-      opacity: 0;
-      transform: translateY(-8px);
-      display: block;
-    }
-  }
-
-  #guestbook {
-    grid-area: footer;
-  }
-}
-
-html {
-  background-color: #ece8d8;
-}
-
-.topbar,
-#sidebar {
+.topbar {
   background-color: #69849b;
+}
+.topbar a,
+.topbar summary {
+  font-family: Chivo;
+  color: #ece8d8;
 }
 header {
   width: 75%;
@@ -184,7 +118,28 @@ header hr {
   color: #ddd4a8;
 }
 #sidebar {
+  background-color: #69849b;
+  box-shadow: 3px 3px #5e6d8a;
   padding-bottom: 12px;
+  min-height: 50vh;
+}
+.notched-header {
+  background-color: #69849b;
+  display: inline-flex;
+}
+.left h3 {
+  padding: 0 0 2px 6px;
+  color: #bfcdce;
+  margin: 0;
+}
+.notch-right {
+  height: 100%;
+}
+.notch-right:before {
+  content: "";
+  position: absolute;
+  border-top: 24px solid transparent;
+  border-left: 24px solid #69849b;
 }
 #sidebar summary {
   margin: 8px;
@@ -200,11 +155,9 @@ header hr {
   color: #ece8d8;
   background-color: transparent;
 }
-#changelog {
-  background-color: #95a561;
-}
 #greeter {
   background-color: #ddd4a8;
+  box-shadow: 3px 3px #b6a688;
   padding: 8px;
   min-height: 220px;
 }
@@ -245,6 +198,11 @@ header hr {
 }
 #todo {
   background-color: #9bbdbc;
+  box-shadow: 3px 3px #849ba5;
+}
+#changelog {
+  background-color: #95a561;
+  box-shadow: 3px 3px #738650;
 }
 #changelog,
 #todo {
@@ -320,37 +278,91 @@ header hr {
 }
 #guestbook {
   background-color: #9bbdbc;
+  box-shadow: 3px 3px #849ba5;
   margin-bottom: 12px;
-}
-#img-window {
-  background-color: #95a561;
-  margin-bottom: 12px;
-  flex-grow: 1;
-}
-#img-window h4 {
-  background-color: #698458;
-  color: #ece8d8;
-  padding: 2px 4px;
-  width: 100%;
-  height: 1.6em;
-}
-#img-window img {
-  border: 2px solid #698458;
-  margin: 8px 8px 0 8px;
-  width: calc(100% - 16px);
-  object-fit: contain;
-  box-sizing: border-box;
 }
 #buttons-aside {
   background-color: #69849b;
 }
 #buttons-aside h4 {
   background-color: #bfcdce;
-  color: #16184d;
+  color: #1f3974;
   padding: 4px;
 }
-#buttons-aside button {
+.button-wrapper {
   position: relative;
   width: 100%;
   margin: 8px auto 0 auto;
+}
+.button-wrapper button {
+  display: inline-block;
+}
+
+/* styling for mobile devices */
+@media (max-width: 769px) {
+  .is-hidden-touch {
+    display: none;
+  }
+  .grid-links {
+    display: grid;
+    grid-template: "side main" "footer footer";
+    gap: 10px;
+  }
+
+  .nav-icon {
+    display: block;
+    margin: 1rem;
+    text-align: end;
+  }
+
+  .left {
+    position: absolute;
+    top: -150px;
+    right: 0;
+    width: 200px;
+    height: auto;
+    z-index: 9;
+  }
+  #sidebar {
+    min-height: auto;
+  }
+
+  .left {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease,
+      display 0.3s allow-discrete;
+  }
+  .sitebox:has(#nav-checkbox:not(:checked)) .left {
+    opacity: 0;
+    transform: translateY(-8px);
+    display: none;
+  }
+  @starting-style {
+    .sitebox:has(#nav-checkbox:checked) .left {
+      opacity: 0;
+      transform: translateY(-8px);
+      display: block;
+    }
+  }
+
+  #guestbook {
+    grid-area: footer;
+  }
+}
+@media (max-width: 580px) {
+  header {
+    width: 100%;
+    padding: 12px;
+    margin: auto;
+  }
+  #titlebar {
+    line-height: 80px;
+  }
+  #titlebar h1 {
+    font-size: 12vw;
+  }
 }
