@@ -21,6 +21,10 @@
   font-family: IBM-Plex-Mono;
   src: url(../_assets/fonts/body/IBM_Plex_Mono/IBMPlexMono-Medium.ttf);
 }
+@font-face {
+  font-family: FakeReceipt;
+  src: url(../_assets/fonts/header/fake-receipt/Fake\ Receipt.otf);
+}
 html {
   font-size: 16px;
   background-color: #ece8d8;
@@ -32,7 +36,9 @@ p,
 a,
 h5,
 button,
-li {
+li,
+td,
+th {
   font-family: Chivo;
   font-weight: 300;
 }
@@ -92,7 +98,7 @@ summary {
 }
 footer {
   text-align: center;
-  padding: 3vw 0vw 10vw;
+  padding: 0 0 10vw 0;
 }
 .nav-icon {
   display: none;

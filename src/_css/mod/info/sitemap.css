@@ -1,0 +1,89 @@
+#titlebar {
+  border-radius: 32px 32px 0 0;
+}
+main {
+  background-color: #b8ac92;
+  box-shadow: 6px 6px #756b5b;
+  width: 75%;
+  margin: 12px auto;
+  padding: 12px 16px;
+}
+h2 {
+  color: #383430;
+  border-bottom: 3px dotted #756b5b;
+  margin-bottom: 12px;
+  padding-left: 6px;
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.4rem;
+  background-color: #756b5b;
+  padding: 2px 8px 0;
+  margin: 0;
+  color: #383430;
+}
+h5 {
+  font-family: FakeReceipt;
+  color: #383430;
+  border-bottom: 2px dashed #756b5b;
+}
+.x-scrollbox {
+  background-color: #756b5b;
+  padding: 8px;
+}
+.folder li,
+.folder a,
+p.desc {
+  color: #383430;
+}
+p.desc {
+  padding-bottom: 4px;
+  margin: 2px 0;
+  text-wrap: initial;
+  line-height: 1.2rem;
+  font-weight: 200;
+}
+#about-currently .notch-right:before {
+  border-left: 24px solid #383430;
+  height: 26px;
+}
+.folder-wrapper {
+  background-color: #383430;
+  border: 8px double #756b5b;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 12px;
+}
+.folder {
+  background-color: #b8ac92;
+  display: inline-block;
+  vertical-align: top;
+  width: 260px;
+  min-height: 200px;
+  padding: 8px 12px 12px;
+  margin-right: 8px;
+}
+.subsections {
+  border: 2px solid #756b5b;
+  padding: 8px;
+}
+.subsections ul {
+  border-left: 2px solid #756b5b;
+  padding-left: 4px;
+}
+.subsections li,
+.subsections a {
+  font-family: IBM-Plex-Mono;
+  font-size: 0.9rem;
+}
+.subsections li::before {
+  color: #756b5b;
+  content: "--";
+  float: left;
+}
+.subsections a:hover {
+  color: #756b5b;
+}
+h5 a:hover {
+  color: #383430;
+}

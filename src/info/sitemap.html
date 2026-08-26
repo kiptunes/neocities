@@ -10,122 +10,139 @@
       content="Personal page for all my art and things. Welcome!"
     />
     <!-- <link rel="icon" type="image/x-icon" href=""> -->
-    <link rel="stylesheet" href="_css/bulma/bulma-no-helpers.css" />
-    <link rel="stylesheet" href="_css/style.css" />
-    <link rel="stylesheet" href="_css/components.css" />
-    <title>malfen</title>
+    <link rel="stylesheet" href="../_css/bulma/bulma-no-helpers.css" />
+    <link rel="stylesheet" href="../_css/style.css" />
+    <link rel="stylesheet" href="../_css/mod/info/style.css" />
+    <link rel="stylesheet" href="../_css/mod/info/sitemap.css" />
+    <link rel="stylesheet" href="../_css/components.css" />
+    <title>miyu > map</title>
   </head>
 
   <body>
     <!-- top navigation -->
     <nav class="topbar">
-      <a class="topbar-item" id="home" href="">home</a>
-      <a href="" class="topbar-item">theme</a>
-      <!-- settings -->
-      <div class="topbar-item">
-        <details>
-          <summary>settings</summary>
-          <div class="details-content">
-            <label>
-              <span>reduced motion</span>
-              <input type="checkbox" checked />
-              <span class="checkmark"></span>
-            </label>
-            <br />
-            <label>
-              <span>lazy loading</span>
-              <input type="checkbox" checked />
-              <span class="checkmark"></span>
-            </label>
-            <br />
-            <label>
-              <span>dyslexia friendly font</span>
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-            <br />
-            <label>
-              <span>alt text below images</span>
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-          </div>
-        </details>
-      </div>
+      <a class="topbar-item" id="home" href="../index.html">Miyufen</a>
     </nav>
 
     <nav class="path columns is-mobile">
-      <button class="column is-narrow">Back</button>
-      <button class="column is-narrow">Forward</button>
-      <a class="column is-hidden-touch">path/to/page</a>
-      <div class="column nav-icon">
-        <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
-        <label for="nav-checkbox">nav</label>
-        <nav class="menu sidebar-mobile">
-          <!-- <p class="menu-label">General</p> -->
-        </nav>
+      <div class="column">
+        <a href="../index.html"><u>home</u></a> >
+        <a href="../info/index.html">
+          <u>info</u> > <a href="#"> <u>sitemap</u></a>
+        </a>
       </div>
     </nav>
 
     <div class="sitebox container is-widescreen">
-      <header class="titlebar">
-        <h1>WELCOME</h1>
+      <header>
+        <div id="titlebar"><h1>SITEMAP</h1></div>
+        <hr />
       </header>
 
-      <div class="container is-widescreen">
-        <!-- sitebox -->
-        <main class="columns">
-          <div class="column">
-          <h4>src</h4>
+      <!-- sitebox -->
+      <main>
+        <a href="../index.html"><h2>Home</h2></a>
+        <div class="x-scrollbox">
+          <h3>Folders //</h3>
+          <div class="folder-wrapper">
+            <div class="folder">
+              <h5>Info</h5>
+              <p class="desc">About me, this site, and my setup.</p>
+              <div class="subsections">
+                <ul>
+                  <a href="../info/index.html">
+                    <li>#About</li>
+                    <li>#Site</li>
+                    <li>#Comms</li>
+                    <li>#Setup</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <div class="folder">
+              <h5>Links</h5>
+              <p class="desc">
+                Links to resources, to graphics, and other neocities sites.
+              </p>
+              <div class="subsections">
+                <ul>
+                  <li>
+                    <a href="../links/resources.html"><u>/resources</u></a>
+                  </li>
+                  <li>
+                    <a href="../links/sites.html"><u>/sites</u></a>
+                  </li>
+                  <li>
+                    <a href="../links/toybox.html"><u>/toybox</u></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="folder">
+              <h5>Art</h5>
+              <p class="desc">
+                Archive of art, traditional and digital, that I've made.
+              </p>
+              <div class="subsections">
+                <ul>
+                  <li>
+                    <a href="../art/illustrations.html"
+                      ><u>/illustrations</u></a
+                    >
+                  </li>
+                  <li>
+                    <a href="../art/sketchbook.html"><u>/sketchbook</u></a>
+                  </li>
+                  <li>
+                    <a href="../art/pixel-art.html"><u>/pixel-art</u></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="folder">
+              <h5>Media</h5>
+              <p class="desc">
+                Notes on various pieces of media that I wanted to talk about.
+              </p>
+              <div class="subsections">
+                <ul>
+                  <li>
+                    <a href="../media/books/"><u>/books</u></a>
+                  </li>
+                  <li>
+                    <a href="../media/games.html"><u>/games</u></a>
+                  </li>
+                  <li>
+                    <a href="../media/music/"><u>/music</u></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- socials -->
+        <nav class="bcrumbs" aria-label="breadcrumbs">
           <ul>
-            <li>
-            <p>art/</p>
-            <ul>
-              <li><a href="">fanart</a></li>
-              <li><a href="">illustrations</a></li>
-              <li><a href="">pixel</a></li>
-              <li><a href="">sketchbook</a></li>
-            </ul>
-            </li>
-            <li>
-            <p>links/</p>
-            <ul>
-              <li><a href="">resources</a></li>
-              <li><a href="">sites</a></li>
-              <li><a href="">toybox</a></li>
-            </ul>
-            </li>
-            <li>
-            <p>media/</p>
-            <ul>
-              <li><a href="">books</a></li>
-              <li><a href="">games</a></li>
-              <li><a href="">music</a></li>
-            </ul>
-            </li>
-            <li>credits</li>
-            <li>guestbook</li>
-            <li>index</li>
-            <li>info</li>
-            <li>sitemap</li>
+            <li><a href="https://miyufen.tumblr.com">tumblr</a></li>
+            <li><a href="">toyhouse</a></li>
+            <li><a href="">artfight</a></li>
+            <li><a href="https://github.com/kiptunes">github</a></li>
+            <li><a href="">ko-fi</a></li>
           </ul>
-          </div>
-          
-          <div class="column description">
+        </nav>
+      </main>
 
-          </div>
-        </main>
-
-        <!-- quicklinks -->
-        <aside class="right column"></aside>
-      </div>
+      <!-- quicklinks -->
+      <aside class="right column is-narrow"></aside>
 
       <!-- footer -->
       <footer>
-        <a href="">sourcecode</a> / <a href="">credits</a> / public domain under
-        the <a href="https://unlicense.org/">unlicense</a>
-        <br />
-        2026 • malfen
+        <p>
+          <a href="github.com/kiptunes/neocities">sourcecode</a> /
+          <a href="credits.html">credits</a> / public domain under the
+          <a href="https://unlicense.org/">unlicense</a>
+        </p>
+        <p>2026 • miyufen</p>
       </footer>
     </div>
   </body>

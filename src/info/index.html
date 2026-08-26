@@ -58,10 +58,9 @@
     </nav>
 
     <nav class="path columns is-mobile">
-      <span
-        ><a href="../index.html"><u>/</u></a
-        ><a href="info"><u>info</u></a></span
-      >
+      <div>
+        <a href="../index.html"><u>home</u></a> > <a href="info"><u>info</u></a>
+      </div>
       <div class="column nav-icon">
         <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
         <label for="nav-checkbox">nav</label>
@@ -294,13 +293,13 @@
             <div class="tab-content" id="tab0-content">
               <div class="columns">
                 <section class="column">
-                  <article id="about-me">
+                  <article class="tab-content-main" id="about-me">
                     <h2>About Me</h2>
                     <p>
-                      Hi! : &#x0029; <br /><br />
+                      Hello! <br /><br />
                       I am an electrical engineering undergrad student based in
                       the US Northeast. I like computing history, unix systems,
-                      and ergo keyboards! Sometimes I also draw. It's nice to
+                      and ergo keyboards. Sometimes I also draw. It's nice to
                       meet you! <br /><br />
                       I have an
                       <u><a href="mailto:miyufenn@gmail.com">email</a></u> if
@@ -308,31 +307,49 @@
                     </p>
                   </article>
                   <article id="about-maintain">
-                    <h4>Why I maintain this site</h4>
-                    <p>Thank you for visiting my page :)</p>
+                    <h4>Thoughtbox</h4>
+                    <p>
+                      This framework is bothering me. I often can't tell where
+                      column gutterspace is coming from, which leads to me just
+                      resetting everything without adjusting the sass files.
+                      Maybe that's what I should be doing?
+                      <br /><br />Eventually I want to redo all the flexbox
+                      formatting to be rid of the framework entirely. It served
+                      me well while I was in a rush, but now that I have more
+                      time to chip away at this site it's definitely near the
+                      top of my priority list. I'm sure to learn something, at
+                      least. <br /><br />
+                      [Although -- the framework overwriting issue might be the
+                      least of my problems in my jumbled css.]
+                    </p>
                   </article>
                 </section>
                 <aside class="column is-4">
-                  <div id="about-quickrefs">
+                  <div class="top" id="about-quickrefs">
                     <h3>Quickrefs</h3>
-                    <img src="" alt="" />
-                    <table>
-                      <tr>
-                        <td><h5>Name</h5></td>
-                        <td><p>Mari</p></td>
-                      </tr>
-                      <tr>
-                        <td><h5>Prns</h5></td>
-                        <td><p>Any</p></td>
-                      </tr>
-                      <tr>
-                        <td>Yr</td>
-                        <td>2</td>
-                      </tr>
-                    </table>
-                    <p>My favorite language to code in is typescript!</p>
+                    <img src="" alt="" height="240" width="240" />
+                    <div class="table-wrapper">
+                      <table>
+                        <tr>
+                          <td>Name</td>
+                          <td>Mari</td>
+                        </tr>
+                        <tr>
+                          <td>Pronouns</td>
+                          <td>Any</td>
+                        </tr>
+                        <tr>
+                          <td>Year</td>
+                          <td>2</td>
+                        </tr>
+                        <tr>
+                          <td>Languages</td>
+                          <td>EN/JP</td>
+                        </tr>
+                      </table>
+                    </div>
                   </div>
-                  <div id="about-currently">
+                  <section id="about-currently">
                     <div class="notched-header">
                       <h3>Currently...</h3>
                       <div class="notch-right"></div>
@@ -342,24 +359,30 @@
                         <tr>
                           <td><h5>reading</h5></td>
                           <td>
-                            <p><span>-></span> 100 Years of Solitude</p>
+                            <p><span>-> </span> 100 Years of Solitude</p>
                           </td>
                         </tr>
                         <tr>
                           <td><h5>listening to</h5></td>
                           <td>
-                            <p><span>-></span> saintseneca</p>
+                            <p><span>-> </span> saintseneca</p>
                           </td>
                         </tr>
                         <tr>
                           <td><h5>working on</h5></td>
                           <td>
-                            <p><span>-></span> this website</p>
+                            <p><span>-> </span> this website</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><h5>playing</h5></td>
+                          <td>
+                            <p><span>-> </span> 9 sols</p>
                           </td>
                         </tr>
                       </table>
                     </div>
-                  </div>
+                  </section>
                 </aside>
               </div>
             </div>
@@ -367,45 +390,47 @@
             <div class="tab-content" id="tab1-content">
               <div class="columns">
                 <section class="column">
-                  <h2>About the Site</h2>
-                  <p class="main-abt">
-                    This site is mainly my place to separate personal things
-                    from my other devwork. It uses the Bulma CSS framework
-                    (specifically the alt version without helpers) for theming,
-                    responsiveness, and other components like the breadcrumbs at
-                    the bottom of this page.
-                    <br />
-                  </p>
-                  <article>
-                    <h2>FAQ</h2>
+                  <article class="tab-content-main">
+                    <h2>About the Site</h2>
+                    <p class="main-abt">
+                      This site is mainly my place to separate personal things
+                      from my other devwork. It uses the Bulma CSS framework
+                      (specifically the alt version without helpers) for
+                      theming, responsiveness, and other components like the
+                      breadcrumbs at the bottom of this page.
+                      <br />
+                    </p>
+                  </article>
+                  <article id="site-faq">
+                    <h2>//&emsp;FAQ</h2>
                     <div class="qna">
                       <h6 class="question">Why make a website?</h6>
                       <p class="answer">
-                        Among other reasons: for fun, to keep the old web alive,
-                        to make a corner of the internet yours and yours alone.
+                        &emsp;Among other reasons: for fun, to keep the old web
+                        alive, to make a corner of the internet entirely yours.
                       </p>
                     </div>
                     <div class="qna">
                       <h6 class="question">Why not use javascript?</h6>
                       <p class="answer">
-                        The point of this site at the time of conception was to
-                        re-familiarize myself with css, so I wanted to do some
-                        silly stuff with css only. In the future, this site will
-                        probably use more js! Just not right now.
-                        <br />
-                        (Although, others might prefer not to use javascript
-                        because it can bloat a website. At the end of the day,
-                        it depends on your usecase and who you want your site to
-                        be seen by.)
+                        &emsp;The point of this site at the time of conception
+                        was to re-familiarize myself with css, so I wanted to do
+                        some silly stuff with css only. In the future, this site
+                        will probably use more js! Just not right now.
+                        <br /><br />
+                        &emsp;(Although, others might prefer not to use
+                        javascript because it can bloat a website. At the end of
+                        the day, it depends on your usecase and who you want
+                        your site to be seen by.)
                       </p>
                     </div>
                     <div class="qna">
                       <h6 class="question">Why use a framework?</h6>
                       <p class="answer">
-                        I wanted to make this site responsive (able to adapt to
-                        different screen sizes), and it's just a little bit
-                        faster to use a framework to accomplish that. tl;dr I'm
-                        just lazy
+                        &emsp;I wanted to make this site responsive (able to
+                        adapt to different screen sizes), and it's just a little
+                        bit faster to use a framework to accomplish that. tl;dr
+                        I'm just lazy
                       </p>
                     </div>
                     <div class="qna">
@@ -413,222 +438,353 @@
                         Can I copy or modify this site's code?
                       </h6>
                       <p class="answer">
-                        Yes! My code is free use without attribution, but if you
-                        also keep the part of the code that uses Bulma CSS, keep
-                        in mind that it uses the MIT license, which has
-                        different requirements.
+                        &emsp;Yes! My code is free use without attribution, but
+                        if you also keep the part of the code that uses Bulma
+                        CSS, keep in mind that it uses the MIT license, which
+                        has different requirements.
                       </p>
                     </div>
                   </article>
                 </section>
-                <div class="column is-3">
-                  <aside id="site-latest-update">
-                    <div class="log-header">
-                      <h5>Latest Update</h5>
-                      <p>2026.08.24</p>
+                <aside class="column is-3">
+                  <article class="top" id="site-latest">
+                    <h3>Latest Update</h3>
+                    <div>
+                      <p>Made this page.</p>
+                      <p>2026.08.25</p>
                     </div>
-                    <p>Made this page.</p>
-                  </aside>
-                  <article id="site-credits">
-                    <h5>Credits</h5>
-                    <ul>
-                      <li><a href="">Hack Club</a></li>
-                      <li><a href="">Bulma CSS</a></li>
-                      <li><a href="">Deploy to Neocities</a></li>
-                    </ul>
                   </article>
-                </div>
+                  <article class="bottom" id="site-credits">
+                    <h3>Credits</h3>
+                    <ul>
+                      <li>
+                        <u><a href="https://hackclub.com/">Hack Club</a></u>
+                      </li>
+                      <li>
+                        <u><a href="https://bulma.io/">Bulma CSS</a></u>
+                      </li>
+                      <li>
+                        <u>
+                          <a
+                            href="https://github.com/marketplace/actions/deploy-to-neocities"
+                            >Deploy to Neocities</a
+                          ></u
+                        >
+                      </li>
+                    </ul>
+                    <p>. . .</p>
+                  </article>
+                </aside>
               </div>
             </div>
             <!-- commission info -->
             <div class="tab-content" id="tab2-content">
-              <div class="container">
-                <h2>Commissions</h2>
+              <div class="tab-content-main">
                 <article>
-                  <p>closed</p>
+                  <h2>Commissions: closed</h2>
+                  <p>ETA: 01/2027</p>
                 </article>
               </div>
             </div>
             <!-- about setup -->
             <div class="tab-content" id="tab3-content">
               <div class="columns">
-                <div class="column">
-                  <h2>Setup</h2>
-                  <section id="applications">
+                <section class="column">
+                  <article class="tab-content-main" id="applications">
+                    <h2>Setup</h2>
                     <h4>Applications</h4>
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th>Name</th>
-                          <th>Purpose</th>
-                          <th>Compatibility</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Krita</td>
-                          <td>Drawing</td>
-                          <td>Linux, Windows, Mac</td>
-                        </tr>
-                        <tr>
-                          <td>Aseprite</td>
-                          <td>Pixel art</td>
-                          <td>Windows, Linux (aur)</td>
-                        </tr>
-                        <tr>
-                          <td>Inkscape</td>
-                          <td>Vector drawing</td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>Blender</td>
-                          <td>3d art</td>
-                          <td>Linux, Windows, Mac</td>
-                        </tr>
-                        <tr>
-                          <td>FreeCAD</td>
-                          <td>CAD</td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>Opentoonz</td>
-                          <td>Animation</td>
-                          <td>Linux, Windows, Mac</td>
-                        </tr>
-                        <tr>
-                          <td>Godot Engine</td>
-                          <td>Game development</td>
-                          <td>Linux, Windows, Mac</td>
-                        </tr>
-                        <tr>
-                          <td>KiCAD</td>
-                          <td>PCB design</td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>CodeOSS</td>
-                          <td>Code editor</td>
-                          <td></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </section>
-                  <section class="mobile-wrapper" id="devices">
-                    <h4>Devices</h4>
-                    <div class="device">
-                      <h5>Laptop</h5>
-                      <figure>
-                        <img src="" alt="" />
-                        <figcaption></figcaption>
-                      </figure>
+                    <div class="table-wrapper">
                       <table>
                         <thead>
-                          <th>Specs</th>
+                          <tr>
+                            <th>Name</th>
+                            <th>Purpose</th>
+                            <th>Notes</th>
+                          </tr>
                         </thead>
-                        <tr>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td></td>
-                        </tr>
+                        <tbody>
+                          <tr>
+                            <td>Krita</td>
+                            <td>2d art</td>
+                            <td>
+                              <p>
+                                The drawing program I use on laptop. I don't
+                                bother with many complicated tools, so I've
+                                personally never felt the need to migrate to CSP
+                                or Sai.
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Aseprite</td>
+                            <td>Pixel art</td>
+                            <td>
+                              <p>
+                                You don't have to pay the $20 for Aseprite! It's
+                                open source. You can build it from their github
+                                repo.
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Inkscape</td>
+                            <td>Vector art</td>
+                            <td>
+                              <p>
+                                I use Inkscape to sketch out webpage ideas and
+                                sometimes create vector graphics. Comparable to
+                                Adobe Illustrator without the pricetag. Also
+                                consider Photopea if you're looking for a
+                                Photoshop alternative.
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Blender</td>
+                            <td>3d art</td>
+                            <td>
+                              <p>
+                                Application for (but not limited to) 3d
+                                modeling, rendering, animation, and editing.
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>FreeCAD</td>
+                            <td>CAD</td>
+                            <td>
+                              <p>
+                                The application I use for more precise
+                                measurements and for 3D print cases, stands,
+                                etc.
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Opentoonz</td>
+                            <td>Animation</td>
+                            <td>
+                              <p>
+                                I rarely animate, but when I do, I use
+                                Opentoonz. If you run Linux, you can find the
+                                package on the github page, since it's not on
+                                the main site.
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Godot Engine</td>
+                            <td>Gamedev</td>
+                            <td>
+                              <p>
+                                Lightweight engine that requires no network
+                                sign-on. Uses GDScript (an engine-native
+                                language similar to python) or C#, whichever you
+                                prefer.
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>KiCAD</td>
+                            <td>PCB design</td>
+                            <td>
+                              <p>
+                                Multipurpose schematic editor. Extensive
+                                libraries, and there's an extension for FreeCAD
+                                that allows PCB model imports from KiCAD.
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Code OSS</td>
+                            <td>IDE</td>
+                            <td>
+                              <p>
+                                VSCode without Microsoft specific functionality
+                                -- i.e., telemetry-free.
+                              </p>
+                            </td>
+                          </tr>
+                        </tbody>
                       </table>
-                      <article class="setup-notes">
-                        <h5>Notes</h5>
-                        <p>
-                          The x280 has served me well. I use microSD cards for
-                          playing music so its many ports are helpful to me.
-                          Cheap, sturdy, and light, my only complaint is that
-                          the color profile sometimes bothers me no matter how
-                          much I tinker with it. Beware that it has soldered
-                          RAM.
-                        </p>
+                    </div>
+                  </article>
+                  <article id="devices">
+                    <h2>// Devices</h2>
+                    <div class="columns device-wrapper is-mobile">
+                      <div class="device column">
+                        <h3>Laptop</h3>
+                        <figure>
+                          <img src="" alt="" />
+                          <figcaption><h4>Thinkpad X280</h4></figcaption>
+                        </figure>
+                        <details class="device-specs">
+                          <summary>Specs</summary>
+                          <div>
+                            <table>
+                              <tr>
+                                <td>CPU</td>
+                                <td>Intel Core i7 (8th Gen)</td>
+                              </tr>
+                              <tr>
+                                <td>GPU</td>
+                                <td>Intel UHD Graphics 620</td>
+                              </tr>
+                              <tr>
+                                <td>RAM</td>
+                                <td>16GB</td>
+                              </tr>
+                              <tr>
+                                <td>Storage</td>
+                                <td>512GB</td>
+                              </tr>
+                              <tr>
+                                <td>Battery capacity</td>
+                                <td>48 Wh</td>
+                              </tr>
+                              <tr>
+                                <td>Screen size</td>
+                                <td>12.5"</td>
+                              </tr>
+                              <tr>
+                                <td>Resolution</td>
+                                <td>1920 x 1080</td>
+                              </tr>
+                              <tr>
+                                <td>Ports (simplified)</td>
+                                <td>
+                                  USB-C x2, USB-A x2, HDMI, audio connector,
+                                  microSD
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                        </details>
+                        <article class="setup-notes">
+                          <h4>Notes</h4>
+                          <p tabindex="0">
+                            &emsp;The x280 serves well for a dev laptop. Cheap,
+                            sturdy, and light, my only complaint is that the
+                            color profile bothers me when I draw no matter how
+                            much I tinker with it.
+                            <br /><br />&emsp;Overall, a reliable computer if
+                            you don't mind the small screen. Beware that it has
+                            soldered RAM. <br /><br />
+                          </p>
+                        </article>
+                      </div>
+                      <div class="device column">
+                        <h3>Pen tablet</h3>
+                        <figure>
+                          <img src="" alt="" />
+                          <figcaption><h4>Huion 1060P</h4></figcaption>
+                        </figure>
+                        <details class="device-specs">
+                          <summary>Specs</summary>
+                          <div>
+                            <table>
+                              <tr>
+                                <td>Area</td>
+                                <td>10x6.25"</td>
+                              </tr>
+                              <tr>
+                                <td>Thickness</td>
+                                <td>10mm</td>
+                              </tr>
+                              <tr>
+                                <td>Pressure sensitivity</td>
+                                <td>8,192 levels</td>
+                              </tr>
+                              <tr>
+                                <td>Programmable keys</td>
+                                <td>12 on tablet, 2 on stylus</td>
+                              </tr>
+                            </table>
+                          </div>
+                        </details>
+                        <article class="setup-notes">
+                          <h4>Notes</h4>
+                          <p tabindex="0">
+                            &emsp;I use this tablet with OpenTabletDriver on
+                            Linux, and it works without any major hiccups. I
+                            hear Huion tablets are usually well supported by
+                            Linux drivers, even if they are not propietary.
+                            <br /><br />&emsp;The only shame is that the
+                            pen-activated shortcut buttons along the top of the
+                            tablet are unsupported by the otdriver mapping
+                            interface. I'd like to try coding an extension that
+                            adds the functionality of turning some portion of
+                            the tablet area into shortcuts, when I get the
+                            chance... <br /><br />
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </article>
+                </section>
+                <aside class="column is-3">
+                  <section class="top" id="setup-resources">
+                    <h3>Resources</h3>
+                    <div>
+                      <article>
+                        <details open>
+                          <summary><h5>Brushes (Procreate)</h5></summary>
+                        </details>
+                      </article>
+                      <article>
+                        <details open>
+                          <summary><h5>Articles</h5></summary>
+                        </details>
                       </article>
                     </div>
-                    <div class="device">
-                      <h5>Pen tablet</h5>
-                      <figure>
-                        <img src="" alt="" />
-                        <figcaption>Huion 1060P</figcaption>
-                      </figure>
+                  </section>
+                  <section class="bottom" id="setup-os">
+                    <h3>OS Setup //</h3>
+                    <div class="table-wrapper">
                       <table>
-                        <thead>
-                          <th>Specs</th>
-                        </thead>
                         <tr>
-                          <td></td>
-                          <td></td>
+                          <td>Kernel</td>
+                          <td>Linux</td>
                         </tr>
                         <tr>
-                          <td></td>
-                          <td></td>
+                          <td>Server</td>
+                          <td>x11</td>
                         </tr>
                         <tr>
-                          <td></td>
-                          <td></td>
+                          <td>Distro</td>
+                          <td>Arch</td>
+                        </tr>
+                        <tr>
+                          <td>WM</td>
+                          <td>i3wm</td>
                         </tr>
                       </table>
-                      <article class="setup-notes">
-                        <h5>Notes</h5>
-                        <p></p>
-                      </article>
                     </div>
                   </section>
-                </div>
-                <aside class="column is-4">
-                  <section id="setup-resources">
-                    <h4>Resources</h4>
-                  </section>
-                  <section id="setup-os">
-                    <h4>OS Setup</h4>
-                    <table>
-                      <tr>
-                        <td>Kernel</td>
-                        <td>Linux</td>
-                      </tr>
-                      <tr>
-                        <td>Server</td>
-                        <td>x11</td>
-                      </tr>
-                      <tr>
-                        <td>Distro</td>
-                        <td>Arch</td>
-                      </tr>
-                      <tr>
-                        <td>WM/DE</td>
-                        <td>i3wm, no de</td>
-                      </tr>
-                    </table>
-                  </section>
-                  <section class="button-wrapper"></section>
                 </aside>
               </div>
             </div>
           </div>
-          <!-- socials -->
-          <nav class="bcrumbs" aria-label="breadcrumbs">
-            <ul>
-              <li><a href="https://miyufen.tumblr.com">tumblr</a></li>
-              <li><a href="">toyhouse</a></li>
-              <li><a href="">artfight</a></li>
-              <li><a href="https://github.com/kiptunes">github</a></li>
-              <li><a href="">ko-fi</a></li>
-            </ul>
-          </nav>
         </main>
       </div>
-
+      <!-- socials -->
+      <nav class="bcrumbs" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="https://miyufen.tumblr.com">tumblr</a></li>
+          <li><a href="">toyhouse</a></li>
+          <li><a href="">artfight</a></li>
+          <li><a href="https://github.com/kiptunes">github</a></li>
+          <li><a href="">ko-fi</a></li>
+        </ul>
+      </nav>
       <!-- footer -->
       <footer>
-        <a href="">sourcecode</a> / <a href="">credits</a> / public domain under
-        the <a href="https://unlicense.org/">unlicense</a>
-        <br />
-        2026 • miyufen
+        <p>
+          <a href="github.com/kiptunes/neocities">sourcecode</a> /
+          <a href="credits.html">credits</a> / public domain under the
+          <a href="https://unlicense.org/">unlicense</a>
+        </p>
+        <p>2026 • miyufen</p>
       </footer>
     </div>
   </body>
