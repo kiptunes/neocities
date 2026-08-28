@@ -386,10 +386,14 @@ footer a {
     margin: 1rem;
     text-align: end;
   }
+  .nav-icon:hover span {
+    color: #1f3974;
+    cursor: pointer;
+  }
 
   .left {
     position: absolute;
-    top: -150px;
+    top: -120px;
     right: 0;
     width: 200px;
     height: auto;

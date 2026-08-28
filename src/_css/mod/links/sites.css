@@ -1,0 +1,237 @@
+span {
+  color: #d2ccbe;
+  color: #8ecacb;
+  color: #25637a;
+  color: #175b5c;
+  color: #516099;
+  color: #38526d;
+  color: #212145;
+  color: #2f393c;
+}
+html {
+  background-color: #d2ccbe;
+}
+.topbar,
+.notched-header {
+  background-color: #38526d;
+}
+header {
+  width: 100%;
+  padding: 0 12px;
+}
+header hr {
+  background-color: #38526d;
+  flex: 1;
+  margin: 32px 12px 0;
+  background-color: transparent;
+  border-bottom: 32px double #38526d;
+}
+header nav {
+  margin: 6px 0 12px;
+  padding: 12px;
+  background-color: #516099;
+}
+#titlebar {
+  background-color: #1f274b;
+  display: flex;
+  text-align: left;
+  padding-left: 12px;
+  background-color: #1f274b;
+  border-radius: 0 32px 0 0;
+}
+#titlebar h1 {
+  color: #d2ccbe;
+}
+#sidebar,
+#link-back {
+  background-color: #38526d;
+  box-shadow: 3px 3px #1f274b;
+}
+.subsection-tabs ul {
+  vertical-align: middle;
+  text-align: right;
+}
+.subsection-tabs li {
+  display: inline-block;
+}
+.subsection-tabs a {
+  font-family: FakeReceipt;
+  color: #212145;
+  padding: 8px;
+  border-left: 2px solid #d2ccbe;
+}
+.subsection-tabs a:hover {
+  color: #8ecacb;
+}
+.left .notch-right:before {
+  border-left: 24px solid #38526d;
+}
+.left h3,
+#sidebar span {
+  color: #d2ccbe;
+}
+#sidebar span:hover {
+  color: #8ecacb;
+}
+#sidebar {
+  background-color: #38526d;
+  box-shadow: 3px 3px #1f274b;
+}
+#sidebar li:hover {
+  background-color: #1f274b;
+}
+#sidebar summary {
+  background-color: #1f274b;
+  color: #d2ccbe;
+}
+#sidebar summary:hover {
+  color: #8ecacb;
+}
+.path {
+  display: inline-block;
+  font-family: Chivo;
+}
+.path a {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+h2 {
+  font-size: 1.72rem;
+}
+#webrings h2 {
+  color: #25295f;
+  border-bottom: 2px dashed #25295f;
+  margin-bottom: 18px;
+}
+#inspiration {
+  margin-top: 12px;
+  padding: 0;
+}
+#inspiration hr {
+  margin: 12px 0;
+  height: 6px;
+  background-color: transparent;
+  border-top: 2px solid #38526d;
+  border-bottom: 2px solid #38526d;
+}
+#inspiration h2 {
+  background-color: #175b5c;
+  color: #d2ccbe;
+  padding: 4px 12px;
+}
+#inspiration p {
+  color: #175b5c;
+  border-bottom: 2px dotted #175b5c;
+}
+#inspiration .button-wrapper {
+  border: 2px solid #38526d;
+  box-shadow: 3px 3px #1f274b;
+  margin-bottom: 12px;
+}
+#fun {
+  padding: 0 12px 12px;
+}
+#fun h2 {
+  color: #d2ccbe;
+  border-bottom: 2px dashed #d2ccbe;
+  margin-bottom: 4px;
+}
+#fun p {
+  color: #d2ccbe;
+}
+#fun .linkbox {
+  background-color: #d2ccbe;
+  border: 2px solid #1f274b;
+}
+#fun > div {
+  padding: 6px;
+}
+#webrings article,
+#fun {
+  background-color: #516099;
+  box-shadow: 3px 3px #1f274b;
+}
+#webrings {
+  margin-bottom: 12px;
+  padding: 6px;
+}
+#webrings article {
+  margin: 12px 0;
+}
+#webrings article:first-child {
+  margin-right: 12px;
+}
+#webrings article p {
+  background-color: #25295f;
+  color: #d2ccbe;
+  max-height: 200px;
+  overflow-y: scroll;
+  padding: 4px 12px 4px 4px;
+}
+#webrings article h4 {
+  color: #d2ccbe;
+  margin-bottom: 6px;
+  border-bottom: 2px solid #d2ccbe;
+}
+#link-back h4 {
+  background-color: #d2ccbe;
+  color: #212145;
+}
+#link-back .button-wrapper {
+  background-color: #d2ccbe;
+  margin-top: 6px;
+  padding: 8px;
+  box-shadow: none;
+}
+#hotlinking {
+  background-color: #38526d;
+  box-shadow: 3px 3px #1f274b;
+  padding: 6px;
+  margin-top: 12px;
+}
+#hotlinking summary {
+  list-style: none;
+  cursor: pointer;
+}
+#hotlinking h5 {
+  font-family: IBM-Plex-Mono;
+  padding: 2px 4px;
+  font-size: 0.9rem;
+  background-color: #1f274b;
+}
+#hotlinking p {
+  background-color: #d2ccbe;
+  margin-top: 6px;
+  color: #38526d;
+  padding: 4px 8px 12px 4px;
+  text-align: justify;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+#hotlinking a {
+  color: #25637a;
+}
+#hotlinking a:hover {
+  color: #516099;
+}
+footer p {
+  color: #1f274b;
+}
+footer a {
+  color: #38526d;
+}
+@media (max-width: 769px) {
+  #webrings article:first-child {
+    margin-right: 12px;
+  }
+  #webrings article {
+    margin: 0 12px 12px;
+  }
+  #hotlinking {
+    margin-top: 0px;
+  }
+  aside.right article {
+    flex: 1;
+  }
+}

@@ -12,83 +12,57 @@
     <!-- <link rel="icon" type="image/x-icon" href=""> -->
     <link rel="stylesheet" href="../_css/bulma/bulma-no-helpers.css" />
     <link rel="stylesheet" href="../_css/style.css" />
-    <link rel="stylesheet" href="../_css/mod/links/style.css" />
+    <link rel="stylesheet" href="../_css/mod/links/toybox.css" />
     <link rel="stylesheet" href="../_css/components.css" />
-    <title>malfen</title>
+    <title>miyufen</title>
   </head>
 
   <body>
     <!-- top navigation -->
     <nav class="topbar">
-      <a class="topbar-item" id="home" href="">home</a>
-      <a href="" class="topbar-item">theme</a>
-      <!-- settings -->
-      <div class="topbar-item">
-        <details>
-          <summary>settings</summary>
-          <div class="details-content">
-            <label>
-              <span>reduced motion</span>
-              <input type="checkbox" checked />
-              <span class="checkmark"></span>
-            </label>
-            <br />
-            <label>
-              <span>lazy loading</span>
-              <input type="checkbox" checked />
-              <span class="checkmark"></span>
-            </label>
-            <br />
-            <label>
-              <span>dyslexia friendly font</span>
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-            <br />
-            <label>
-              <span>alt text below images</span>
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-          </div>
-        </details>
-      </div>
+      <a class="topbar-item" id="home" href="../index.html">Miyufen</a>
     </nav>
 
     <nav class="path columns is-mobile">
-      <button class="column is-narrow">Back</button>
-      <button class="column is-narrow">Forward</button>
-      <a class="column is-hidden-touch">path/to/page</a>
+      <div class="column">
+        <a href="../index.html"><u>home</u></a> > links >
+        <a href="#"><u>toybox</u></a>
+      </div>
       <div class="column nav-icon">
-        <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
-        <label for="nav-checkbox">nav</label>
-        <nav class="menu sidebar-mobile">
-          <!-- <p class="menu-label">General</p> -->
-        </nav>
+        <label for="nav-checkbox">
+          <span>nav</span>
+        </label>
       </div>
     </nav>
 
     <div class="sitebox container is-widescreen">
-      <header class="titlebar">
-        <h1>TOYBOX</h1>
+      <header>
+        <div id="titlebar">
+          <h1>TOYBOX</h1>
+          <hr />
+        </div>
+        <nav class="subsection-tabs">
+          <ul>
+            <li><a href="#graphics">Collection</a></li>
+            <li><a href="#about">Notes</a></li>
+            <li><a href="#links">Links</a></li>
+          </ul>
+        </nav>
       </header>
-
-      <nav class="tabs is-centered">
-        <ul>
-          <li><a href="#graphics">Collection</a></li>
-          <li><a href="#about">Notes</a></li>
-          <li><a href="#links">Links</a></li>
-        </ul>
-      </nav>
 
       <div class="columns container is-widescreen">
         <!-- sidebar -->
         <aside class="left column is-hidden-touch is-one-fifth">
+          <div class="notched-header">
+            <h3>Navigation</h3>
+            <div class="notch-right"></div>
+            <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
+          </div>
           <nav class="menu" id="sidebar">
             <details class="folder-label" open>
               <summary>Root</summary>
               <ul>
-                <li class="is-active">
+                <li>
                   <a href="../index.html">
                     <img
                       src="../_assets/img/icons/nav/icon-home.png"
@@ -128,7 +102,7 @@
               <summary>Art</summary>
               <ul>
                 <li>
-                  <a href="">
+                  <a href="../art/illustrations.html">
                     <img
                       src="../_assets/img/icons/nav/icon-easel.png"
                       alt="easel icon"
@@ -139,18 +113,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="">
-                    <img
-                      src="../_assets/img/icons/nav/icon-pencil.png"
-                      alt="pencil icon"
-                      width="16"
-                      height="16"
-                    />
-                    <span>Fanart</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
+                  <a href="../art/sketchbook.html">
                     <img
                       src="../_assets/img/icons/nav/icon-notebook.png"
                       alt="notebook icon"
@@ -161,9 +124,9 @@
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="../art/pixel-art.html">
                     <img
-                      src="../_assets/img/icons/nav/icon-pixel.png"
+                      src="../_assets/img/icons/nav/icon-pencil.png"
                       alt="pixel icon"
                       width="16"
                       height="16"
@@ -231,7 +194,7 @@
                 <li>
                   <a href="../links/toybox.html">
                     <img
-                      src="../_assets/img/icons/nav/icon-kite.png"
+                      src="../_assets/img/icons/nav/icon-pixel.png"
                       alt="kite icon"
                       width="16"
                       height="16"
@@ -256,37 +219,39 @@
         </aside>
 
         <!-- sitebox -->
-        <main class="column">
-          <!-- info before stamps -->
-          <details open class="info">
-            <summary>Info</summary>
-            <p tabindex="0">
-              Welcome to my graphics collection! I am in the process of adding
-              links to each stamp so that they take you to the place that I
-              found them when you click on them. This won't necessarily be the
-              original source, unfortunately. <br /><br />
+        <main class="column middle">
+          <div class="columns">
+            <!-- stamps columns -->
+            <section class="column">
+              <!-- info before stamps -->
+              <details open class="info">
+                <summary>Info</summary>
+                <p tabindex="0">
+                  Welcome to my graphics collection! I am in the process of
+                  adding links to each stamp so that they take you to the place
+                  that I found them when you click on them. This won't
+                  necessarily be the original source, unfortunately.
+                  <br /><br />
 
-              Pause the gifs at any time by pressing the "pause/play" button
-              below. <br /><br />
+                  Pause the gifs at any time by pressing the "pause/play" button
+                  below.
+                  <br /><br />
 
-              There are links to more graphics collections at the bottom of this
-              page. Please be aware that a large majority of them contain BRIGHT
-              COLORS and FLASHING LIGHTS. Be sure to only go to the sites I have
-              listed if it is safe for you to do so.
-            </p>
-          </details>
+                  There are links to more graphics collections at the bottom of
+                  this page. Please be aware that a large majority of them
+                  contain <span class="red">BRIGHT COLORS</span> and
+                  <span class="red">FLASHING LIGHTS</span>. Be sure to only go
+                  to the sites I have listed if it is safe for you to do so.
+                </p>
+              </details>
 
-          <!-- moving gifs -->
-          <div>
-            <!-- pause/play button for gif to png switch -->
-            <label for="pause-gifs" id="graphics">
-              <input type="checkbox" id="pause-gifs" checked />
-              <span>pause/play</span>
-            </label>
-            <section class="columns">
-              <!-- stamps columns -->
-              <section class="column" id="stamps">
-                <h3>stamps!</h3>
+              <!-- pause/play button for gif to png switch -->
+              <label for="pause-gifs" id="graphics">
+                <input type="checkbox" id="pause-gifs" checked />
+                <span>pause/play</span>
+              </label>
+              <article class="graphics" id="stamps">
+                <h3>stamps</h3>
                 <div class="stamp-wrapper img-wrapper">
                   <a href=""
                     ><img
@@ -759,208 +724,477 @@
                       height="56"
                   /></a>
                 </div>
-              </section>
+              </article>
 
-              <!-- banners and buttons section on the right-->
-              <div class="column is-one-quarter">
-                <div id="buttons">
-                  <!-- buttons -->
-                  <h3>buttons :]</h3>
-                  <div class="img-wrapper button-wrapper">
-                    <a class="animated-gifs" href=""
-                      ><img
-                        src="../_assets/img/graphics/Buttons/Tech/dos-page.gif"
-                        alt="Dos page button."
-                        title="Dos page button."
-                        width="88"
-                        height="31"
-                    /></a>
-                    <a class="static-gifs" href=""
-                      ><img
-                        src="../_assets/img/graphics/Buttons/Tech/[STATIC]dos-page.png"
-                        alt="Dos page button."
-                        title="Dos page button."
-                        width="88"
-                        height="31"
-                    /></a>
-                    <a href=""
-                      ><img
-                        src="../_assets/img/graphics/Buttons/Tech/got-html.pnj"
-                        alt="'Got HTML?' button."
-                        width="88"
-                        height="31"
-                    /></a>
-                    <a class="animated-gifs" href=""
-                      ><img
-                        src="../_assets/img/graphics/Buttons/Tech/seed-your-torrents.gif"
-                        alt="'Sharing is caring; seed your torrents' gif."
-                        width="88"
-                        height="31"
-                    /></a>
-                    <a class="static-gifs" href=""
-                      ><img
-                        src="../_assets/img/graphics/Buttons/Tech/[STATIC]seed-your-torrents.png"
-                        alt="'Sharing is caring; seed your torrents' button."
-                        width="88"
-                        height="31"
-                    /></a>
-                    <a href=""
-                      ><img
-                        src="../_assets/img/graphics/Buttons/Tech/i-like-computer.jpg"
-                        alt="'I like computer' button."
-                        width="88"
-                        height="31"
-                    /></a>
-                    <a class="animated-gifs" href=""
-                      ><img
-                        src="../_assets/img/graphics/Buttons/Tech/preserve-internet-archive.gif"
-                        alt="'Preserve history' Internet Archive gif."
-                        width="88"
-                        height="31"
-                    /></a>
-                    <a class="static-gifs" href=""
-                      ><img
-                        src="../_assets/img/graphics/Buttons/Tech/[STATIC]preserve-internet-archive.png"
-                        alt="'Preserve history' Internet Archive button."
-                        width="88"
-                        height="31"
-                    /></a>
-                    <a href=""
-                      ><img
-                        src="../_assets/img/graphics/Buttons/Food/88x31_milk_tea_now.png"
-                        alt="'Milk tea now!' button."
-                        width="88"
-                        height="31"
-                    /></a>
-                    <a href=""
-                      ><img
-                        src="../_assets/img/graphics/Buttons/Tech/mobile-friendly.png"
-                        alt="'Mobile friendly' button."
-                        width="88"
-                        height="31"
-                    /></a>
-                    <a href=""
-                      ><img
-                        src="../_assets/img/graphics/Buttons/Nature/there-is-only-one.png"
-                        alt="There is only one Earth button."
-                        width="88"
-                        height="31"
-                    /></a>
-                    <a class="animated-gifs" href=""
-                      ><img
-                        src="../_assets/img/graphics/Buttons/Tech/emoticons-exclamation.gif"
-                        alt="Emoticonos with a star button."
-                        width="88"
-                        height="31"
-                    /></a>
-                    <a class="static-gifs" href=""
-                      ><img
-                        src="../_assets/img/graphics/Buttons/Tech/[STATIC]emoticons-exclamation.png"
-                        alt="Emoticonos with a star button."
-                        width="88"
-                        height="31"
-                    /></a>
-                    <a href=""
-                      ><img
-                        src="../_assets/img/graphics/Buttons/About/right2repair.png"
-                        alt="Right to repair support button."
-                        width="88"
-                        height="31"
-                    /></a>
-                    <a class="animated-gifs" href=""
-                      ><img
-                        src="../_assets/img/graphics/Buttons/Fandom/vidapon-Rain_World_button.gif"
-                        alt="Rain World gif."
-                        width="88"
-                        height="31"
-                    /></a>
-                    <a class="static-gifs" href=""
-                      ><img
-                        src="../_assets/img/graphics/Buttons/Fandom/[STATIC]vidapon-Rain_World_button.png"
-                        alt="Rain World button."
-                        width="88"
-                        height="31"
-                    /></a>
-                    <a class="animated-gifs" href=""
-                      ><img
-                        src="../_assets/img/graphics/Buttons/Fandom/vidapon-ISaT_button.gif"
-                        alt="In Stars and Time gif."
-                        width="88"
-                        height="31"
-                    /></a>
-                    <a class="static-gifs" href=""
-                      ><img
-                        src="../_assets/img/graphics/Buttons/Fandom/[STATIC]vidapon-ISaT_button.png"
-                        alt="In Stars and Time button."
-                        width="88"
-                        height="31"
-                    /></a>
-                    <a href=""
-                      ><img
-                        src="../_assets/img/graphics/Buttons/Flags/trans.jpg"
-                        alt="Trans flag button."
-                        width="88"
-                        height="31"
-                    /></a>
-                    <a href=""
-                      ><img
-                        src="../_assets/img/graphics/Buttons/Food/peach.png"
-                        alt="Peach button."
-                        width="88"
-                        height="31"
-                    /></a>
+              <!-- table with info placed below stamps -->
+              <article id="about">
+                <h2>About</h2>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Type</th>
+                      <th>Size [px]</th>
+                      <th>Use</th>
+                      <th>References</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td>Stamp</td>
+                    <td>&numsp;99 x 56</td>
+                    <td>
+                      Originated on DeviantArt around 2005 to promote their
+                      first convention.
+                    </td>
+                    <td>
+                      <a href="https://ballonlea.net/articles/stamp">
+                        <i>A Brief History of DeviantART Stamps</i></a
+                      >, Ballonlea
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Button</td>
+                    <td>&numsp;88 x 31</td>
+                    <td>
+                      Likely started by Netscape with their 'Netscape Now!'
+                      buttons in the 1990's.
+                    </td>
+                    <td>
+                      <a href="https://88x31.nl/history.html"
+                        ><i>88x31 Collection - History</i></a
+                      >, Paulus Hollander
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Blinkie</td>
+                    <td>150 x 20</td>
+                    <td>Popularized as site decorations on Geocities.</td>
+                    <td>
+                      <a href="https://blinkies.cafe/"
+                        ><i>About Blinkie GIFs</i></a
+                      >, blinkies.cafe
+                    </td>
+                  </tr>
+                </table>
+              </article>
+
+              <details open class="info">
+                <summary>WARNING</summary>
+                <p>
+                  The sites listed below contain large swaths of bright colors
+                  and flashing lights.
+                </p>
+              </details>
+
+              <!-- 2-column links and resources area -->
+              <section id="links">
+                <!-- links to graphics collections -->
+                <article class="resources">
+                  <h3>Find More</h3>
+                  <div>
+                    <details class="linkbox">
+                      <summary><h4>Collections</h4></summary>
+                      <ul tabindex="0">
+                        <li>
+                          <a href="https://lazer-bunny.neocities.org/graphics"
+                            >Lazer-Bunny</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://blinkie.world/">blinkie.world</a>
+                        </li>
+                        <li><a href="https://blinkie.wiki/">BlinkieWiki</a></li>
+                        <li>
+                          <a
+                            href="https://adriansblinkiecollection.neocities.org/"
+                            >Adrian's Blinkie Collection</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://y2k.neocities.org/collections"
+                            >Y2K Collections</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://raining-starss.neocities.org/stampcollection"
+                            >Raining Starss Collections</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://pixelsafari.neocities.org/"
+                            >Coco's Pixel Safari</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://vesselvindicate.nekoweb.org/shrines/blinkies.html"
+                            >vesselvindicate</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://www.glitter-graphics.com/"
+                            >Glitter Graphics</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://jansuta.neocities.org/graphics#txt"
+                            >Jan Suta</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://nonexistentfandomsfandom.neocities.org/graphics/"
+                            >The Nonexistent Fandoms Fandom</a
+                          >
+                        </li>
+                      </ul>
+                    </details>
+                    <!-- links to artists who make graphics -->
+                    <details class="linkbox">
+                      <summary><h4>Artists</h4></summary>
+                      <ul tabindex="0">
+                        <li>
+                          <a href="https://sillyblinkies.nekoweb.org/"
+                            >Silly Blinkies</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://blinkie-autism.neocities.org/"
+                            >Blinkie Autism</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://sydsblinkies.neocities.org/"
+                            >syds blinkies</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://transbro.neocities.org/Graphics"
+                            >TransBro</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://kotatsu.me/creations/blinkies/"
+                            >kotatsu.me</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://wynns-wonderful-pixel-paradise.neocities.org/"
+                            >Wynn's Wonderful Pixel Paradise</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://wrender.neocities.org/graphics"
+                            >Wrender</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://plasticdino.net/graphics"
+                            >plasticdino</a
+                          >
+                        </li>
+                        <li><a href="https://omfg.neocities.org/">omfg</a></li>
+                        <li>
+                          <a
+                            href="https://sillybeanies.neocities.org/mywork/graphics/graphicsindex"
+                            >sillybeanies</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://svnhrtz.neocities.org/graphics"
+                            >svnhrtz</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://vesselvindicate.nekoweb.org/shrines/blinkies.html"
+                            >Graphics by Jay</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://jack-dawlia.neocities.org/page/graphics"
+                            >Jack Dawlia</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="http://blinkieobsession.freeservers.com/2/list.htm"
+                            >Blinkie Obsession</a
+                          >
+                        </li>
+                      </ul>
+                    </details>
+                    <details class="linkbox">
+                      <summary><h4>Blogs</h4></summary>
+                      <ul tabindex="0">
+                        <li>
+                          <a href="https://www.tumblr.com/blinkees"
+                            >@blinkees</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://hyprmobile.tumblr.com/"
+                            >@hyprmobile</a
+                          >
+                        </li>
+                      </ul>
+                    </details>
                   </div>
-                </div>
+                </article>
 
-                <!-- blinkies -->
-                <div id="blinkies">
-                  <h3>Blinkies</h3>
-                  <div class="img-wrapper blinkie-wrapper">
-                    <a class="animated-gifs" href=""
-                      ><img
-                        src="../_assets/img/graphics/Banners/About/i-support-emoticons.gif"
-                        alt="I support emoticons blinkie."
-                        width="150"
-                        height="20"
-                      />
-                    </a>
-                    <a class="static-gifs" href=""
-                      ><img
-                        src="../_assets/img/graphics/Banners/About/[STATIC]i-support-emoticons.png"
-                        alt="I support emoticons blinkie."
-                        width="150"
-                        height="20"
-                      />
-                    </a>
-                    <a class="animated-gifs" href="">
-                      <img
-                        src="../_assets/img/graphics/Banners/About/it-its.gif"
-                        alt="'It/its' blinkie with computer icon blinkie."
-                        width="150"
-                        height="20"
-                    /></a>
-                    <a class="static-gifs" href="">
-                      <img
-                        src="../_assets/img/graphics/Banners/About/[STATIC]it-its.png"
-                        alt="'It/its' blinkie with computer icon blinkie."
-                        width="150"
-                        height="20"
-                    /></a>
-                    <a class="animated-gifs" href=""
-                      ><img
-                        src="../_assets/img/graphics/Banners/About/dishwasher-safe.gif"
-                        alt="'Dishwasher safe' blinkie with smiley faces."
-                        width="150"
-                        height="20"
-                    /></a>
-                    <a class="static-gifs" href=""
-                      ><img
-                        src="../_assets/img/graphics/Banners/About/[STATIC]dishwasher-safe.png"
-                        alt="'Dishwasher safe' blinkie with smiley faces."
-                        width="150"
-                        height="20"
-                    /></a>
-                    <!--
+                <!-- links to templates and borders -->
+                <article class="resources">
+                  <h3>Make Your Own</h3>
+                  <div>
+                    <!-- links to guides -->
+                    <details class="linkbox">
+                      <summary><h4>Graphic Makers</h4></summary>
+                      <ul tabindex="0">
+                        <li>
+                          <a href="https://blinkies.cafe/">blinkies.cafe</a>
+                        </li>
+                        <li>
+                          <a href="https://gerudovalley.net/blinkie_maker.html"
+                            >Gerudo Valley Blinkie Maker</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://myblinkie.dazzlejunction.net/"
+                            >MyBlinkie</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://websetsbylynn.neocities.org/"></a
+                          >Graphic Makers
+                        </li>
+                      </ul>
+                    </details>
+                    <details class="linkbox">
+                      <summary><h4>Guides</h4></summary>
+                      <ul tabindex="0">
+                        <li>
+                          <a href="https://blinkies.cafe/">blinkies.cafe</a>
+                        </li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                      </ul>
+                    </details>
+                    <!-- links to templates -->
+                    <details class="linkbox">
+                      <summary><h4>Templates</h4></summary>
+                    </details>
+                    <!-- links to borders -->
+                    <details class="linkbox">
+                      <summary><h4>Borders</h4></summary>
+                    </details>
+                  </div>
+                </article>
+              </section>
+            </section>
+
+            <!-- banners and buttons section on the right-->
+            <aside class="column is-one-quarter">
+              <article class="graphics" id="buttons">
+                <!-- buttons -->
+                <h3>buttons</h3>
+                <div class="img-wrapper button-wrapper">
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Buttons/Tech/dos-page.gif"
+                      alt="Dos page button."
+                      title="Dos page button."
+                      width="88"
+                      height="31"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Buttons/Tech/[STATIC]dos-page.png"
+                      alt="Dos page button."
+                      title="Dos page button."
+                      width="88"
+                      height="31"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Buttons/Tech/got-html.pnj"
+                      alt="'Got HTML?' button."
+                      width="88"
+                      height="31"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Buttons/Tech/seed-your-torrents.gif"
+                      alt="'Sharing is caring; seed your torrents' gif."
+                      width="88"
+                      height="31"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Buttons/Tech/[STATIC]seed-your-torrents.png"
+                      alt="'Sharing is caring; seed your torrents' button."
+                      width="88"
+                      height="31"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Buttons/Tech/i-like-computer.jpg"
+                      alt="'I like computer' button."
+                      width="88"
+                      height="31"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Buttons/Tech/preserve-internet-archive.gif"
+                      alt="'Preserve history' Internet Archive gif."
+                      width="88"
+                      height="31"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Buttons/Tech/[STATIC]preserve-internet-archive.png"
+                      alt="'Preserve history' Internet Archive button."
+                      width="88"
+                      height="31"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Buttons/Food/88x31_milk_tea_now.png"
+                      alt="'Milk tea now!' button."
+                      width="88"
+                      height="31"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Buttons/Tech/mobile-friendly.png"
+                      alt="'Mobile friendly' button."
+                      width="88"
+                      height="31"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Buttons/Nature/there-is-only-one.png"
+                      alt="There is only one Earth button."
+                      width="88"
+                      height="31"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Buttons/Tech/emoticons-exclamation.gif"
+                      alt="Emoticonos with a star button."
+                      width="88"
+                      height="31"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Buttons/Tech/[STATIC]emoticons-exclamation.png"
+                      alt="Emoticonos with a star button."
+                      width="88"
+                      height="31"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Buttons/About/right2repair.png"
+                      alt="Right to repair support button."
+                      width="88"
+                      height="31"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Buttons/Fandom/vidapon-Rain_World_button.gif"
+                      alt="Rain World gif."
+                      width="88"
+                      height="31"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Buttons/Fandom/[STATIC]vidapon-Rain_World_button.png"
+                      alt="Rain World button."
+                      width="88"
+                      height="31"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Buttons/Fandom/vidapon-ISaT_button.gif"
+                      alt="In Stars and Time gif."
+                      width="88"
+                      height="31"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Buttons/Fandom/[STATIC]vidapon-ISaT_button.png"
+                      alt="In Stars and Time button."
+                      width="88"
+                      height="31"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Buttons/Flags/trans.jpg"
+                      alt="Trans flag button."
+                      width="88"
+                      height="31"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../_assets/img/graphics/Buttons/Food/peach.png"
+                      alt="Peach button."
+                      width="88"
+                      height="31"
+                  /></a>
+                </div>
+              </article>
+
+              <!-- blinkies -->
+              <article class="graphics" id="blinkies">
+                <h3>Blinkies</h3>
+                <div class="img-wrapper blinkie-wrapper">
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Banners/About/i-support-emoticons.gif"
+                      alt="I support emoticons blinkie."
+                      width="150"
+                      height="20"
+                    />
+                  </a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Banners/About/[STATIC]i-support-emoticons.png"
+                      alt="I support emoticons blinkie."
+                      width="150"
+                      height="20"
+                    />
+                  </a>
+                  <a class="animated-gifs" href="">
+                    <img
+                      src="../_assets/img/graphics/Banners/About/it-its.gif"
+                      alt="'It/its' blinkie with computer icon blinkie."
+                      width="150"
+                      height="20"
+                  /></a>
+                  <a class="static-gifs" href="">
+                    <img
+                      src="../_assets/img/graphics/Banners/About/[STATIC]it-its.png"
+                      alt="'It/its' blinkie with computer icon blinkie."
+                      width="150"
+                      height="20"
+                  /></a>
+                  <a class="animated-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Banners/About/dishwasher-safe.gif"
+                      alt="'Dishwasher safe' blinkie with smiley faces."
+                      width="150"
+                      height="20"
+                  /></a>
+                  <a class="static-gifs" href=""
+                    ><img
+                      src="../_assets/img/graphics/Banners/About/[STATIC]dishwasher-safe.png"
+                      alt="'Dishwasher safe' blinkie with smiley faces."
+                      width="150"
+                      height="20"
+                  /></a>
+                  <!--
                     <a class="animated-gifs" href=""
                       ><img
                         src="../_assets/img/graphics/Banners/Tech/piracy-fun-and-free.gif"
@@ -976,446 +1210,139 @@
                         height="20"
                     /></a>
                      -->
+                </div>
+              </article>
+
+              <!-- other graphics -->
+              <article class="graphics" id="other-graphics">
+                <h3>Other graphics</h3>
+                <div class="img-wrapper" id="graphics-grid">
+                  <!-- porygon keychain -->
+                  <a class="animated-gifs" href="">
+                    <img
+                      src="../_assets/img/graphics/Pixel/Fandom/porygon keychain.gif"
+                      alt="Pixelated porygon keychain."
+                      title="Pixelated porygon keychain."
+                    />
+                  </a>
+                  <a class="static-gifs" href="">
+                    <img
+                      src="../_assets/img/graphics/Pixel/Fandom/[STATIC]porygon keychain.png"
+                      alt="Pixelated porygon keychain."
+                      title="Pixelated porygon keychain."
+                    />
+                  </a>
+                  <!-- fan and server gifs -->
+                  <a class="animated-gifs" href="">
+                    <br />
+                    <img
+                      src="../_assets/img/graphics/Pixel/Animals/aaa-fan.gif"
+                      alt="Cat going 'aaa' in front of a fan gif."
+                      title="Cat going 'aaa' in front of a fan gif."
+                    />
+                  </a>
+                  <a class="static-gifs" href="">
+                    <br />
+                    <img
+                      src="../_assets/img/graphics/Pixel/Animals/[STATIC]aaa-fan.png"
+                      alt="Cat going 'aaa' in front of a fan."
+                      title="Cat going 'aaa' in front of a fan."
+                    />
+                  </a>
+
+                  <a class="animated-gifs" href="">
+                    <img
+                      src="../_assets/img/graphics/Pixel/Tech/server.gif"
+                      alt="Server rack lighting up gif."
+                      title="Server rack lighting up gif."
+                    />
+                  </a>
+                  <a class="static-gifs" href="">
+                    <img
+                      src="../_assets/img/graphics/Pixel/Tech/[STATIC]server.png"
+                      alt="Server rack."
+                      title="Server rack."
+                    />
+                  </a>
+
+                  <!-- emoticons -->
+                  <div class="img-wrapper">
+                    <a href=""
+                      ><img
+                        src="../_assets/img/graphics/Pixel/Food/ramune.png"
+                        alt="ramune bottle"
+                        title="ramune bottle"
+                    /></a>
+                    <br />
+                    <a class="animated-gifs" href="">
+                      <img
+                        src="../_assets/img/graphics/Pixel/Emoticon/sigh.gif"
+                        alt="Emoticon sighs gif."
+                        title="Emoticon sighs gif."
+                      />
+                    </a>
+                    <a class="static-gifs" href="">
+                      <img
+                        src="../_assets/img/graphics/Pixel/Emoticon/[STATIC]sigh.png"
+                        alt="Emoticon sighing."
+                        title="Emoticon sighing."
+                      />
+                    </a>
+                    <br />
+                    <a class="animated-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Pixel/Emoticon/dizzy.gif"
+                        alt="Emoticon with at symbols for eyes gif."
+                        title="Emoticon with at symbols for eyes gif."
+                    /></a>
+                    <a class="static-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Pixel/Emoticon/[STATIC]dizzy.png"
+                        alt="Emoticon with at symbols for eyes."
+                        title="Emoticon with at symbols for eyes."
+                    /></a>
+                    <br />
+                    <a class="animated-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Pixel/Emoticon/rub-eye.gif"
+                        alt="Emoticon rubs its eye gif."
+                        title="Emoticon rubs its eye gif."
+                    /></a>
+                    <a class="static-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Pixel/Emoticon/[STATIC]rub-eye.png"
+                        alt="Emoticon rubbing its eye."
+                        title="moticon rubbing its eye."
+                    /></a>
+                    <br />
+                    <a class="animated-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Pixel/Emoticon/snzz.gif"
+                        alt="Emoticon dozes off."
+                        title="Emoticon dozes off."
+                    /></a>
+                    <a class="static-gifs" href=""
+                      ><img
+                        src="../_assets/img/graphics/Pixel/Emoticon/[STATIC]snzz.png"
+                        alt="Emoticon dozing off."
+                        title="Emoticon dozing off."
+                    /></a>
                   </div>
                 </div>
-
-                <!-- other graphics -->
-                <div id="other-graphics">
-                  <h3>Other graphics</h3>
-                  <div class="img-wrapper" id="graphics-grid">
-                    <!-- porygon keychain -->
-                    <a class="animated-gifs" href="">
-                      <img
-                        src="../_assets/img/graphics/Pixel/Fandom/porygon keychain.gif"
-                        alt="Pixelated porygon keychain."
-                        title="Pixelated porygon keychain."
-                      />
-                    </a>
-                    <a class="static-gifs" href="">
-                      <img
-                        src="../_assets/img/graphics/Pixel/Fandom/[STATIC]porygon keychain.png"
-                        alt="Pixelated porygon keychain."
-                        title="Pixelated porygon keychain."
-                      />
-                    </a>
-                    <!-- fan and server gifs -->
-                    <a class="animated-gifs" href="">
-                      <br />
-                      <img
-                        src="../_assets/img/graphics/Pixel/Animals/aaa-fan.gif"
-                        alt="Cat going 'aaa' in front of a fan gif."
-                        title="Cat going 'aaa' in front of a fan gif."
-                      />
-                    </a>
-                    <a class="static-gifs" href="">
-                      <br />
-                      <img
-                        src="../_assets/img/graphics/Pixel/Animals/[STATIC]aaa-fan.png"
-                        alt="Cat going 'aaa' in front of a fan."
-                        title="Cat going 'aaa' in front of a fan."
-                      />
-                    </a>
-
-                    <a class="animated-gifs" href="">
-                      <img
-                        src="../_assets/img/graphics/Pixel/Tech/server.gif"
-                        alt="Server rack lighting up gif."
-                        title="Server rack lighting up gif."
-                      />
-                    </a>
-                    <a class="static-gifs" href="">
-                      <img
-                        src="../_assets/img/graphics/Pixel/Tech/[STATIC]server.png"
-                        alt="Server rack."
-                        title="Server rack."
-                      />
-                    </a>
-
-                    <!-- emoticons -->
-                    <div class="img-wrapper">
-                      <a href=""
-                        ><img
-                          src="../_assets/img/graphics/Pixel/Food/ramune.png"
-                          alt="ramune bottle"
-                          title="ramune bottle"
-                      /></a>
-                      <br />
-                      <a class="animated-gifs" href="">
-                        <img
-                          src="../_assets/img/graphics/Pixel/Emoticon/sigh.gif"
-                          alt="Emoticon sighs gif."
-                          title="Emoticon sighs gif."
-                        />
-                      </a>
-                      <a class="static-gifs" href="">
-                        <img
-                          src="../_assets/img/graphics/Pixel/Emoticon/[STATIC]sigh.png"
-                          alt="Emoticon sighing."
-                          title="Emoticon sighing."
-                        />
-                      </a>
-                      <br />
-                      <a class="animated-gifs" href=""
-                        ><img
-                          src="../_assets/img/graphics/Pixel/Emoticon/dizzy.gif"
-                          alt="Emoticon with at symbols for eyes gif."
-                          title="Emoticon with at symbols for eyes gif."
-                      /></a>
-                      <a class="static-gifs" href=""
-                        ><img
-                          src="../_assets/img/graphics/Pixel/Emoticon/[STATIC]dizzy.png"
-                          alt="Emoticon with at symbols for eyes."
-                          title="Emoticon with at symbols for eyes."
-                      /></a>
-                      <br />
-                      <a class="animated-gifs" href=""
-                        ><img
-                          src="../_assets/img/graphics/Pixel/Emoticon/rub-eye.gif"
-                          alt="Emoticon rubs its eye gif."
-                          title="Emoticon rubs its eye gif."
-                      /></a>
-                      <a class="static-gifs" href=""
-                        ><img
-                          src="../_assets/img/graphics/Pixel/Emoticon/[STATIC]rub-eye.png"
-                          alt="Emoticon rubbing its eye."
-                          title="moticon rubbing its eye."
-                      /></a>
-                      <br />
-                      <a class="animated-gifs" href=""
-                        ><img
-                          src="../_assets/img/graphics/Pixel/Emoticon/snzz.gif"
-                          alt="Emoticon dozes off."
-                          title="Emoticon dozes off."
-                      /></a>
-                      <a class="static-gifs" href=""
-                        ><img
-                          src="../_assets/img/graphics/Pixel/Emoticon/[STATIC]snzz.png"
-                          alt="Emoticon dozing off."
-                          title="Emoticon dozing off."
-                      /></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-
-          <div class="pokemon">
-            <h3>Pokemon</h3>
-
-            <div class="img-wrapper">
-              <a href="https://pokemondb.net/pokedex/mantine"
-                ><img
-                  src="https://img.pokemondb.net/sprites/sword-shield/normal/mantine.png"
-                  alt="Mantine"
-                  title="Mantine"
-                  width="120"
-                  height="112"
-              /></a>
-              <a href="https://pokemondb.net/pokedex/lileep"
-                ><img
-                  src="https://img.pokemondb.net/sprites/sword-shield/normal/lileep.png"
-                  alt="Lileep"
-                  title="Lileep"
-                  width="120"
-                  height="112"
-              /></a>
-              <a href="https://pokemondb.net/pokedex/magnemite"
-                ><img
-                  src="https://img.pokemondb.net/sprites/sword-shield/normal/magnemite.png"
-                  alt="Magnemite"
-                  title="Magnemite"
-                  width="120"
-                  height="112"
-              /></a>
-              <a href="https://pokemondb.net/pokedex/meltan"
-                ><img
-                  src="https://img.pokemondb.net/sprites/sword-shield/normal/meltan.png"
-                  alt="Meltan"
-                  title="Meltan"
-                  width="120"
-                  height="112"
-              /></a>
-              <a href="https://pokemondb.net/pokedex/klefki"
-                ><img
-                  src="https://img.pokemondb.net/sprites/sword-shield/normal/klefki.png"
-                  alt="Klefki"
-                  title="Klefki"
-                  width="120"
-                  height="112"
-              /></a>
-              <a href="https://pokemondb.net/pokedex/klinklang"
-                ><img
-                  src="https://img.pokemondb.net/sprites/sword-shield/normal/klinklang.png"
-                  alt="Klinklang"
-                  title="Klinklang"
-                  width="120"
-                  height="112"
-              /></a>
-            </div>
-          </div>
-          <!-- DELETE LATER -->
-          <hr />
-          <!-- table with info placed below stamps -->
-          <aside class="about-graphics" id="about">
-            <h3>About</h3>
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>Type</th>
-                  <th>Size [px]</th>
-                  <th>Use</th>
-                  <th>References</th>
-                </tr>
-              </thead>
-              <tr>
-                <td>Stamp</td>
-                <td>99 x 56</td>
-                <td>
-                  Originated on DeviantArt around 2005 to promote their first
-                  convention.
-                </td>
-                <td>
-                  <a href="https://ballonlea.net/articles/stamp">
-                    <i>A Brief History of DeviantART Stamps</i></a
-                  >, Ballonlea
-                </td>
-              </tr>
-              <tr>
-                <td>Button</td>
-                <td>88 x 31</td>
-                <td>
-                  Likely started by Netscape with their 'Netscape Now!' buttons
-                  in the 1990's.
-                </td>
-                <td>
-                  <a href="https://88x31.nl/history.html"
-                    ><i>88x31 Collection - History</i></a
-                  >, Paulus Hollander
-                </td>
-              </tr>
-              <tr>
-                <td>Blinkie</td>
-                <td>150 x 20</td>
-                <td>Popularized as site decorations on Geocities.</td>
-                <td>
-                  <a href="https://blinkies.cafe/"><i>About Blinkie GIFs</i></a
-                  >, blinkies.cafe
-                </td>
-              </tr>
-            </table>
-          </aside>
-
-          <!-- DELETE LATER -->
-          <hr />
-          <article class="info" id="links">
-            <p>
-              WARNING: Sites listed below contain large swaths of bright colors
-              and flashing lights.
-            </p>
-          </article>
-          <!-- 2-column links and resources area -->
-          <div class="columns is-mobile">
-            <!-- links to graphics collections -->
-            <section class="column is-half">
-              <h3>Find More</h3>
-              <div>
-                <details class="linkbox">
-                  <summary><h4>Collections</h4></summary>
-                  <ul tabindex="0">
-                    <li>
-                      <a href="https://lazer-bunny.neocities.org/graphics"
-                        >Lazer-Bunny</a
-                      >
-                    </li>
-                    <li><a href="https://blinkie.world/">blinkie.world</a></li>
-                    <li><a href="https://blinkie.wiki/">BlinkieWiki</a></li>
-                    <li>
-                      <a href="https://adriansblinkiecollection.neocities.org/"
-                        >Adrian's Blinkie Collection</a
-                      >
-                    </li>
-                    <li>
-                      <a href="https://y2k.neocities.org/collections"
-                        >Y2K Collections</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://raining-starss.neocities.org/stampcollection"
-                        >Raining Starss Collections</a
-                      >
-                    </li>
-                    <li>
-                      <a href="https://pixelsafari.neocities.org/"
-                        >Coco's Pixel Safari</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://vesselvindicate.nekoweb.org/shrines/blinkies.html"
-                        >vesselvindicate</a
-                      >
-                    </li>
-                    <li>
-                      <a href="https://www.glitter-graphics.com/"
-                        >Glitter Graphics</a
-                      >
-                    </li>
-                    <li>
-                      <a href="https://jansuta.neocities.org/graphics#txt"
-                        >Jan Suta</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://nonexistentfandomsfandom.neocities.org/graphics/"
-                        >The Nonexistent Fandoms Fandom</a
-                      >
-                    </li>
-                  </ul>
-                </details>
-                <details class="linkbox">
-                  <summary><h4>Artists</h4></summary>
-                  <ul tabindex="0">
-                    <li>
-                      <a href="https://sillyblinkies.nekoweb.org/"
-                        >Silly Blinkies</a
-                      >
-                    </li>
-                    <li>
-                      <a href="https://blinkie-autism.neocities.org/"
-                        >Blinkie Autism</a
-                      >
-                    </li>
-                    <li>
-                      <a href="https://sydsblinkies.neocities.org/"
-                        >syds blinkies</a
-                      >
-                    </li>
-                    <li>
-                      <a href="https://transbro.neocities.org/Graphics"
-                        >TransBro</a
-                      >
-                    </li>
-                    <li>
-                      <a href="https://kotatsu.me/creations/blinkies/"
-                        >kotatsu.me</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://wynns-wonderful-pixel-paradise.neocities.org/"
-                        >Wynn's Wonderful Pixel Paradise</a
-                      >
-                    </li>
-                    <li>
-                      <a href="https://wrender.neocities.org/graphics"
-                        >Wrender</a
-                      >
-                    </li>
-                    <li>
-                      <a href="https://plasticdino.net/graphics">plasticdino</a>
-                    </li>
-                    <li><a href="https://omfg.neocities.org/">omfg</a></li>
-                    <li>
-                      <a
-                        href="https://sillybeanies.neocities.org/mywork/graphics/graphicsindex"
-                        >sillybeanies</a
-                      >
-                    </li>
-                    <li>
-                      <a href="https://svnhrtz.neocities.org/graphics"
-                        >svnhrtz</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://vesselvindicate.nekoweb.org/shrines/blinkies.html"
-                        >Graphics by Jay</a
-                      >
-                    </li>
-                    <li>
-                      <a href="https://jack-dawlia.neocities.org/page/graphics"
-                        >Jack Dawlia</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="http://blinkieobsession.freeservers.com/2/list.htm"
-                        >Blinkie Obsession</a
-                      >
-                    </li>
-                  </ul>
-                </details>
-                <details class="linkbox">
-                  <summary><h4>Blogs</h4></summary>
-                  <ul tabindex="0">
-                    <li>
-                      <a href="https://www.tumblr.com/blinkees">@blinkees</a>
-                    </li>
-                    <li>
-                      <a href="https://hyprmobile.tumblr.com/">@hyprmobile</a>
-                    </li>
-                  </ul>
-                </details>
-              </div>
-            </section>
-
-            <!-- links to templates and borders -->
-            <section class="column">
-              <h3>Make Your Own</h3>
-              <div>
-                <!-- links to guides -->
-                <details class="linkbox">
-                  <summary><h4>Graphic Makers</h4></summary>
-                  <ul tabindex="0">
-                    <li><a href="https://blinkies.cafe/">blinkies.cafe</a></li>
-                    <li>
-                      <a href="https://gerudovalley.net/blinkie_maker.html"
-                        >Gerudo Valley Blinkie Maker</a
-                      >
-                    </li>
-                    <li>
-                      <a href="https://myblinkie.dazzlejunction.net/"
-                        >MyBlinkie</a
-                      >
-                    </li>
-                    <li>
-                      <a href="https://websetsbylynn.neocities.org/"></a>Graphic
-                      Makers
-                    </li>
-                  </ul>
-                </details>
-                <details class="linkbox">
-                  <summary><h4>Guides</h4></summary>
-                  <ul tabindex="0">
-                    <li><a href="https://blinkies.cafe/">blinkies.cafe</a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                  </ul>
-                </details>
-                <!-- links to templates -->
-                <details class="linkbox">
-                  <summary><h4>Templates</h4></summary>
-                </details>
-                <!-- links to borders -->
-                <details class="linkbox">
-                  <summary><h4>Borders</h4></summary>
-                </details>
-              </div>
-            </section>
+              </article>
+            </aside>
           </div>
         </main>
       </div>
 
       <!-- footer -->
       <footer>
-        <a href="">sourcecode</a> / <a href="">credits</a> / public domain under
-        the <a href="https://unlicense.org/">unlicense</a>
-        <br />
-        2026 • miyufen
+        <p>
+          <a href="github.com/kiptunes/neocities">sourcecode</a> /
+          <a href="credits.html">credits</a> / public domain under the
+          <a href="https://unlicense.org/">unlicense</a>
+        </p>
+        <p>2026 • miyufen</p>
       </footer>
     </div>
   </body>

@@ -1,28 +1,33 @@
-.tab-content, .tab-item input{
+.tab-content,
+.tab-item input {
   display: none;
 }
 
-.tabs-wrapper:has(#tab0-toggle:checked) #tab0-content{
+.tabs-wrapper:has(#tab0-toggle:checked) #tab0-content {
   display: block;
 }
-.tabs-wrapper:has(#tab1-toggle:checked) #tab1-content{
+.tabs-wrapper:has(#tab1-toggle:checked) #tab1-content {
   display: block;
 }
-.tabs-wrapper:has(#tab2-toggle:checked) #tab2-content{
+.tabs-wrapper:has(#tab2-toggle:checked) #tab2-content {
   display: block;
 }
-.tabs-wrapper:has(#tab3-toggle:checked) #tab3-content{
+.tabs-wrapper:has(#tab3-toggle:checked) #tab3-content {
   display: block;
 }
-.tabs-wrapper:has(#tab4-toggle:checked) #tab4-content{
+.tabs-wrapper:has(#tab4-toggle:checked) #tab4-content {
   display: block;
 }
-.tabs-wrapper:has(#tab5-toggle:checked) #tab5-content{
+.tabs-wrapper:has(#tab5-toggle:checked) #tab5-content {
   display: block;
 }
-.tabs-wrapper:has(#tab6-toggle:checked) #tab6-content{
+.tabs-wrapper:has(#tab6-toggle:checked) #tab6-content {
   display: block;
 }
-.tabs-wrapper:has(#tab7-toggle:checked) #tab7-content{
+.tabs-wrapper:has(#tab7-toggle:checked) #tab7-content {
+  display: block;
+}
+/* show all */
+.tabs-wrapper:has(#tab000-toggle:checked) .tab-content {
   display: block;
 }

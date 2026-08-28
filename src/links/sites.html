@@ -14,155 +14,246 @@
     <link rel="stylesheet" href="../_css/style.css" />
     <link rel="stylesheet" href="../_css/mod/sites.css" />
     <link rel="stylesheet" href="../_css/components.css" />
-    <title>malfen</title>
+    <link rel="stylesheet" href="../_css/mod/links/sites.css" />
+    <title>miyu > sites</title>
   </head>
 
   <body>
     <!-- top navigation -->
     <nav class="topbar">
       <a class="topbar-item" id="home" href="">home</a>
-      <a href="" class="topbar-item">theme</a>
-      <!-- settings -->
-      <div class="topbar-item">
-        <details>
-          <summary>settings</summary>
-          <div class="details-content">
-            <label>
-              <span>reduced motion</span>
-              <input type="checkbox" checked />
-              <span class="checkmark"></span>
-            </label>
-            <br />
-            <label>
-              <span>lazy loading</span>
-              <input type="checkbox" checked />
-              <span class="checkmark"></span>
-            </label>
-            <br />
-            <label>
-              <span>dyslexia friendly font</span>
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-            <br />
-            <label>
-              <span>alt text below images</span>
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-          </div>
-        </details>
-      </div>
     </nav>
 
     <nav class="path columns is-mobile">
-      <button class="column is-narrow">Back</button>
-      <button class="column is-narrow">Forward</button>
-      <a class="column is-hidden-touch">path/to/page</a>
+      <div class="column">
+        <a href="../index.html"><u>home</u></a> > links >
+        <a href="#"><u>sites</u></a>
+      </div>
       <div class="column nav-icon">
-        <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
-        <label for="nav-checkbox">nav</label>
-        <nav class="menu sidebar-mobile">
-          <!-- <p class="menu-label">General</p> -->
-        </nav>
+        <label for="nav-checkbox">
+          <span>nav</span>
+        </label>
       </div>
     </nav>
 
     <div class="sitebox container is-widescreen">
-      <header class="titlebar">
-        <h1>WELCOME</h1>
+      <header>
+        <div id="titlebar">
+          <h1>SITES</h1>
+          <hr />
+        </div>
+        <nav class="subsection-tabs">
+          <ul>
+            <li><a href="#webrings">Webrings</a></li>
+            <li><a href="#inspiration">Inspiration</a></li>
+            <li><a href="#fun">Fun</a></li>
+          </ul>
+        </nav>
       </header>
 
       <div class="columns container is-widescreen">
         <!-- sidebar -->
-        <aside class="column is-hidden-touch">
-          <nav class="menu sidebar">
-            <p class="menu-label">Root</p>
-            <ul class="menu-list">
-              <li class="is-active"><a href="../index.html">Home</a></li>
-              <li><a href="../info.html">Info</a></li>
-              <li><a href="../sitemap.html">Sitemap</a></li>
-            </ul>
-            <p class="menu-label">My things</p>
-            <ul class="menu-list">
-              <li>
+        <aside class="left column is-hidden-touch">
+          <div class="notched-header">
+            <h3>Navigation</h3>
+            <div class="notch-right"></div>
+            <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
+          </div>
+
+          <nav class="menu has-shadow" id="sidebar">
+            <details class="folder-label" open>
+              <summary>Root</summary>
+              <ul>
+                <li>
+                  <a href="../index.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-home.png"
+                      alt="home icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../info/index.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-info.png"
+                      alt="question mark icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Info</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../info/sitemap.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-map.png"
+                      alt="map icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Sitemap</span>
+                  </a>
+                </li>
+              </ul>
+            </details>
+
+            <details class="folder-label" open>
+              <summary>Art</summary>
+              <ul>
+                <li>
+                  <a href="">
+                    <img
+                      src="../_assets/img/icons/nav/icon-easel.png"
+                      alt="easel icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Illustrations</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="../_assets/img/icons/nav/icon-notebook.png"
+                      alt="notebook icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Sketchbook</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="../_assets/img/icons/nav/icon-pencil.png"
+                      alt="pixel icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Pixel art</span>
+                  </a>
+                </li>
+              </ul>
+            </details>
+
+            <details class="folder-label" open>
+              <summary>Media</summary>
+              <ul>
+                <li>
+                  <a href="../media/books/index.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-books.png"
+                      alt="books icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Books</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../media/games.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-joystick.png"
+                      alt="joystick icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Games</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../media/music/index.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-music.png"
+                      alt="music icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Music</span>
+                  </a>
+                </li>
+              </ul>
+            </details>
+
+            <!-- <li hidden>
                 <details>
-                  <summary>Art</summary>
+                  <summary>Interests</summary>
                   <ul>
-                    <li>
-                      <a href="../art/illustrations.html">Illustrations</a>
-                    </li>
-                    <li><a href="../art/fanart.html">Fanart</a></li>
-                    <li><a href="../art/fanart.html">Sketchbook</a></li>
-                    <li><a href="">Pixel art</a></li>
+                    <li><a href="interests/pylons">Pylons</a></li>
+                    <li><a href="interests/wind-turbines">Wind Turbines</a></li>
                   </ul>
                 </details>
-              </li>
-              <li>
-                <details>
-                  <summary>Media</summary>
-                  <ul>
-                    <li><a href="">Books</a></li>
-                    <li><a href="">Games</a></li>
-                    <li><a href="">Misc</a></li>
-                    <li><a href="">Music</a></li>
-                  </ul>
-                </details>
-              </li>
-              <li><a href="">Characters</a></li>
-            </ul>
+              </li> -->
+            <li hidden><a href="">Characters</a></li>
+
             <!-- links folder -->
-            <p class="menu-label">Links</p>
-            <ul class="menu-list">
-              <li><a href="links/sites.html">Sites</a></li>
-              <li><a href="links/toybox.html">Fun</a></li>
-              <li><a href="links/resources.html">Resources</a></li>
-            </ul>
+            <details class="folder-label" open>
+              <summary>Links</summary>
+              <ul>
+                <li>
+                  <a href="#">
+                    <img
+                      src="../_assets/img/icons/nav/icon-site.png"
+                      alt="site icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Sites</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="toybox.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-pixel.png"
+                      alt="kite icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Toybox</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="resources.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-link.png"
+                      alt="link icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Resources</span>
+                  </a>
+                </li>
+              </ul>
+            </details>
           </nav>
-          <!-- contact-->
-          <article>
-            <h4>Contact</h4>
-            <p>
-              I have an <a href="mailto:shrimpcantfryrice@gmail.com">email</a>!
-            </p>
-            <hr />
-            <h4>repository</h4>
-            <p>
-              view the source code on
-              <a href="github.com/kiptunes/neocities">github!</a>
-            </p>
-          </article>
         </aside>
 
         <!-- sitebox -->
         <main class="column is-7">
-          <nav class="tabs">
-            <ul>
-              <li><a href="#webrings">Webrings</a></li>
-              <li><a href="#inspiration">Inspiration</a></li>
-              <li><a href="#fun">Fun</a></li>
-            </ul>
-          </nav>
           <!-- webrings -->
           <section id="webrings">
-            <h3>Webrings</h3>
+            <h2>Webrings</h2>
             <div class="columns">
-              <aside class="column">
+              <article class="column">
                 <h4>About</h4>
                 <p>
                   &emsp; Webrings are a network of websites grouped by common
-                  interest, whose subject can be any number of things, including
-                  fandom, skill level, or shared tools. <br /><br />
-                  &emsp; The earlier definition of a true 'webring' had stricter
-                  restrictions about the content of a website, but on Neocities
-                  nowadays it's more common that the only requirement of a
-                  webring is that the overarching theme of the webring is simply
-                  featured somewhere on your site. <br /><br />
+                  interest (e.g. liking the same music album, or using the same
+                  art program). <br /><br />
+                  &emsp; An earlier definition of a webring was commercial and
+                  held more stringent rules about the content of its members'
+                  websites, but on Neocities nowadays it's more common that the
+                  only requirement of a webring is that the overarching theme of
+                  the webring is just featured somewhere on your site.
+                  <br /><br />
                   &emsp; The members of a webring are linked together so that
                   you can navigate forwards and backwards to the neighbors of
-                  the site, and the last site links to the first in a 'ring'.
+                  the site, and the last site links to the first (in a ring).
                 </p>
-              </aside>
+              </article>
               <article class="column">
                 <h4>Links</h4>
                 <p>
@@ -178,10 +269,10 @@
               </article>
             </div>
           </section>
-          <hr />
           <!-- cool sites -->
           <section id="inspiration">
-            <h3>Inspiration</h3>
+            <hr />
+            <h2>Inspiration</h2>
             <p>Here are buttons to a handful of personal sites I like a lot!</p>
             <div class="button-wrapper">
               <a href=""> <img src="" alt="" /></a>
@@ -190,66 +281,98 @@
               <a href=""> <img src="" alt="" /></a>
               <a href=""> <img src="" alt="" /></a>
             </div>
+            <hr />
           </section>
-          <hr />
           <!-- cool sites -->
           <section id="fun">
-            <h3>Fun</h3>
+            <h2>Fun</h2>
             <p>
               Some miscellaneous sites that aren't personal ones and not
               necessarily hosted on neocities/nekoweb ^_^
             </p>
-            <ul>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-            </ul>
+            <div class="linkbox">
+              <ul>
+                <li>
+                  <a href=""><h6></h6></a>
+                </li>
+                <li>
+                  <a href=""><h6></h6></a>
+                </li>
+                <li>
+                  <a href=""><h6></h6></a>
+                </li>
+                <li>
+                  <a href=""><h6></h6></a>
+                </li>
+                <li>
+                  <a href=""><h6></h6></a>
+                </li>
+                <li>
+                  <a href=""><h6></h6></a>
+                </li>
+              </ul>
+            </div>
           </section>
         </main>
 
         <!-- quicklinks -->
         <aside class="right column">
-          <!-- separator image -->
-          <div class="window is-hidden-touch">
-            <img src="" alt="" />
-          </div>
-
           <!-- link back button -->
-          <div>
+          <article id="link-back">
             <h4>Link back</h4>
-            <a href=""><img src="" alt="" /></a>
-            <details>
-              <summary>Code</summary>
-              <p></p>
-            </details>
-          </div>
+            <!-- link back stamp -->
+            <div class="button-wrapper">
+              <button>
+                <a href="">
+                  <img src="" alt="" width="88" height="31" />
+                </a>
+              </button>
+              <button>
+                <a href="" class="copy-button"> </a>
+                <img src="" alt="" width="88" height="31" />
+              </button>
+              <details>
+                <summary>Copy code:</summary>
+                <p>
+                  <code>
+                    <!-- <button>
+                        <a href="" class="copy-button"> </a>
+                        <img src="" alt="" width="88" height="31" />
+                      </button> -->
+                  </code>
+                </p>
+              </details>
+            </div>
+          </article>
 
-          <article>
-            <h4>Why is hotlinking bad?</h4>
-            <p>
-              As defined by Neocities,
-              <a href="https://neocities.org/site_files/hotlinking">
-                hotlinking
-              </a>
-              is when a non-HTML file hosted by Neocities is embedded into
-              another site that is not hosted by Neocities, using up the host
-              server's bandwidth. Hotlinked files are also susceptible to
-              breaking when the host website is rearranged. It is disallowed for
-              external sites and discouraged between mutually hosted sites.
-            </p>
+          <article id="hotlinking">
+            <details>
+              <summary><h5>Why is hotlinking bad?</h5></summary>
+              <p>
+                &emsp;&emsp;As defined by Neocities,
+                <a href="https://neocities.org/site_files/hotlinking">
+                  hotlinking
+                </a>
+                is when a non-HTML file hosted by Neocities is embedded into
+                another site that is not hosted by Neocities, using up the host
+                server's bandwidth. <br /><br />
+                &emsp;&emsp;Hotlinked files are also susceptible to breaking
+                when the host website is rearranged. It is disallowed for
+                external sites and discouraged between mutually hosted sites.
+              </p>
+            </details>
           </article>
         </aside>
       </div>
 
       <!-- footer -->
       <footer>
-        <a href="">sourcecode</a> / <a href="">credits</a> / public domain under
-        the <a href="https://unlicense.org/">unlicense</a>
-        <br />
-        2026 • malfen
+        <p>
+          <a href="github.com/kiptunes/neocities">sourcecode</a> /
+          <a href="credits.html">credits</a> / public domain under the
+          <a href="https://unlicense.org/">unlicense</a>
+        </p>
+        <p>2026 • miyufen</p>
       </footer>
     </div>
   </body>

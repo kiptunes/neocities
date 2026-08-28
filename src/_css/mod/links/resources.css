@@ -1,0 +1,164 @@
+html {
+  background-color: #d2ccbe;
+}
+.topbar,
+.notched-header {
+  background-color: #38526d;
+}
+header {
+  width: 82vw;
+}
+header hr {
+  background-color: #25637a;
+}
+#titlebar {
+  background-color: #1f274b;
+}
+#titlebar h1 {
+  color: #d2ccbe;
+}
+#sidebar {
+  background-color: #38526d;
+  box-shadow: 3px 3px #1f274b;
+}
+.left .notch-right:before {
+  border-left: 24px solid #38526d;
+}
+.left h3,
+#sidebar span {
+  color: #d2ccbe;
+}
+#sidebar span:hover {
+  color: #8ecacb;
+}
+#sidebar {
+  background-color: #38526d;
+  box-shadow: 3px 3px #1f274b;
+}
+#sidebar li:hover {
+  background-color: #1f274b;
+}
+#sidebar summary {
+  background-color: #1f274b;
+  color: #d2ccbe;
+}
+#sidebar summary:hover {
+  color: #8ecacb;
+}
+.path {
+  display: inline-block;
+  font-family: Chivo;
+}
+.path a {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.tab-item-wrapper {
+  margin: 0;
+  border: 4px solid #1f274b;
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding: 8px 12px;
+}
+.tab-item-wrapper a {
+  margin-right: 8px;
+  min-width: 100px;
+  text-align: center;
+  padding: 6px;
+}
+.tab-item span {
+  font-family: FakeReceipt;
+  padding: 2px 4px;
+  color: #d2ccbe;
+}
+.tab-item-wrapper a:hover:nth-child(even) span {
+  color: #25637a;
+}
+.tab-item-wrapper a:hover:nth-child(odd) span {
+  color: #1f274b;
+}
+.tab-item-wrapper a:hover span {
+  background-color: #d2ccbe;
+}
+.tab-item-wrapper a:nth-child(even) {
+  background-color: #25637a;
+}
+.tab-item-wrapper a:nth-child(odd) {
+  background-color: #1f274b;
+}
+.tab-content h2 {
+  margin: 12px 0 12px;
+  font-size: 1.8rem;
+  padding: 0 6px;
+  color: #175b5c;
+  border-bottom: 4px dotted #1f274b;
+}
+.tab-content details summary {
+  background-color: #38526d;
+  color: #d2ccbe;
+  padding: 4px 8px 4px 4px;
+  margin: 6px 6px 0;
+  list-style: none;
+  position: relative;
+}
+.tab-content details summary:hover {
+  transform: translateX(4px);
+}
+.tab-content details h4 {
+  font-size: 1.1rem;
+}
+.tab-content details h4::after {
+  content: ">";
+  float: right;
+}
+.tab-content details:open h4::after {
+  transform: rotate(90deg);
+}
+.tab-content details ul {
+  background-color: #d2ccbe;
+  padding: 6px;
+  margin: 4px 6px 4px 6px;
+  max-height: 100px;
+  overflow-y: scroll;
+}
+.tab-content details ul li::before {
+  content: "⊢ ";
+  vertical-align: center;
+  font-size: 1.1rem;
+  line-height: 10px;
+}
+.tab-content details ul li:last-child::before {
+  content: "∟ ";
+}
+.tab-content details ul a {
+  color: #38526d;
+  font-family: IBM-Plex-Mono;
+  font-size: 0.9rem;
+}
+.tab-content details ul a:hover {
+  color: #1f274b;
+}
+.tab-content details ul li {
+  color: #2f393c;
+}
+button.sticky {
+  background-color: #1f274b;
+  padding: 12px;
+  box-shadow: 2px 2px#131324;
+}
+button.sticky:hover {
+  transform: translate(2px, 2px);
+  background-color: #131324;
+}
+button.sticky a {
+  font-family: FakeReceipt;
+  color: #d2ccbe;
+}
+footer p {
+  color: #1f274b;
+}
+footer a {
+  color: #38526d;
+}

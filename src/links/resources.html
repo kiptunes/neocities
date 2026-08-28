@@ -8,360 +8,727 @@
     <link rel="stylesheet" href="../_css/bulma/bulma-no-helpers.css" />
     <link rel="stylesheet" href="../_css/style.css" />
     <link rel="stylesheet" href="../_css/components.css" />
-    <title>malfen</title>
+    <link rel="stylesheet" href="../_css/mod/links/resources.css" />
+    <title>miyu > links</title>
   </head>
 
   <body>
     <!-- top navigation -->
     <nav class="topbar">
       <a class="topbar-item" id="home" href="">home</a>
-      <a href="" class="topbar-item">theme</a>
-      <!-- settings -->
-      <div class="topbar-item">
-        <details>
-          <summary>settings</summary>
-          <div class="details-content">
-            <label>
-              <span>reduced motion</span>
-              <input type="checkbox" checked />
-              <span class="checkmark"></span>
-            </label>
-            <br />
-            <label>
-              <span>lazy loading</span>
-              <input type="checkbox" checked />
-              <span class="checkmark"></span>
-            </label>
-            <br />
-            <label>
-              <span>dyslexia friendly font</span>
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-            <br />
-            <label>
-              <span>alt text below images</span>
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-          </div>
-        </details>
-      </div>
     </nav>
 
     <nav class="path columns is-mobile">
-      <button class="column is-narrow">Back</button>
-      <button class="column is-narrow">Forward</button>
-      <a class="column is-hidden-touch">path/to/page</a>
+      <div class="column">
+        <a href="../index.html"><u>home</u></a> > links >
+        <a href="#"><u>resources</u></a>
+      </div>
       <div class="column nav-icon">
-        <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
-        <label for="nav-checkbox">nav</label>
-        <nav class="menu sidebar-mobile">
-          <!-- <p class="menu-label">General</p> -->
-        </nav>
+        <label for="nav-checkbox">
+          <span>nav</span>
+        </label>
       </div>
     </nav>
 
-    <div class="sitebox container is-widescreen">
-      <header class="titlebar">
-        <h1>RESOURCES</h1>
+    <div class="container is-widescreen">
+      <header>
+        <div id="titlebar"><h1>RESOURCES</h1></div>
+        <hr />
       </header>
-      <div class="columns container is-widescreen">
+
+      <div class="sitebox columns container is-widescreen">
         <!-- sidebar -->
-        <aside class="column is-one-fifth is-hidden-touch">
-          <nav class="menu sidebar">
-            <p class="menu-label">ROOT</p>
-            <ul class="menu-list">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../info.html">Info</a></li>
-              <li>
-                <details>
-                  <summary>Art</summary>
-                  <ul>
-                    <li><a href="">Illustrations</a></li>
-                    <li><a href="">Fanart</a></li>
-                    <li><a href="">Sketchbook</a></li>
-                    <li><a href="">Pixel art</a></li>
-                  </ul>
-                </details>
-              </li>
-            </ul>
+        <aside class="left column is-hidden-touch">
+          <div class="notched-header">
+            <h3>Navigation</h3>
+            <div class="notch-right"></div>
+            <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
+          </div>
 
-            <ul class="menu-list">
-              <li>
-                <details>
-                  <summary>Media</summary>
-                  <ul>
-                    <li><a href="">Books</a></li>
-                    <li><a href="">Games</a></li>
-                    <li><a href="">Misc</a></li>
-                    <li><a href="">Music</a></li>
-                  </ul>
-                </details>
-              </li>
-            </ul>
-            <!-- links folder -->
-            <p class="menu-label">LINKS</p>
-            <ul class="menu-list">
-              <li><a href="">OC Site</a></li>
-              <li><a href="sites.html">Neighbors</a></li>
-              <li><a href="toybox.html">Fun</a></li>
-              <li><a href="resources.html">Resources</a></li>
-            </ul>
-          </nav>
-        </aside>
-
-        <main class="column">
-          <div class="tabs-wrapper">
-            <div class="tabs">
+          <nav class="menu has-shadow" id="sidebar">
+            <details class="folder-label" open>
+              <summary>Root</summary>
               <ul>
                 <li>
-                  <a>
-                    <label for="tab0-toggle" class="tab-item">
-                      <span>Art</span>
-                      <input
-                        checked
-                        name="tabs-toggle"
-                        id="tab0-toggle"
-                        type="radio"
-                      />
-                    </label>
+                  <a href="../index.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-home.png"
+                      alt="home icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Home</span>
                   </a>
                 </li>
                 <li>
-                  <a>
-                    <label for="tab1-toggle" class="tab-item">
-                      <span>Code</span>
-                      <input name="tabs-toggle" id="tab1-toggle" type="radio" />
-                    </label>
+                  <a href="../info/index.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-info.png"
+                      alt="question mark icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Info</span>
                   </a>
                 </li>
                 <li>
-                  <a>
-                    <label for="tab2-toggle" class="tab-item">
-                      <span>Game Dev</span>
-                      <input name="tabs-toggle" id="tab2-toggle" type="radio" />
-                    </label>
-                  </a>
-                </li>
-                <li>
-                  <a>
-                    <label for="tab3-toggle" class="tab-item">
-                      <span>Hardware</span>
-                      <input name="tabs-toggle" id="tab3-toggle" type="radio" />
-                    </label>
-                  </a>
-                </li>
-                <li>
-                  <a>
-                    <label for="tab4-toggle" class="tab-item">
-                      <span>Languages</span>
-                      <input name="tabs-toggle" id="tab4-toggle" type="radio" />
-                    </label>
-                  </a>
-                </li>
-                <li>
-                  <a>
-                    <label for="tab5-toggle" class="tab-item">
-                      <span>Library</span>
-                      <input name="tabs-toggle" id="tab5-toggle" type="radio" />
-                    </label>
-                  </a>
-                </li>
-                <li>
-                  <a>
-                    <label for="tab6-toggle" class="tab-item">
-                      <span>Tools</span>
-                      <input name="tabs-toggle" id="tab6-toggle" type="radio" />
-                    </label>
-                  </a>
-                </li>
-                <li>
-                  <a>
-                    <label for="tab7-toggle" class="tab-item">
-                      <span>Web Dev</span>
-                      <input name="tabs-toggle" id="tab7-toggle" type="radio" />
-                    </label>
+                  <a href="../info/sitemap.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-map.png"
+                      alt="map icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Sitemap</span>
                   </a>
                 </li>
               </ul>
+            </details>
+
+            <details class="folder-label" open>
+              <summary>Art</summary>
+              <ul>
+                <li>
+                  <a href="">
+                    <img
+                      src="../_assets/img/icons/nav/icon-easel.png"
+                      alt="easel icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Illustrations</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="../_assets/img/icons/nav/icon-notebook.png"
+                      alt="notebook icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Sketchbook</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="../_assets/img/icons/nav/icon-pencil.png"
+                      alt="pixel icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Pixel art</span>
+                  </a>
+                </li>
+              </ul>
+            </details>
+
+            <details class="folder-label" open>
+              <summary>Media</summary>
+              <ul>
+                <li>
+                  <a href="../media/books/index.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-books.png"
+                      alt="books icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Books</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../media/games.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-joystick.png"
+                      alt="joystick icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Games</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../media/music/index.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-music.png"
+                      alt="music icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Music</span>
+                  </a>
+                </li>
+              </ul>
+            </details>
+
+            <!-- <li hidden>
+                <details>
+                  <summary>Interests</summary>
+                  <ul>
+                    <li><a href="interests/pylons">Pylons</a></li>
+                    <li><a href="interests/wind-turbines">Wind Turbines</a></li>
+                  </ul>
+                </details>
+              </li> -->
+            <li hidden><a href="">Characters</a></li>
+
+            <!-- links folder -->
+            <details class="folder-label" open>
+              <summary>Links</summary>
+              <ul>
+                <li>
+                  <a href="sites.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-site.png"
+                      alt="site icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Sites</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="toybox.html">
+                    <img
+                      src="../_assets/img/icons/nav/icon-pixel.png"
+                      alt="kite icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Toybox</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="../_assets/img/icons/nav/icon-link.png"
+                      alt="link icon"
+                      width="16"
+                      height="16"
+                    />
+                    <span>Resources</span>
+                  </a>
+                </li>
+              </ul>
+            </details>
+          </nav>
+        </aside>
+
+        <main class="sitebox column is-8">
+          <div class="tabs-wrapper">
+            <div class="tab-item-wrapper">
+              <a>
+                <label for="tab000-toggle" class="tab-item">
+                  <span>All</span>
+                  <input
+                    checked
+                    name="tabs-toggle"
+                    id="tab000-toggle"
+                    type="radio"
+                  />
+                </label>
+              </a>
+              <a>
+                <label for="tab0-toggle" class="tab-item">
+                  <span>Art</span>
+                  <input
+                    checked
+                    name="tabs-toggle"
+                    id="tab0-toggle"
+                    type="radio"
+                  />
+                </label>
+              </a>
+              <a>
+                <label for="tab1-toggle" class="tab-item">
+                  <span>Code</span>
+                  <input name="tabs-toggle" id="tab1-toggle" type="radio" />
+                </label>
+              </a>
+              <a>
+                <label for="tab2-toggle" class="tab-item">
+                  <span>Game Dev</span>
+                  <input name="tabs-toggle" id="tab2-toggle" type="radio" />
+                </label>
+              </a>
+
+              <a>
+                <label for="tab3-toggle" class="tab-item">
+                  <span>Hardware</span>
+                  <input name="tabs-toggle" id="tab3-toggle" type="radio" />
+                </label>
+              </a>
+              <a>
+                <label for="tab4-toggle" class="tab-item">
+                  <span>Languages</span>
+                  <input name="tabs-toggle" id="tab4-toggle" type="radio" />
+                </label>
+              </a>
+              <a>
+                <label for="tab6-toggle" class="tab-item">
+                  <span>Tools</span>
+                  <input name="tabs-toggle" id="tab6-toggle" type="radio" />
+                </label>
+              </a>
+              <a>
+                <label for="tab7-toggle" class="tab-item">
+                  <span>Web Dev</span>
+                  <input name="tabs-toggle" id="tab7-toggle" type="radio" />
+                </label>
+              </a>
+              <a hidden>
+                <label for="tab5-toggle" class="tab-item">
+                  <span>Library</span>
+                  <input name="tabs-toggle" id="tab5-toggle" type="radio" />
+                </label>
+              </a>
             </div>
 
             <!-- art tab content -->
             <div class="tab-content" id="tab0-content">
+              <h2>Art</h2>
               <details>
-                <summary>Programs</summary>
+                <summary><h4>Programs</h4></summary>
+                <ul>
+                  <li>
+                    <a href="https://krita.org/en/download/">Krita</a>: Free
+                    drawing application
+                  </li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Brushes</summary>
+                <summary><h4>Brushes</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>References</summary>
+                <summary><h4>References</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Posts</summary>
+                <summary><h4>Posts</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Books</summary>
+                <summary><h4>Books</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
             </div>
 
             <!-- code tab content -->
             <div class="tab-content" id="tab1-content">
+              <h2>Code</h2>
               <details>
-                <summary>Python</summary>
+                <summary><h4>Python</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Java</summary>
+                <summary><h4>Java</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Linux</summary>
+                <summary><h4>C</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Desktop Customization</summary>
+                <summary><h4>Linux</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Books</summary>
+                <summary><h4>Desktop Customization</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
+              </details>
+              <details>
+                <summary><h4>Books</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
             </div>
 
             <!-- gamedev tab content -->
             <div class="tab-content" id="tab2-content">
+              <h2>Gamedev</h2>
               <details>
-                <summary>Engines</summary>
+                <summary><h4>Engines</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Guides</summary>
+                <summary><h4>Guides</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Channels</summary>
+                <summary><h4>Channels</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Cool Projects</summary>
+                <summary><h4>Cool Projects</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Books</summary>
+                <summary><h4>Books</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
             </div>
 
             <!-- hardware tab content -->
             <div class="tab-content" id="tab3-content">
+              <h2>Hardware</h2>
               <details>
-                <summary>Guides</summary>
+                <summary><h4>Guides</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>PCB Design</summary>
+                <summary><h4>PCB Design</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>PC Assembly</summary>
+                <summary><h4>PC Assembly</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Cool Projects</summary>
+                <summary><h4>Cool Projects</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Books</summary>
+                <summary><h4>Books</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
             </div>
 
             <!-- Languages -->
             <div class="tab-content" id="tab4-content">
+              <h2>Languages</h2>
               <details>
-                <summary>English</summary>
+                <summary><h4>English</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>ASL</summary>
+                <summary><h4>ASL</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Japanese</summary>
+                <summary><h4>Japanese</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Spanish</summary>
+                <summary><h4>Spanish</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Mandarin</summary>
+                <summary><h4>Mandarin</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Ukrainian</summary>
+                <summary><h4>Ukrainian</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
             </div>
 
             <!-- library tab content -->
-            <div class="tab-content" id="tab5-content">
+            <div hidden class="tab-content" id="tab5-content">
+              <h2>Library</h2>
               <details>
-                <summary>Libraries</summary>
+                <summary><h4>Libraries</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Biology</summary>
+                <summary><h4>Biology</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Geography</summary>
+                <summary><h4>Geography</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Health</summary>
+                <summary><h4>Health</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Math</summary>
+                <summary><h4>Math</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Music</summary>
+                <summary><h4>Music</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Physics</summary>
+                <summary><h4>Physics</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
-              <p>(also see the 'books' sections under the other tabs.)</p>
             </div>
 
             <!-- tools tab content -->
             <div class="tab-content" id="tab6-content">
+              <h2>Tools</h2>
               <details>
-                <summary>Applications</summary>
+                <summary><h4>Applications</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Extensions</summary>
+                <summary><h4>Extensions</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Utilities</summary>
+                <summary><h4>Utilities</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
             </div>
 
             <!-- webdev tab content -->
             <div class="tab-content" id="tab7-content">
+              <h2>Web Development</h2>
               <details>
-                <summary>Learning Resources</summary>
-                <p></p>
+                <summary><h4>Learning Resources</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>CSS Snippets</summary>
-                <p></p>
+                <summary><h4>CSS Snippets</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>JS/TS</summary>
-                <p></p>
+                <summary><h4>JS/TS</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Graphics</summary>
-                <p></p>
+                <summary><h4>Graphics</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Channels</summary>
-                <p></p>
+                <summary><h4>Channels</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
               <details>
-                <summary>Books</summary>
-                <p></p>
+                <summary><h4>Books</h4></summary>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </details>
             </div>
           </div>
-
-          <button>back to top</button>
         </main>
+        <aside class="column right">
+          <button class="sticky"><a href="#">back to top</a></button>
+        </aside>
       </div>
 
       <!-- footer -->
       <footer>
-        <a href="">credits</a>
-        <a href="">sourcecode</a>
-        <p>licensed under the unlicense. yayy yippee wip</p>
+        <p>
+          <a href="github.com/kiptunes/neocities">sourcecode</a> /
+          <a href="credits.html">credits</a> / public domain under the
+          <a href="https://unlicense.org/">unlicense</a>
+        </p>
+        <p>2026 • miyufen</p>
       </footer>
     </div>
   </body>
