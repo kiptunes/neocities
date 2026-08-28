@@ -23,7 +23,7 @@
 }
 @font-face {
   font-family: FakeReceipt;
-  src: url(../_assets/fonts/header/fake-receipt/Fake\ Receipt.otf);
+  src: url(../_assets/fonts/header/fake-receipt/FakeReceipt.otf);
 }
 html {
   font-size: 16px;
