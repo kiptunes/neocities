@@ -1,11 +1,65 @@
+@font-face {
+  font-family: Chivo;
+  src: url("../../../_assets/fonts/body/Chivo/Chivo-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: HomeVideo;
+  src: url("../../../_assets/fonts/header/home-video/HomeVideo-Regular.otf");
+}
+@font-face {
+  font-family: GoodLookingFont;
+  src: url("../../../_assets/fonts/header/goodlookingfont/GoodLookingFont.otf");
+}
+body {
+  font-family: Chivo;
+}
+html {
+  background-color: #111;
+}
+h4 {
+  font-family: HomeVideo;
+}
+h1 {
+  color: #fa9a1d;
+  font-family: GoodLookingFont;
+  font-size: 2rem;
+}
+p {
+  color: #bbb;
+}
 main {
   max-width: 75vw;
-  height: 100%;
+  height: 100vh;
   margin: 0 auto;
-  align-content: center;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 hr {
-  background-color: #111;
+  background-color: #080808;
   border-bottom: 24px dashed #fa9a1d;
+}
+.note {
+  margin: 12px 0;
+  padding: 8px;
+  border: 2px solid #fa9a1d;
+}
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+nav a {
+  background-color: #080808;
+  padding: 12px;
+  text-align: center;
+  color: #bbb;
+  width: 100px;
+  margin: 4px;
+  border: 2px solid #888;
+}
+nav a:hover {
+  background-color: #fa9a1d;
+  color: #080808;
+  border: none;
 }
