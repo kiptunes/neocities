@@ -11,99 +11,62 @@
     />
     <!-- <link rel="icon" type="image/x-icon" href=""> -->
     <link rel="stylesheet" href="../../_css/bulma/bulma-no-helpers.css" />
-    <link rel="stylesheet" href="../../_css/style.css" />
-    <link rel="stylesheet" href="../../_css/mod/media.css" />
+    <link rel="stylesheet" href="../../_css/mod/media/style.css" />
+    <link rel="stylesheet" href="../../_css/mod/media/music.css" />
     <link rel="stylesheet" href="../../_css/components.css" />
-    <title>malfen</title>
+    <title>miyu > music</title>
   </head>
 
   <body>
     <!-- top navigation -->
     <nav class="topbar">
-      <a class="topbar-item" id="home" href="">home</a>
-      <a href="" class="topbar-item">theme</a>
-      <!-- settings -->
-      <div class="topbar-item">
-        <details>
-          <summary>settings</summary>
-          <div class="details-content">
-            <label>
-              <span>reduced motion</span>
-              <input type="checkbox" checked />
-              <span class="checkmark"></span>
-            </label>
-            <br />
-            <label>
-              <span>lazy loading</span>
-              <input type="checkbox" checked />
-              <span class="checkmark"></span>
-            </label>
-            <br />
-            <label>
-              <span>dyslexia friendly font</span>
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-            <br />
-            <label>
-              <span>alt text below images</span>
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-          </div>
-        </details>
-      </div>
+      <a class="topbar-item" id="home" href="../../index.html"
+        ><h4>Miyufen</h4></a
+      >
     </nav>
 
     <nav class="path columns is-mobile">
-      <button class="column is-narrow">Back</button>
-      <button class="column is-narrow">Forward</button>
-      <a class="column is-hidden-touch">path/to/page</a>
-      <div class="column nav-icon">
-        <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
-        <label for="nav-checkbox">nav</label>
-        <nav class="menu sidebar-mobile">
-          <!-- <p class="menu-label">General</p> -->
-        </nav>
+      <div>
+        <a href="../../index.html"><u>home</u></a> > media >
+        <a href="#"><u>music</u></a>
+      </div>
+      <div class="right">
+        <a href="../books/index.html">/Books</a>
+        <a href="../games.html">/Games</a>
+        <a href="#">/Music</a>
       </div>
     </nav>
 
-    <div class="sitebox container is-widescreen">
-      <header>
-        <nav class="columns" id="page-nav">
-          <h2 class="column">MUSIC</h2>
-          <ul class="column is-narrow">
-            <li><a href="../books/index.html"></a>Books</li>
-            <li><a href="../games.html">Games</a></li>
-            <li><a href="#">Music</a></li>
-          </ul>
+    <div class="container is-widescreen">
+      <header id="page-nav">
+        <h1>MUSIC</h1>
+        <nav class="link-tabs">
+          <a href="#">Albums</a>
+          <a href="wip.html">Songs</a>
+          <a href="wip.html">Articles</a>
         </nav>
       </header>
 
-      <main class="sitebox container is-fluid">
-        <nav class="tabs">
-          <ul>
-            <li><a href="songs.html">Songs</a></li>
-            <li><a href="index.html">Albums</a></li>
-            <li><a href="articles.html">Articles</a></li>
-            <li><a href="links.html">Links</a></li>
-          </ul>
-        </nav>
-
+      <main class="container is-fluid">
         <div class="middle columns">
           <!-- album scrollbox -->
           <!-- vertical on desktop and horizontal on mobile -->
-          <div class="album-wrapper column is-narrow">
+          <nav class="album-wrapper column is-narrow">
             <button class="album" onclick="openAlbum(event, '')">
               <figure>
-                <img src="" alt="" />
+                <img
+                  src="../../_assets/img/media/albums/album_RKS_Friend_Love_Freefall.jpg"
+                  alt=""
+                  height="160"
+                  width="160"
+                />
                 <figcaption class="media-title">Album</figcaption>
               </figure>
             </button>
-          </div>
+          </nav>
 
           <div class="column">
-            <!-- before an album is opened -->
+            <!-- before an album is opened 
             <article hidden>
               <h3>Welcome</h3>
               <p>
@@ -113,84 +76,189 @@
                 impedit fugit saepe corrupti voluptas atque?
               </p>
             </article>
+            -->
 
             <!-- if an album is opened -->
-            <!-- top area -->
-            <div class="columns">
-              <!-- left: opened song commentary -->
-              <div class="column">
-                <section class="song-info">
-                  <h5>Now Playing:</h5>
-                  <div class="tag-wrapper"></div>
+            <div class="main">
+              <h2>How To: Friend, Love, Freefall</h2>
+              <div class="top">
+                <section>
+                  <article class="shadow" id="album-info">
+                    <h4>Info</h4>
+                    <div class="table-wrapper">
+                      <table>
+                        <tr>
+                          <th>Release Date</th>
+                          <td>April 2018</td>
+                        </tr>
+                        <tr>
+                          <th>Genre</th>
+                          <td>Indie Rock</td>
+                        </tr>
+                        <tr>
+                          <th>Label</th>
+                          <td>Elektra</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </article>
+                  <article class="shadow" id="album-bg">
+                    <h4>Background</h4>
+                    <p tabindex="0">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Unde quaerat dignissimos eos ipsa hic vero tempora
+                      corporis, maiores necessitatibus harum, tenetur sint,
+                      architecto ab! Commodi at dicta eius voluptatibus
+                      sapiente!
+                    </p>
+                  </article>
                 </section>
-                <article class="song-notes">
-                  <h4>Commentary</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Beatae, vero tenetur veniam pariatur excepturi provident
-                    fuga a porro similique officia dolor voluptatibus ut, qui
-                    sed modi sint dicta expedita ad! Assumenda possimus optio
-                    dicta voluptatum obcaecati molestias deleniti autem earum
-                    hic incidunt culpa sint velit, tenetur enim doloribus quas?
-                    Delectus officiis ullam ratione nam voluptatum est culpa
-                    eligendi velit magnam?
-                  </p>
-                </article>
+
+                <section class="tracklist">
+                  <h4>Tracklist</h4>
+                  <table class="tracklist">
+                    <tr>
+                      <td>01</td>
+                      <td>Pacific Love</td>
+                      <td>0:23</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>02</td>
+                      <td>Mission to Mars</td>
+                      <td>2:34</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>03</td>
+                      <td>Fever Pitch</td>
+                      <td>2:43</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>04</td>
+                      <td>It's Called: Freefall</td>
+                      <td>2:32</td>
+                      <td>
+                        <span class="songtag first">&starf;</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>05</td>
+                      <td>Holy War</td>
+                      <td>2:54</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>06</td>
+                      <td>Matchbox</td>
+                      <td>2:52</td>
+                      <td>
+                        <span class="songtag favorite">&#9829;</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>07</td>
+                      <td>Moody Orange</td>
+                      <td>3:16</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>08</td>
+                      <td>Hide</td>
+                      <td>3:12</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>09</td>
+                      <td>When It Lands</td>
+                      <td>4:29</td>
+                      <td>
+                        <span class="songtag favorite">&#9829;</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>Painkillers</td>
+                      <td>3:33</td>
+                      <td>
+                        <span class="songtag favorite">&#9829;</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>11</td>
+                      <td>Recktify</td>
+                      <td>1:49</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td>Possum Queen</td>
+                      <td>2:07</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>13</td>
+                      <td>Polite Company</td>
+                      <td>4:02</td>
+                      <td></td>
+                    </tr>
+                  </table>
+                </section>
               </div>
-              <!-- right: album cover and list of songs -->
-              <div class="column is-narrow">
-                <figure>
-                  <img src="" alt="" />
-                  <figcaption>Album Title</figcaption>
-                </figure>
-                <!-- songlist -->
-                <section class="songlist">
-                  <h4>List</h4>
-                  <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                  </ul>
+              <hr />
+              <div class="bottom" id="#opinions">
+                <h2>thoughts</h2>
+                <section>
+                  <div class="shadow">
+                    <div class="table-wrapper">
+                      <table>
+                        <tr>
+                          <th>Favorite</th>
+                          <td>It's Called: Freefall</td>
+                        </tr>
+                        <tr>
+                          <th>Featured</th>
+                          <td>
+                            Painkillers<br />
+                            Matchbox<br />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>Listen for</th>
+                          <td>Drums</td>
+                        </tr>
+                        <tr>
+                          <th>Tags</th>
+                          <td><span class="songtag k">K</span></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <article class="shadow" id="thoughts">
+                    <h4>notes</h4>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Unde adipisci iste delectus. Hic unde consequatur quis
+                      animi saepe quae molestias reiciendis. Voluptatem placeat
+                      ea tempore deserunt, voluptatum atque beatae quia.
+                    </p>
+                  </article>
                 </section>
               </div>
             </div>
-            <!-- bottom area -->
-            <section class="album-info">
-              <h4 class="album-name">Album Name</h4>
-              <div class="columns">
-                <table class="table column is-narrow">
-                  <tr>
-                    <th>date</th>
-                    <td>xxxx</td>
-                  </tr>
-                  <tr>
-                    <th>genre</th>
-                    <td>genre</td>
-                  </tr>
-                </table>
-                <section class="album-notes">
-                  <h5>Notes</h5>
-                  <span>Overall rating:</span>
-                  <br />
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam obcaecati aut voluptatibus et quia laborum,
-                    excepturi provident cum, fugit necessitatibus totam dolores
-                    ex repellat dolor id quod autem! Doloremque, asperiores.
-                  </p>
-                </section>
-              </div>
-            </section>
           </div>
         </div>
       </main>
 
       <!-- footer -->
       <footer>
-        <a href="">sourcecode</a> / <a href="">credits</a> / public domain under
-        the <a href="https://unlicense.org/">unlicense</a>
-        <br />
-        2026 • malfen
+        <p>
+          <a href="github.com/kiptunes/neocities">sourcecode</a> /
+          <a href="credits.html">credits</a> / public domain under the
+          <a href="https://unlicense.org/">unlicense</a>
+        </p>
+        <p>2026 • miyufen</p>
       </footer>
     </div>
   </body>

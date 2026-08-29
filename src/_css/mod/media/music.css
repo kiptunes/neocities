@@ -1,0 +1,102 @@
+.album-wrapper {
+  border: 4px solid #0d5b33;
+  margin: 14px 0;
+  height: 80vh;
+}
+main {
+  padding: 12px 0;
+}
+div.top {
+  display: flex;
+}
+h2 {
+  color: #86c28b;
+  margin-bottom: 12px;
+  border-bottom: 4px dotted #86c28b;
+}
+.shadow:has(.table-wrapper) {
+  background-color: #0d5b33;
+  padding: 12px;
+}
+.shadow .table-wrapper {
+  padding: 8px;
+  background-color: #0d141a;
+}
+.shadow .table-wrapper th {
+  color: #6ca771;
+}
+section.tracklist {
+  flex: 1;
+  margin-left: 12px;
+  padding: 6px;
+  border: 4px double #0d5b337e;
+}
+section.tracklist h4 {
+  color: #1b9145;
+  border-bottom: 2px solid #0d5b33;
+  margin-bottom: 8px;
+}
+table.tracklist {
+  width: 100%;
+}
+table.tracklist tr:nth-child(even) {
+  background-color: #06293d62;
+}
+.tracklist td:first-child,
+.tracklist td:nth-child(3) {
+  color: #6ca771;
+}
+.tracklist td:nth-child(2) {
+  color: #b0df91;
+}
+.tracklist td {
+  padding-right: 12px;
+}
+#album-bg {
+  background-color: #06293d;
+  margin-top: 12px;
+  padding: 12px;
+  max-width: 400px;
+}
+#album-bg p {
+  padding: 8px;
+  background-color: #0d141a;
+  color: #6ca771;
+  height: 200px;
+  overflow-y: scroll;
+}
+#album-info h4,
+#album-bg h4 {
+  padding: 8px;
+  background-color: #0d141a;
+  color: #eee;
+  margin-bottom: 8px;
+}
+
+div.bottom section {
+  display: flex;
+}
+div.bottom section > * {
+  flex: 1;
+}
+div.bottom table th {
+  white-space: nowrap;
+  width: fit-content;
+}
+div.bottom div.shadow {
+  height: min-content;
+}
+#thoughts {
+  margin-left: 12px;
+  padding: 12px;
+}
+#thoughts h4 {
+  background-color: #0d141a;
+  color: #eee;
+  padding: 4px 8px;
+  margin-bottom: 8px;
+}
+#thoughts p {
+  height: 200px;
+  overflow-y: scroll;
+}

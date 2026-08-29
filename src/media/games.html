@@ -11,107 +11,45 @@
     />
     <!-- <link rel="icon" type="image/x-icon" href=""> -->
     <link rel="stylesheet" href="../_css/bulma/bulma-no-helpers.css" />
-    <link rel="stylesheet" href="../_css/style.css" />
-    <link rel="stylesheet" href="../_css/mod/media.css" />
+    <link rel="stylesheet" href="../_css/mod/media/style.css" />
     <link rel="stylesheet" href="../_css/components.css" />
-    <title>malfen</title>
+    <title>miyu > games</title>
   </head>
 
   <body>
     <!-- top navigation -->
     <nav class="topbar">
-      <a class="topbar-item" id="home" href="">home</a>
-      <a href="" class="topbar-item">theme</a>
-      <!-- settings -->
-      <div class="topbar-item">
-        <details>
-          <summary>settings</summary>
-          <div class="details-content">
-            <label>
-              <span>reduced motion</span>
-              <input type="checkbox" checked />
-              <span class="checkmark"></span>
-            </label>
-            <br />
-            <label>
-              <span>lazy loading</span>
-              <input type="checkbox" checked />
-              <span class="checkmark"></span>
-            </label>
-            <br />
-            <label>
-              <span>dyslexia friendly font</span>
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-            <br />
-            <label>
-              <span>alt text below images</span>
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-          </div>
-        </details>
-      </div>
+      <a class="topbar-item" id="home" href="../index.html"><h4>Miyufen</h4></a>
     </nav>
 
     <nav class="path columns is-mobile">
-      <button class="column is-narrow">Back</button>
-      <button class="column is-narrow">Forward</button>
-      <a class="column is-hidden-touch">path/to/page</a>
-      <div class="column nav-icon">
-        <input type="checkbox" class="checkbox-hidden" id="nav-checkbox" />
-        <label for="nav-checkbox">nav</label>
-        <nav class="menu sidebar-mobile">
-          <!-- <p class="menu-label">General</p> -->
-        </nav>
+      <div>
+        <a href="../index.html"><u>home</u></a> > media >
+        <a href="#"><u>games</u></a>
+      </div>
+      <div class="right">
+        <a href="books/index.html">/Books</a>
+        <a href="#">/Games</a>
+        <a href="music/index.html">/Music</a>
       </div>
     </nav>
 
     <div class="container is-widescreen">
-      <header>
-        <nav class="columns" id="page-nav">
-          <h2 class="column">GAMES</h2>
-          <ul class="column is-narrow">
-            <li><a href="books/index.html"></a>Books</li>
-            <li><a href="#">Games</a></li>
-            <li><a href="music.html">Music</a></li>
-          </ul>
+      <header id="page-nav">
+        <h1>GAMES</h1>
+        <nav class="link-tabs">
+          <a href="#links"><h5>Links</h5></a>
+          <a href="#emulators"><h5>Emulators</h5></a>
+          <a href="#thoughts"><h5>Thoughts</h5></a>
         </nav>
       </header>
 
       <main>
-        <nav class="tabs">
-          <ul>
-            <li><a href="#">Links</a></li>
-            <li><a href="#">Emulators</a></li>
-            <li><a href="#">Thoughts</a></li>
-          </ul>
-        </nav>
-
-        <ul class="game-wrapper" tabindex="0">
-          <!-- TEMPLATE -->
-          <!-- 
-            <li class="game-item">
-                <div class="columns">
-                <figure class="column is-narrow">
-                    <ficaption>Inscryption</ficaption>
-                    <img src="" alt="" />
-                </figure>
-                <section class="column">
-                    <h3>Notes</h3>
-                    <p tabindex="0"></p>
-                </section>
-                </div>
-                <details>
-                <summary>Screenshots</summary>
-                <div class="img-wrapper"></div>
-                </details>
-            </li>
-          -->
-
-          <!-- LIST -->
-          <!-- 
+        <section class="solid shadow" id="favorites">
+          <h2>Favorites</h2>
+          <ul class="game-wrapper" tabindex="0">
+            <!-- LIST -->
+            <!-- 
                 Inscryption
                 Arctic Eggs
                 Portal
@@ -122,26 +60,105 @@
                 Sky: Children of the Light
             -->
 
-          <li class="game-item">
-            <div class="columns">
-              <figure class="column is-narrow">
-                <ficaption>Inscryption</ficaption>
-                <img src="" alt="" />
-              </figure>
-              <section class="column">
-                <h3>Notes</h3>
-                <p tabindex="0"></p>
-              </section>
-            </div>
-            <details>
-              <summary>Screenshots</summary>
-              <div class="img-wrapper"></div>
-            </details>
-          </li>
-        </ul>
-
-        <div class="columns" id="info">
-          <aside class="column" id="links">
+            <li class="game">
+              <h3>Inscryption</h3>
+              <div class="main">
+                <div class="table-wrapper">
+                  <table>
+                    <tr>
+                      <td><h5>Genre</h5></td>
+                      <td>Roguelike deckbuilder</td>
+                    </tr>
+                    <tr>
+                      <td><h5>Developer</h5></td>
+                      <td>Daniel Mullins</td>
+                    </tr>
+                    <tr>
+                      <td><h5>Release date</h5></td>
+                      <td>Oct. 2021</td>
+                    </tr>
+                    <tr>
+                      <td><h5>Compatibility</h5></td>
+                      <td>PC: Mac, Windows, Linux</td>
+                    </tr>
+                  </table>
+                </div>
+                <img src="" alt="" height="120" width="220" />
+              </div>
+              <details class="notes">
+                <summary><h4>Notes</h4></summary>
+                <div class="expand">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Illo nostrum nisi adipisci assumenda tempore quos, qui, iste
+                    dolorem maxime fugit cumque quas iusto exercitationem odio,
+                    reprehenderit aliquam placeat veritatis consequatur?
+                  </p>
+                </div>
+              </details>
+              <details class="screenshots">
+                <summary><h4>Screenshots</h4></summary>
+                <div class="expand">
+                  <div class="img-wrapper">
+                    <img src="" alt="" height="135" width="240" />
+                    <img src="" alt="" height="135" width="240" />
+                    <img src="" alt="" height="135" width="240" />
+                  </div>
+                </div>
+              </details>
+            </li>
+            <li class="game">
+              <h3>Arctic Eggs</h3>
+              <div class="main">
+                <div class="table-wrapper">
+                  <table>
+                    <tr>
+                      <td><h5>Genre</h5></td>
+                      <td>Adventure, Cooking</td>
+                    </tr>
+                    <tr>
+                      <td><h5>Publisher</h5></td>
+                      <td>CRITICAL REFLEX</td>
+                    </tr>
+                    <tr>
+                      <td><h5>Release date</h5></td>
+                      <td>May 2024</td>
+                    </tr>
+                    <tr>
+                      <td><h5>Compatibility</h5></td>
+                      <td>PC: Mac, Windows, Linux</td>
+                    </tr>
+                  </table>
+                </div>
+                <img src="" alt="" height="120" width="220" />
+              </div>
+              <details class="notes">
+                <summary><h4>Notes</h4></summary>
+                <div class="expand">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Illo nostrum nisi adipisci assumenda tempore quos, qui, iste
+                    dolorem maxime fugit cumque quas iusto exercitationem odio,
+                    reprehenderit aliquam placeat veritatis consequatur?
+                  </p>
+                </div>
+              </details>
+              <details class="screenshots">
+                <summary><h4>Screenshots</h4></summary>
+                <div class="expand">
+                  <div class="img-wrapper">
+                    <img src="" alt="" height="135" width="240" />
+                    <img src="" alt="" height="135" width="240" />
+                    <img src="" alt="" height="135" width="240" />
+                  </div>
+                </div>
+              </details>
+            </li>
+          </ul>
+        </section>
+        <hr />
+        <section id="info">
+          <aside id="links">
             <h4>Links</h4>
             <ul tabindex="0">
               <li><a href=""></a></li>
@@ -149,7 +166,7 @@
               <li><a href=""></a></li>
             </ul>
           </aside>
-          <aside class="column" id="emulators">
+          <aside id="emulators">
             <h4>Emulators</h4>
             <ul tabindex="0">
               <li><a href=""></a></li>
@@ -157,10 +174,10 @@
               <li><a href=""></a></li>
             </ul>
           </aside>
-        </div>
-
-        <section id="thoughts">
-          <h4>Bad opinion zone</h4>
+        </section>
+        <hr />
+        <section class="shadow" id="thoughts">
+          <h2>Thoughts</h2>
           <p tabindex="0">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
             dicta veniam! Enim velit tempora id delectus adipisci minima odit
@@ -172,22 +189,16 @@
             pariatur.
           </p>
         </section>
-
-        <section id="see-also">
-            <h4>See Also:</h4>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </section>
       </main>
 
       <!-- footer -->
       <footer>
-        <a href="">sourcecode</a> / <a href="">credits</a> / public domain under
-        the <a href="https://unlicense.org/">unlicense</a>
-        <br />
-        2026 • malfen
+        <p>
+          <a href="github.com/kiptunes/neocities">sourcecode</a> /
+          <a href="credits.html">credits</a> / public domain under the
+          <a href="https://unlicense.org/">unlicense</a>
+        </p>
+        <p>2026 • miyufen</p>
       </footer>
     </div>
   </body>
